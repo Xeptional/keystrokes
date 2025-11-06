@@ -1,0 +1,671 @@
+{
+  "applications": [
+    {
+      "name": "Adobe Acrobat Reader",
+      "slug": "adobe-acrobat-reader",
+      "platforms": ["Windows", "macOS"],
+      "description": "Adobe Acrobat Reader is a free PDF viewer for reading, printing, and annotating PDF documents. It includes accessibility features like screen reader support, read-out-loud functionality, keyboard navigation, and high contrast modes for inclusive document access.",
+      "categories": [
+        {
+          "name": "General Navigation",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Shift + Ctrl + Forward Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Ctrl + /"},
+                {"os": "macOS", "keys": "Shift + Cmd + /"}
+              ],
+              "context": "Available in Acrobat Reader",
+              "description": "Press Shift, Control, and Forward Slash together to display complete list of keyboard shortcuts.",
+              "notes": "Screen readers announce shortcuts reference opened. Browse shortcuts by category."
+            },
+            {
+              "action": "Next page",
+              "keys": "Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Page Down or Right Arrow"},
+                {"os": "macOS", "keys": "Page Down or Fn + Down Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Page Down or Right Arrow to navigate to the next page in the document.",
+              "notes": "Screen readers announce new page number. Standard method for sequential reading."
+            },
+            {
+              "action": "Previous page",
+              "keys": "Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Page Up or Left Arrow"},
+                {"os": "macOS", "keys": "Page Up or Fn + Up Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Page Up or Left Arrow to navigate to the previous page in the document.",
+              "notes": "Screen readers announce previous page number."
+            },
+            {
+              "action": "First page",
+              "keys": "Ctrl + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Home"},
+                {"os": "macOS", "keys": "Cmd + Home"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and Home together to jump to the first page of the document.",
+              "notes": "Screen readers announce page one. Quick navigation to document start."
+            },
+            {
+              "action": "Last page",
+              "keys": "Ctrl + End",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + End"},
+                {"os": "macOS", "keys": "Cmd + End"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and End together to jump to the last page of the document.",
+              "notes": "Screen readers announce final page number."
+            },
+            {
+              "action": "Go to specific page",
+              "keys": "Ctrl + Shift + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + N"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and N together to open page number dialog for jumping to specific page.",
+              "notes": "Screen readers announce page number dialog. Type page number and press Enter."
+            },
+            {
+              "action": "Scroll up",
+              "keys": "Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Up Arrow"},
+                {"os": "macOS", "keys": "Up Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Up Arrow to scroll up in the current page without changing pages.",
+              "notes": "Screen readers may announce visible text as viewport changes."
+            },
+            {
+              "action": "Scroll down",
+              "keys": "Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Down Arrow"},
+                {"os": "macOS", "keys": "Down Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Down Arrow to scroll down in the current page.",
+              "notes": "Screen readers may announce text becoming visible."
+            },
+            {
+              "action": "Scroll to beginning of page",
+              "keys": "Home",
+              "variants": [
+                {"os": "Windows", "keys": "Home"},
+                {"os": "macOS", "keys": "Home or Fn + Left Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Home to scroll to the top of the current page.",
+              "notes": "Screen readers announce top of page."
+            },
+            {
+              "action": "Scroll to end of page",
+              "keys": "End",
+              "variants": [
+                {"os": "Windows", "keys": "End"},
+                {"os": "macOS", "keys": "End or Fn + Right Arrow"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press End to scroll to the bottom of the current page.",
+              "notes": "Screen readers announce bottom of page."
+            }
+          ]
+        },
+        {
+          "name": "Document Operations",
+          "shortcuts": [
+            {
+              "action": "Open file",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "Available in Acrobat Reader",
+              "description": "Press Control and O together to open file browser dialog for selecting PDF to open.",
+              "notes": "Screen readers announce open dialog. Navigate files with arrow keys and press Enter."
+            },
+            {
+              "action": "Close document",
+              "keys": "Ctrl + W",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + W"},
+                {"os": "macOS", "keys": "Cmd + W"}
+              ],
+              "context": "When PDF is open",
+              "description": "Press Control and W together to close current PDF document without closing Acrobat Reader.",
+              "notes": "Screen readers announce document closed. Application remains open."
+            },
+            {
+              "action": "Save copy",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "When PDF is open",
+              "description": "Press Control, Shift, and S together to save a copy of the PDF with a new name.",
+              "notes": "Screen readers announce save dialog. Choose location and filename."
+            },
+            {
+              "action": "Print",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"}
+              ],
+              "context": "When PDF is open",
+              "description": "Press Control and P together to open print dialog for printing the document.",
+              "notes": "Screen readers announce print dialog. Configure printer settings and page range."
+            },
+            {
+              "action": "Document properties",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"}
+              ],
+              "context": "When PDF is open",
+              "description": "Press Control and D together to view document properties including title, author, and metadata.",
+              "notes": "Screen readers announce properties dialog with document information."
+            },
+            {
+              "action": "Exit Acrobat Reader",
+              "keys": "Ctrl + Q",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Q"},
+                {"os": "macOS", "keys": "Cmd + Q"}
+              ],
+              "context": "Available in Acrobat Reader",
+              "description": "Press Control and Q together to close all documents and exit Acrobat Reader completely.",
+              "notes": "Screen readers announce application closing. All open PDFs will close."
+            }
+          ]
+        },
+        {
+          "name": "View and Zoom",
+          "shortcuts": [
+            {
+              "action": "Zoom in",
+              "keys": "Ctrl + Plus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Plus or Ctrl + ="},
+                {"os": "macOS", "keys": "Cmd + Plus"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and Plus Sign together to zoom in and magnify the document for better readability.",
+              "notes": "Screen readers may announce zoom percentage. Essential for users with low vision."
+            },
+            {
+              "action": "Zoom out",
+              "keys": "Ctrl + Minus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Minus"},
+                {"os": "macOS", "keys": "Cmd + Minus"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and Minus Sign together to zoom out and see more of the page.",
+              "notes": "Screen readers may announce zoom percentage decreasing."
+            },
+            {
+              "action": "Fit page to window",
+              "keys": "Ctrl + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 0"},
+                {"os": "macOS", "keys": "Cmd + 0"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and Zero together to fit entire page within window boundaries.",
+              "notes": "Screen readers announce fit to window mode. Shows complete page."
+            },
+            {
+              "action": "Fit width",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1"},
+                {"os": "macOS", "keys": "Cmd + 1"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and 1 together to fit page width to window for easier left-to-right reading.",
+              "notes": "Screen readers announce fit width mode. Optimizes horizontal reading."
+            },
+            {
+              "action": "Actual size",
+              "keys": "Ctrl + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 2"},
+                {"os": "macOS", "keys": "Cmd + 2"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and 2 together to display document at actual size (100% zoom).",
+              "notes": "Screen readers announce actual size. Shows document at original dimensions."
+            },
+            {
+              "action": "Reflow view",
+              "keys": "Ctrl + 4",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 4"},
+                {"os": "macOS", "keys": "Cmd + 4"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and 4 together to enable reflow view which reformats text to fit window width.",
+              "notes": "Screen readers announce reflow mode. Text flows as single column without fixed layout. Improves readability for screen magnifier users."
+            },
+            {
+              "action": "Rotate page clockwise",
+              "keys": "Ctrl + Shift + Plus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Plus"},
+                {"os": "macOS", "keys": "Cmd + Shift + Plus"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and Plus together to rotate current page view 90 degrees clockwise.",
+              "notes": "Screen readers announce page rotated. Temporary rotation for current viewing session."
+            },
+            {
+              "action": "Rotate page counterclockwise",
+              "keys": "Ctrl + Shift + Minus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Minus"},
+                {"os": "macOS", "keys": "Cmd + Shift + Minus"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and Minus together to rotate current page view 90 degrees counterclockwise.",
+              "notes": "Screen readers announce page rotated counterclockwise."
+            },
+            {
+              "action": "Single page view",
+              "keys": "Ctrl + 3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 3"},
+                {"os": "macOS", "keys": "Cmd + 3"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and 3 together to display one page at a time in the window.",
+              "notes": "Screen readers announce single page view. Shows one page per screen."
+            },
+            {
+              "action": "Toggle full screen mode",
+              "keys": "Ctrl + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + L"},
+                {"os": "macOS", "keys": "Cmd + L"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and L together to enter or exit full screen reading mode hiding toolbars and menus.",
+              "notes": "Screen readers announce full screen mode. Press Escape or Ctrl+L to exit. Maximizes reading area."
+            }
+          ]
+        },
+        {
+          "name": "Search and Selection",
+          "shortcuts": [
+            {
+              "action": "Find text",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and F together to open search toolbar for finding text in the document.",
+              "notes": "Screen readers announce search toolbar opened. Type search term and press Enter."
+            },
+            {
+              "action": "Find next occurrence",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G or F3"},
+                {"os": "macOS", "keys": "Cmd + G"}
+              ],
+              "context": "After searching",
+              "description": "Press Control and G together to jump to next occurrence of search term in document.",
+              "notes": "Screen readers announce next match found and may read surrounding text."
+            },
+            {
+              "action": "Find previous occurrence",
+              "keys": "Ctrl + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + G or Shift + F3"},
+                {"os": "macOS", "keys": "Cmd + Shift + G"}
+              ],
+              "context": "After searching",
+              "description": "Press Control, Shift, and G together to jump to previous occurrence of search term.",
+              "notes": "Screen readers announce previous match found."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control and A together to select all text content on current page.",
+              "notes": "Screen readers announce all content selected. Useful for copying text."
+            },
+            {
+              "action": "Select text",
+              "keys": "V",
+              "variants": [
+                {"os": "Windows", "keys": "V"},
+                {"os": "macOS", "keys": "V"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press V to activate Select tool for selecting text with keyboard or mouse.",
+              "notes": "Screen readers announce text selection tool active. Use Shift + arrow keys to select text."
+            },
+            {
+              "action": "Hand tool",
+              "keys": "H",
+              "variants": [
+                {"os": "Windows", "keys": "H"},
+                {"os": "macOS", "keys": "H"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press H to activate Hand tool for dragging document and panning around page.",
+              "notes": "Screen readers announce hand tool active. Use arrow keys to pan document."
+            },
+            {
+              "action": "Copy selected text",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and C together to copy selected text to clipboard.",
+              "notes": "Screen readers announce text copied to clipboard. Paste into other applications."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility Features",
+          "shortcuts": [
+            {
+              "action": "Read current page out loud",
+              "keys": "Ctrl + Shift + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Y"},
+                {"os": "macOS", "keys": "Cmd + Shift + Y"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and Y together to have Acrobat read current page aloud using text-to-speech.",
+              "notes": "Acrobat announces and begins reading page content. Built-in read-aloud feature works alongside screen readers. Press Shift + Ctrl + C to stop."
+            },
+            {
+              "action": "Read document from current page",
+              "keys": "Ctrl + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and V together to start reading aloud from current page to end of document.",
+              "notes": "Acrobat begins continuous reading. Useful for listening to entire document sections."
+            },
+            {
+              "action": "Stop reading aloud",
+              "keys": "Ctrl + Shift + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + E"},
+                {"os": "macOS", "keys": "Cmd + Shift + E"}
+              ],
+              "context": "When read aloud is active",
+              "description": "Press Control, Shift, and E together to stop the read-aloud feature.",
+              "notes": "Acrobat announces reading stopped. Pauses text-to-speech playback."
+            },
+            {
+              "action": "Pause/resume reading",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"}
+              ],
+              "context": "When read aloud is active",
+              "description": "Press Control, Shift, and C together to pause or resume reading aloud.",
+              "notes": "Acrobat announces paused or resumed. Temporarily stops reading without ending session."
+            },
+            {
+              "action": "Accessibility Setup Assistant",
+              "keys": "Shift + Ctrl + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Ctrl + 5"},
+                {"os": "macOS", "keys": "Shift + Cmd + 5"}
+              ],
+              "context": "Available in Acrobat Reader",
+              "description": "Press Shift, Control, and 5 together to open Accessibility Setup Assistant for configuring accessibility preferences.",
+              "notes": "Screen readers announce setup assistant. Configure reading order, colors, and screen reader options."
+            },
+            {
+              "action": "Accessibility checker",
+              "keys": "Shift + Ctrl + 6",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Ctrl + 6"},
+                {"os": "macOS", "keys": "Shift + Cmd + 6"}
+              ],
+              "context": "When PDF is open",
+              "description": "Press Shift, Control, and 6 together to run accessibility checker identifying accessibility issues in PDF.",
+              "notes": "Screen readers announce checker results. Shows missing tags, reading order issues, and other accessibility problems."
+            },
+            {
+              "action": "Enable/disable auto-scroll",
+              "keys": "Ctrl + Shift + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press Control, Shift, and H together to enable automatic scrolling through document at set speed.",
+              "notes": "Screen readers announce auto-scroll enabled. Document scrolls continuously. Useful for hands-free reading."
+            },
+            {
+              "action": "High contrast black text on white",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H (in preferences)"},
+                {"os": "macOS", "keys": "Cmd + H"}
+              ],
+              "context": "Via accessibility preferences",
+              "description": "Configure high contrast mode in accessibility preferences for better readability.",
+              "notes": "Screen readers work with high contrast mode. Improves visibility for low vision users. Set in Edit > Preferences > Accessibility."
+            }
+          ]
+        },
+        {
+          "name": "Navigation Panels",
+          "shortcuts": [
+            {
+              "action": "Toggle bookmarks panel",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"}
+              ],
+              "context": "When PDF has bookmarks",
+              "description": "Press Control and B together to show or hide bookmarks panel for document navigation.",
+              "notes": "Screen readers announce bookmarks panel shown or hidden. Navigate bookmarks with arrow keys for quick document access."
+            },
+            {
+              "action": "Toggle thumbnails panel",
+              "keys": "F4",
+              "variants": [
+                {"os": "Windows", "keys": "F4"},
+                {"os": "macOS", "keys": "F4"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press F4 to show or hide page thumbnails panel for visual page navigation.",
+              "notes": "Screen readers announce thumbnails panel. Less useful for screen reader users but available."
+            },
+            {
+              "action": "Show/hide navigation pane",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "F5"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press F5 to toggle left navigation pane containing bookmarks, thumbnails, and other navigation tools.",
+              "notes": "Screen readers announce navigation pane shown or hidden."
+            },
+            {
+              "action": "Toggle toolbar",
+              "keys": "F8",
+              "variants": [
+                {"os": "Windows", "keys": "F8"},
+                {"os": "macOS", "keys": "F8"}
+              ],
+              "context": "When viewing PDF",
+              "description": "Press F8 to show or hide the main toolbar with document controls.",
+              "notes": "Screen readers announce toolbar visibility changed. Maximizes viewing area when hidden."
+            },
+            {
+              "action": "Toggle menu bar",
+              "keys": "F9",
+              "variants": [
+                {"os": "Windows", "keys": "F9"},
+                {"os": "macOS", "keys": "N/A"}
+              ],
+              "context": "Available in Acrobat Reader (Windows)",
+              "description": "Press F9 to show or hide the menu bar with File, Edit, View menus.",
+              "notes": "Screen readers announce menu bar shown or hidden. Windows only."
+            }
+          ]
+        },
+        {
+          "name": "Forms and Comments",
+          "shortcuts": [
+            {
+              "action": "Next form field",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"}
+              ],
+              "context": "When PDF has fillable forms",
+              "description": "Press Tab to move to next form field in fillable PDF document.",
+              "notes": "Screen readers announce field type, label, and current value. Standard form navigation."
+            },
+            {
+              "action": "Previous form field",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"}
+              ],
+              "context": "When in PDF form",
+              "description": "Press Shift and Tab together to move to previous form field.",
+              "notes": "Screen readers announce previous field information."
+            },
+            {
+              "action": "Select checkbox or radio button",
+              "keys": "Space",
+              "variants": [
+                {"os": "Windows", "keys": "Space"},
+                {"os": "macOS", "keys": "Space"}
+              ],
+              "context": "When checkbox or radio button has focus",
+              "description": "Press Space to check or uncheck checkbox or select radio button in form.",
+              "notes": "Screen readers announce checked or unchecked state."
+            },
+            {
+              "action": "Add sticky note",
+              "keys": "S",
+              "variants": [
+                {"os": "Windows", "keys": "S"},
+                {"os": "macOS", "keys": "S"}
+              ],
+              "context": "When commenting is enabled",
+              "description": "Press S to activate sticky note tool for adding comments to document.",
+              "notes": "Screen readers announce sticky note tool active. Click to place note."
+            },
+            {
+              "action": "Highlight text",
+              "keys": "U",
+              "variants": [
+                {"os": "Windows", "keys": "U"},
+                {"os": "macOS", "keys": "U"}
+              ],
+              "context": "When commenting is enabled",
+              "description": "Press U to activate highlight tool for highlighting text in document.",
+              "notes": "Screen readers announce highlight tool active. Select text to highlight."
+            }
+          ]
+        },
+        {
+          "name": "Window Management",
+          "shortcuts": [
+            {
+              "action": "Minimize window",
+              "keys": "Ctrl + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + M"},
+                {"os": "macOS", "keys": "Cmd + M"}
+              ],
+              "context": "When Acrobat window is active",
+              "description": "Press Control and M together to minimize Acrobat Reader window to taskbar.",
+              "notes": "Screen readers announce window minimized. Document remains open in background."
+            },
+            {
+              "action": "Tile windows horizontally",
+              "keys": "Shift + Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Ctrl + K"},
+                {"os": "macOS", "keys": "Shift + Cmd + K"}
+              ],
+              "context": "When multiple PDFs are open",
+              "description": "Press Shift, Control, and K together to arrange open PDF windows in horizontal tiles.",
+              "notes": "Screen readers announce window arrangement. Useful for comparing documents."
+            },
+            {
+              "action": "Cascade windows",
+              "keys": "Shift + Ctrl + J",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Ctrl + J"},
+                {"os": "macOS", "keys": "Shift + Cmd + J"}
+              ],
+              "context": "When multiple PDFs are open",
+              "description": "Press Shift, Control, and J together to arrange windows in cascading layout.",
+              "notes": "Screen readers announce cascade arrangement."
+            },
+            {
+              "action": "Switch between open documents",
+              "keys": "Ctrl + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Tab"},
+                {"os": "macOS", "keys": "Cmd + ~"}
+              ],
+              "context": "When multiple PDFs are open",
+              "description": "Press Control and Tab together to cycle through open PDF documents.",
+              "notes": "Screen readers announce document title as you switch. Navigate between multiple open files."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "AcroRd32.exe"},
+        {"type": "process", "value": "Acrobat Reader.exe"},
+        {"type": "process", "value": "Adobe Acrobat Reader DC"},
+        {"type": "window_title", "value": "* - Adobe Acrobat Reader"},
+        {"type": "window_title", "value": "Adobe Acrobat Reader DC"}
+      ],
+      "source": [
+        "https://helpx.adobe.com/acrobat/using/keyboard-shortcuts.html",
+        "https://helpx.adobe.com/acrobat/using/keyboard-shortcuts-acrobat-reader.html",
+        "https://helpx.adobe.com/acrobat/using/reading-pdfs-accessibility-features.html",
+        "https://www.adobe.com/accessibility/products/reader.html"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

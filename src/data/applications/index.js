@@ -1,0 +1,81 @@
+import adobeAcrobatData from './adobe_acrobat_shortcuts.json';
+import dropboxData from './dropbox_shortcuts.json';
+import chromeData from './chrome_shortcuts.json'
+
+export const applications = {
+  'adobe-acrobat': adobeAcrobatData.applications[0],
+  'dropbox': dropboxData.applications[0],
+  'chrome': chromeData.applications[0]
+  // add more applications
+};
+
+// list of application slugs 
+export const getApplicationSlugs = () => Object.keys(applications);
+
+// single application by slug
+export const getApplication = (slug) => applications[slug];
+
+// array of applications 
+export const getAllApplications = () => Object.values(applications);
+
+//Search accross all applications
+export const searchShortcuts = (query, enabledApps = []) => {
+  const results = [];
+  const searchTerm = query.toLowerCase();
+
+  Object.values(applications).forEach(app => {
+    //skip disabled apps
+    if(!enabledApps.includes(app.slug)) return;
+
+    app.categories.forEach(category => {
+      category.shortcuts.forEach(shortcut => {
+        // search action, description, category name
+        const matchAction = shortcut.action.toLowerCase().includes(searchTerm);
+        const matchDescription = shortcut.description.toLowerCase().includes(searchTerm);
+        const matchCategory = category.name.toLowerCase().includes(searchTerm);
+        const matchKeys = shortcut.keys.toLowerCase().includes(searchTerm);
+
+        if(matchAction || matchDescription || matchCategory || matchKeys) {
+          results.push({
+            app,
+            category,
+            shortcut,
+            matchType: matchAction ? 'action' : matchDescription ? 'description' : matchCategory ? 'category' : 'keys'
+          });
+        }
+      });
+    });
+  });
+
+  return results;
+};
+
+/* 
+// DYNAMIC IMPORT VERSION (Use this if you have 50+ applications for better performance)
+
+// Dynamic import function
+export const loadApplication = async (slug) => {
+  try {
+    const module = await import(`./applications/${slug}.json`);
+    return module.applications[0];
+  } catch (error) {
+    console.error(`Failed to load application: ${slug}`, error);
+    return null;
+  }
+};
+
+// Load multiple applications
+export const loadApplications = async (slugs) => {
+  const promises = slugs.map(slug => loadApplication(slug));
+  const results = await Promise.all(promises);
+  return results.filter(app => app !== null);
+};
+
+// Get all available application slugs (you'd need to maintain this list)
+export const availableApplications = [
+  'adobe-acrobat-reader',
+  'microsoft-word',
+  'visual-studio-code',
+  // ... add all your apps here
+];
+*/

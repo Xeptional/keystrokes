@@ -1,0 +1,380 @@
+{
+  "applications": [
+    {
+      "name": "Dropbox",
+      "slug": "dropbox",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Dropbox is a cloud storage service for storing, syncing, and sharing files across devices. The web interface includes keyboard navigation for managing files and folders with screen reader support for accessible file management.",
+      "categories": [
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Question Mark",
+              "variants": [
+                {"os": "Windows", "keys": "?"},
+                {"os": "macOS", "keys": "?"},
+                {"os": "Linux", "keys": "?"}
+              ],
+              "context": "Available in Dropbox web interface",
+              "description": "Press Question Mark to display list of all available keyboard shortcuts in Dropbox.",
+              "notes": "Screen readers announce shortcuts help dialog opened. View all shortcuts organized by category."
+            },
+            {
+              "action": "Navigate to home",
+              "keys": "G then H",
+              "variants": [
+                {"os": "Windows", "keys": "G then H"},
+                {"os": "macOS", "keys": "G then H"}
+              ],
+              "context": "Available in Dropbox",
+              "description": "Press G then H to navigate to Dropbox home view showing recent files and folders.",
+              "notes": "Screen readers announce Home view opened. Shows recently accessed files."
+            },
+            {
+              "action": "Navigate to files",
+              "keys": "G then F",
+              "variants": [
+                {"os": "Windows", "keys": "G then F"},
+                {"os": "macOS", "keys": "G then F"}
+              ],
+              "context": "Available in Dropbox",
+              "description": "Press G then F to navigate to Files view showing all your Dropbox files and folders.",
+              "notes": "Screen readers announce Files view opened with folder tree and file list."
+            },
+            {
+              "action": "Navigate to shared",
+              "keys": "G then S",
+              "variants": [
+                {"os": "Windows", "keys": "G then S"},
+                {"os": "macOS", "keys": "G then S"}
+              ],
+              "context": "Available in Dropbox",
+              "description": "Press G then S to navigate to Shared view showing files and folders shared with you.",
+              "notes": "Screen readers announce Shared view opened. Shows items others have shared with you."
+            },
+            {
+              "action": "Navigate to deleted files",
+              "keys": "G then D",
+              "variants": [
+                {"os": "Windows", "keys": "G then D"},
+                {"os": "macOS", "keys": "G then D"}
+              ],
+              "context": "Available in Dropbox",
+              "description": "Press G then D to navigate to Deleted Files view showing recently deleted items.",
+              "notes": "Screen readers announce Deleted Files view. Files can be restored within 30 days."
+            },
+            {
+              "action": "Search files",
+              "keys": "Forward Slash",
+              "variants": [
+                {"os": "Windows", "keys": "/"},
+                {"os": "macOS", "keys": "/"}
+              ],
+              "context": "Available in Dropbox",
+              "description": "Press Forward Slash to place focus in search box for searching files and folders.",
+              "notes": "Screen readers announce search box focused. Type filename or content to search."
+            },
+            {
+              "action": "Navigate files list",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"},
+                {"os": "macOS", "keys": "Up/Down Arrow"}
+              ],
+              "context": "When in files list",
+              "description": "Press Up or Down Arrow to navigate through files and folders in the list.",
+              "notes": "Screen readers announce each file name, type, size, and modified date as you navigate."
+            },
+            {
+              "action": "Open file or folder",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"},
+                {"os": "macOS", "keys": "Enter"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Enter to open selected file for preview or navigate into selected folder.",
+              "notes": "Screen readers announce file opening or folder contents loading."
+            },
+            {
+              "action": "Go up one folder level",
+              "keys": "Backspace",
+              "variants": [
+                {"os": "Windows", "keys": "Backspace"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When viewing folder contents",
+              "description": "Press Backspace to navigate up one level to parent folder.",
+              "notes": "Screen readers announce parent folder name and contents."
+            }
+          ]
+        },
+        {
+          "name": "File Operations",
+          "shortcuts": [
+            {
+              "action": "Select file or folder",
+              "keys": "X",
+              "variants": [
+                {"os": "Windows", "keys": "X"},
+                {"os": "macOS", "keys": "X"}
+              ],
+              "context": "When file or folder is focused",
+              "description": "Press X to select or deselect focused file or folder without moving focus.",
+              "notes": "Screen readers announce file selected or deselected. Build multi-selection for batch operations."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When in files list",
+              "description": "Press Control and A together to select all files and folders in current view.",
+              "notes": "Screen readers announce all files selected with count."
+            },
+            {
+              "action": "Deselect all",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "When files are selected",
+              "description": "Press Escape to clear all file selections.",
+              "notes": "Screen readers announce selection cleared."
+            },
+            {
+              "action": "Create new folder",
+              "keys": "Shift + N",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + N"},
+                {"os": "macOS", "keys": "Shift + N"}
+              ],
+              "context": "Available in files view",
+              "description": "Press Shift and N together to create a new folder in current location.",
+              "notes": "Screen readers announce new folder dialog. Type folder name and press Enter."
+            },
+            {
+              "action": "Upload files",
+              "keys": "U",
+              "variants": [
+                {"os": "Windows", "keys": "U"},
+                {"os": "macOS", "keys": "U"}
+              ],
+              "context": "Available in files view",
+              "description": "Press U to open file upload dialog for uploading files from your computer to Dropbox.",
+              "notes": "Screen readers announce upload dialog. Select files to upload to current folder."
+            },
+            {
+              "action": "Download selected",
+              "keys": "D",
+              "variants": [
+                {"os": "Windows", "keys": "D"},
+                {"os": "macOS", "keys": "D"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press D to download selected file or folder to your computer.",
+              "notes": "Screen readers announce download started. File saves to default downloads folder."
+            },
+            {
+              "action": "Rename",
+              "keys": "R",
+              "variants": [
+                {"os": "Windows", "keys": "R"},
+                {"os": "macOS", "keys": "R"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press R to rename selected file or folder.",
+              "notes": "Screen readers announce rename dialog. Type new name and press Enter to save."
+            },
+            {
+              "action": "Move",
+              "keys": "V",
+              "variants": [
+                {"os": "Windows", "keys": "V"},
+                {"os": "macOS", "keys": "V"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press V to move selected items to a different folder location.",
+              "notes": "Screen readers announce move dialog. Navigate folders and select destination."
+            },
+            {
+              "action": "Copy",
+              "keys": "C",
+              "variants": [
+                {"os": "Windows", "keys": "C"},
+                {"os": "macOS", "keys": "C"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press C to copy selected items to a different folder while keeping originals.",
+              "notes": "Screen readers announce copy dialog. Choose destination folder for copies."
+            },
+            {
+              "action": "Delete",
+              "keys": "Backspace",
+              "variants": [
+                {"os": "Windows", "keys": "Backspace"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Backspace or Delete to move selected items to deleted files folder.",
+              "notes": "Screen readers announce confirmation dialog. Items can be restored within 30 days."
+            },
+            {
+              "action": "Permanently delete",
+              "keys": "Shift + Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Backspace"},
+                {"os": "macOS", "keys": "Shift + Delete"}
+              ],
+              "context": "When viewing deleted files",
+              "description": "Press Shift and Delete together to permanently delete items from deleted files folder.",
+              "notes": "Screen readers announce permanent deletion warning. Cannot be recovered after deletion."
+            },
+            {
+              "action": "Restore deleted file",
+              "keys": "R",
+              "variants": [
+                {"os": "Windows", "keys": "R"},
+                {"os": "macOS", "keys": "R"}
+              ],
+              "context": "When viewing deleted files",
+              "description": "Press R to restore selected deleted file to its original location.",
+              "notes": "Screen readers announce file restored. Returns to location before deletion."
+            }
+          ]
+        },
+        {
+          "name": "Sharing and Collaboration",
+          "shortcuts": [
+            {
+              "action": "Share",
+              "keys": "S",
+              "variants": [
+                {"os": "Windows", "keys": "S"},
+                {"os": "macOS", "keys": "S"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press S to open sharing dialog for selected file or folder to share with others.",
+              "notes": "Screen readers announce share dialog. Add email addresses and set permissions."
+            },
+            {
+              "action": "Copy link",
+              "keys": "L",
+              "variants": [
+                {"os": "Windows", "keys": "L"},
+                {"os": "macOS", "keys": "L"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press L to copy shareable link for selected file or folder to clipboard.",
+              "notes": "Screen readers announce link copied to clipboard. Paste link to share with others."
+            },
+            {
+              "action": "Show file details",
+              "keys": "I",
+              "variants": [
+                {"os": "Windows", "keys": "I"},
+                {"os": "macOS", "keys": "I"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press I to show details panel with file information, sharing, and activity.",
+              "notes": "Screen readers announce details panel opened. View size, modified date, and sharing info."
+            },
+            {
+              "action": "Add to starred",
+              "keys": "1",
+              "variants": [
+                {"os": "Windows", "keys": "1"},
+                {"os": "macOS", "keys": "1"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press 1 to star or unstar selected file for quick access from starred section.",
+              "notes": "Screen readers announce file starred or unstarred. Starred files easily accessible."
+            }
+          ]
+        },
+        {
+          "name": "View Options",
+          "shortcuts": [
+            {
+              "action": "Toggle list/grid view",
+              "keys": "T",
+              "variants": [
+                {"os": "Windows", "keys": "T"},
+                {"os": "macOS", "keys": "T"}
+              ],
+              "context": "When viewing files",
+              "description": "Press T to toggle between list view and grid/thumbnail view for files.",
+              "notes": "Screen readers announce view changed to list or grid. List view more accessible for screen readers."
+            },
+            {
+              "action": "Sort files",
+              "keys": "O",
+              "variants": [
+                {"os": "Windows", "keys": "O"},
+                {"os": "macOS", "keys": "O"}
+              ],
+              "context": "When viewing files",
+              "description": "Press O to open sort options menu for changing file sort order.",
+              "notes": "Screen readers announce sort menu. Sort by name, date modified, size, or type."
+            },
+            {
+              "action": "Close preview or dialog",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "When preview or dialog is open",
+              "description": "Press Escape to close file preview, dialog, or panel and return to file list.",
+              "notes": "Screen readers announce preview or dialog closed. Returns focus to file list."
+            }
+          ]
+        },
+        {
+          "name": "Desktop Application",
+          "shortcuts": [
+            {
+              "action": "Open Dropbox folder",
+              "keys": "Ctrl + Shift + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + D"},
+                {"os": "macOS", "keys": "Cmd + Shift + D"}
+              ],
+              "context": "When Dropbox desktop app is running",
+              "description": "Press Control, Shift, and D together to open local Dropbox folder in file explorer.",
+              "notes": "Screen readers announce File Explorer opening Dropbox folder. Works with desktop sync app."
+            },
+            {
+              "action": "Preferences",
+              "keys": "Ctrl + Comma",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ,"},
+                {"os": "macOS", "keys": "Cmd + ,"}
+              ],
+              "context": "When Dropbox desktop app has focus",
+              "description": "Press Control and Comma together to open Dropbox preferences or settings.",
+              "notes": "Screen readers announce preferences dialog. Configure sync, notifications, and account settings."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://www.dropbox.com/home*"},
+        {"type": "url_pattern", "value": "https://*.dropbox.com/*"},
+        {"type": "window_title", "value": "*Dropbox*"},
+        {"type": "process", "value": "Dropbox.exe"}
+      ],
+      "source": [
+        "https://help.dropbox.com/accounts-billing/settings-sign-in/keyboard-shortcuts",
+        "https://help.dropbox.com/files-folders/sort-preview/accessibility",
+        "https://www.dropbox.com/accessibility"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
