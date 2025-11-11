@@ -1,0 +1,517 @@
+{
+  "applications": [
+    {
+      "name": "Zoom",
+      "slug": "zoom",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Zoom is a video conferencing platform for virtual meetings, webinars, and screen sharing. It includes accessibility features like keyboard shortcuts, screen reader support, live transcription, and closed captions for inclusive virtual communication.",
+      "categories": [
+        {
+          "name": "General Controls",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Ctrl + Forward Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + /"},
+                {"os": "macOS", "keys": "Cmd + /"},
+                {"os": "Linux", "keys": "Ctrl + /"}
+              ],
+              "context": "Available in Zoom",
+              "description": "Press Control and Forward Slash together to display list of all keyboard shortcuts in Zoom.",
+              "notes": "Screen readers announce shortcuts window opened. View all available shortcuts."
+            },
+            {
+              "action": "Close current window",
+              "keys": "Alt + F4",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F4"},
+                {"os": "macOS", "keys": "Cmd + W"},
+                {"os": "Linux", "keys": "Alt + F4"}
+              ],
+              "context": "When Zoom window is active",
+              "description": "Press Alt and F4 together to close the current Zoom window or dialog.",
+              "notes": "Screen readers announce window closing. Minimizes to system tray rather than fully exiting on some systems."
+            },
+            {
+              "action": "Switch to portrait/landscape",
+              "keys": "Alt + L",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + L"},
+                {"os": "macOS", "keys": "Cmd + L"}
+              ],
+              "context": "During meeting on mobile-sized window",
+              "description": "Press Alt and L together to switch between portrait and landscape view orientations.",
+              "notes": "Screen readers announce orientation changed. Changes window layout."
+            }
+          ]
+        },
+        {
+          "name": "Meeting Controls",
+          "shortcuts": [
+            {
+              "action": "Join meeting",
+              "keys": "Alt + J",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + J"},
+                {"os": "macOS", "keys": "Cmd + J"}
+              ],
+              "context": "When on Zoom home screen",
+              "description": "Press Alt and J together to open join meeting dialog where you enter meeting ID to join.",
+              "notes": "Screen readers announce join meeting dialog. Enter meeting ID and password to join."
+            },
+            {
+              "action": "Schedule meeting",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "When on Zoom home screen",
+              "description": "Press Alt and S together to open schedule meeting dialog for creating new scheduled meeting.",
+              "notes": "Screen readers announce schedule dialog. Set date, time, and meeting options."
+            },
+            {
+              "action": "Mute/unmute audio",
+              "keys": "Alt + A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A"},
+                {"os": "macOS", "keys": "Cmd + Shift + A"},
+                {"os": "Linux", "keys": "Alt + A"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and A together to mute or unmute your microphone during meeting.",
+              "notes": "Screen readers announce microphone muted or unmuted. Essential control for meeting participation. Notification appears briefly on screen."
+            },
+            {
+              "action": "Start/stop video",
+              "keys": "Alt + V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"},
+                {"os": "Linux", "keys": "Alt + V"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and V together to start or stop your video camera during meeting.",
+              "notes": "Screen readers announce camera started or stopped. Video feed turns on or off."
+            },
+            {
+              "action": "Share screen",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"},
+                {"os": "Linux", "keys": "Alt + Shift + S"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt, Shift, and S together to start or stop screen sharing with meeting participants.",
+              "notes": "Screen readers announce screen share dialog or screen sharing stopped. Select window or entire screen to share."
+            },
+            {
+              "action": "Pause or resume screen share",
+              "keys": "Alt + T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + T"},
+                {"os": "macOS", "keys": "Cmd + Shift + T"}
+              ],
+              "context": "When screen sharing",
+              "description": "Press Alt and T together to pause or resume screen sharing without stopping the share session.",
+              "notes": "Screen readers announce screen share paused or resumed. Share pauses temporarily."
+            },
+            {
+              "action": "Start/stop new screen share",
+              "keys": "Alt + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt, Shift, and S together to initiate new screen share or switch to different screen.",
+              "notes": "Screen readers announce screen share options. Select new content to share."
+            },
+            {
+              "action": "Start/stop local recording",
+              "keys": "Alt + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"},
+                {"os": "Linux", "keys": "Alt + R"}
+              ],
+              "context": "During meeting with recording permission",
+              "description": "Press Alt and R together to start or stop recording the meeting to your local computer.",
+              "notes": "Screen readers announce recording started or stopped. Requires host permission. Participants notified when recording active."
+            },
+            {
+              "action": "Start/stop cloud recording",
+              "keys": "Alt + C",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"},
+                {"os": "Linux", "keys": "Alt + C"}
+              ],
+              "context": "During meeting with cloud recording enabled",
+              "description": "Press Alt and C together to start or stop recording the meeting to Zoom cloud storage.",
+              "notes": "Screen readers announce cloud recording started or stopped. Requires paid Zoom account."
+            },
+            {
+              "action": "End meeting",
+              "keys": "Alt + Q",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Q"},
+                {"os": "macOS", "keys": "Cmd + W"},
+                {"os": "Linux", "keys": "Alt + Q"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and Q together to leave or end the meeting. Host can end meeting for all.",
+              "notes": "Screen readers announce leave meeting dialog. Confirm to leave or end for all participants."
+            },
+            {
+              "action": "Invite others",
+              "keys": "Alt + I",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + I"},
+                {"os": "macOS", "keys": "Cmd + I"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and I together to open invite dialog for adding more participants to meeting.",
+              "notes": "Screen readers announce invite window. Copy meeting link or send email invitations."
+            },
+            {
+              "action": "Show/hide meeting controls",
+              "keys": "Alt + H",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H"},
+                {"os": "macOS", "keys": "Ctrl + H"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and H together to show or hide the meeting control toolbar at bottom of screen.",
+              "notes": "Screen readers announce controls shown or hidden. Hover mouse or use shortcut to reveal controls."
+            }
+          ]
+        },
+        {
+          "name": "Chat and Participants",
+          "shortcuts": [
+            {
+              "action": "Open chat panel",
+              "keys": "Alt + H",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"},
+                {"os": "Linux", "keys": "Alt + H"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and H together to open or close the chat panel for text messaging during meeting.",
+              "notes": "Screen readers announce chat panel opened or closed. Send messages to everyone or privately to individuals."
+            },
+            {
+              "action": "Show/hide participants panel",
+              "keys": "Alt + U",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + U"},
+                {"os": "macOS", "keys": "Cmd + U"},
+                {"os": "Linux", "keys": "Alt + U"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and U together to open or close participants panel showing list of meeting attendees.",
+              "notes": "Screen readers announce participants panel opened. View and manage meeting participants."
+            },
+            {
+              "action": "Raise or lower hand",
+              "keys": "Alt + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Y"},
+                {"os": "macOS", "keys": "Option + Y"},
+                {"os": "Linux", "keys": "Alt + Y"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and Y together to raise your hand to get attention or lower previously raised hand.",
+              "notes": "Screen readers announce hand raised or lowered. Notifies host and participants you have question or comment."
+            }
+          ]
+        },
+        {
+          "name": "Video and View Options",
+          "shortcuts": [
+            {
+              "action": "Switch camera",
+              "keys": "Alt + N",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"}
+              ],
+              "context": "During meeting with multiple cameras",
+              "description": "Press Alt and N together to switch between available camera sources if multiple cameras connected.",
+              "notes": "Screen readers announce camera switched. Cycles through available cameras."
+            },
+            {
+              "action": "Switch to speaker view",
+              "keys": "Alt + F1",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F1"},
+                {"os": "macOS", "keys": "Cmd + Shift + W"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and F1 together to switch to speaker view showing active speaker in large window.",
+              "notes": "Screen readers announce speaker view active. Focuses on person currently speaking."
+            },
+            {
+              "action": "Switch to gallery view",
+              "keys": "Alt + F2",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F2"},
+                {"os": "macOS", "keys": "Cmd + Shift + W"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and F2 together to switch to gallery view showing multiple participants in grid layout.",
+              "notes": "Screen readers announce gallery view active. Shows up to 49 participants simultaneously."
+            },
+            {
+              "action": "View previous page in gallery",
+              "keys": "Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Page Up"},
+                {"os": "macOS", "keys": "Fn + Up Arrow"}
+              ],
+              "context": "In gallery view with multiple pages",
+              "description": "Press Page Up to view previous page of participants in gallery view.",
+              "notes": "Screen readers announce previous page. Navigate through participants when more than fit on one screen."
+            },
+            {
+              "action": "View next page in gallery",
+              "keys": "Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Page Down"},
+                {"os": "macOS", "keys": "Fn + Down Arrow"}
+              ],
+              "context": "In gallery view with multiple pages",
+              "description": "Press Page Down to view next page of participants in gallery view.",
+              "notes": "Screen readers announce next page. Cycle through all meeting participants."
+            },
+            {
+              "action": "Enter or exit fullscreen",
+              "keys": "Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F"},
+                {"os": "macOS", "keys": "Cmd + Shift + F"},
+                {"os": "Linux", "keys": "Alt + F"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and F together to enter or exit fullscreen mode for meeting window.",
+              "notes": "Screen readers announce fullscreen mode entered or exited. Hides other applications."
+            },
+            {
+              "action": "Minimize meeting window",
+              "keys": "Alt + F4",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F4"},
+                {"os": "macOS", "keys": "Cmd + M"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and F4 to minimize Zoom meeting window to taskbar while staying in meeting.",
+              "notes": "Screen readers announce window minimized. Meeting continues in background."
+            },
+            {
+              "action": "Toggle always on top",
+              "keys": "Alt + T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + T"},
+                {"os": "macOS", "keys": "Cmd + T"}
+              ],
+              "context": "In minimized window mode",
+              "description": "Press Alt and T together to toggle always on top mode for minimized meeting window.",
+              "notes": "Screen readers announce always on top toggled. Keeps meeting window visible above other apps."
+            }
+          ]
+        },
+        {
+          "name": "Audio and Accessibility",
+          "shortcuts": [
+            {
+              "action": "Push to talk",
+              "keys": "Hold Space",
+              "variants": [
+                {"os": "Windows", "keys": "Hold Spacebar"},
+                {"os": "macOS", "keys": "Hold Spacebar"},
+                {"os": "Linux", "keys": "Hold Spacebar"}
+              ],
+              "context": "During meeting when muted",
+              "description": "Hold Space bar to temporarily unmute your microphone while speaking, releases when you stop pressing.",
+              "notes": "Screen readers announce temporarily unmuted while Space held. Useful for staying muted except when speaking. Must enable in settings."
+            },
+            {
+              "action": "Enable original sound",
+              "keys": "Alt + Shift + M",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + M"},
+                {"os": "macOS", "keys": "Cmd + Shift + O"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt, Shift, and M together to toggle original sound for music and high-fidelity audio.",
+              "notes": "Screen readers announce original sound enabled or disabled. Preserves audio quality for music."
+            },
+            {
+              "action": "Start/stop live transcription",
+              "keys": "Alt + C",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + C (during meeting)"},
+                {"os": "macOS", "keys": "Option + C"}
+              ],
+              "context": "During meeting with transcription enabled",
+              "description": "Press Alt and C together to start or stop live transcription showing real-time captions.",
+              "notes": "Screen readers announce live transcription started or stopped. Displays automated captions. Essential accessibility feature for deaf and hard of hearing users."
+            },
+            {
+              "action": "Show/hide captions",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"}
+              ],
+              "context": "During meeting with captions enabled",
+              "description": "Press Control, Shift, and C together to show or hide closed captions during meeting.",
+              "notes": "Screen readers announce captions shown or hidden. Displays live or manual captions."
+            },
+            {
+              "action": "Gain remote control",
+              "keys": "Alt + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + G"},
+                {"os": "macOS", "keys": "Cmd + Shift + G"}
+              ],
+              "context": "When remote control offered",
+              "description": "Press Alt, Shift, and G together to gain remote control of shared screen when granted by host.",
+              "notes": "Screen readers announce remote control granted. Can control mouse and keyboard on shared screen."
+            },
+            {
+              "action": "Stop remote control",
+              "keys": "Alt + Shift + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + R"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"}
+              ],
+              "context": "When controlling remote screen",
+              "description": "Press Alt, Shift, and R together to release remote control of shared screen.",
+              "notes": "Screen readers announce remote control released. Returns control to original sharer."
+            }
+          ]
+        },
+        {
+          "name": "Reactions and Filters",
+          "shortcuts": [
+            {
+              "action": "Show emoji reactions panel",
+              "keys": "Alt + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R (non-host)"},
+                {"os": "macOS", "keys": "Cmd + R"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt and R together to show emoji reactions panel for sending quick reactions like thumbs up or clap.",
+              "notes": "Screen readers announce reactions panel. Select emoji to briefly display reaction."
+            },
+            {
+              "action": "Apply video filters",
+              "keys": "Alt + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"}
+              ],
+              "context": "During meeting with video on",
+              "description": "Press Alt, Shift, and V together to open video filters menu for backgrounds and effects.",
+              "notes": "Screen readers announce filters menu. Select virtual background or apply effects."
+            }
+          ]
+        },
+        {
+          "name": "Webinar Controls",
+          "shortcuts": [
+            {
+              "action": "Raise hand in webinar",
+              "keys": "Alt + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Y"},
+                {"os": "macOS", "keys": "Option + Y"}
+              ],
+              "context": "During webinar as attendee",
+              "description": "Press Alt and Y together to raise hand in webinar to ask question or get panelist attention.",
+              "notes": "Screen readers announce hand raised. Notifies panelists and host."
+            },
+            {
+              "action": "Q&A in webinar",
+              "keys": "Alt + Q",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Q (in webinar)"},
+                {"os": "macOS", "keys": "Cmd + Shift + Q"}
+              ],
+              "context": "During webinar",
+              "description": "Press Alt and Q together to open Q&A panel for asking or answering questions in webinar.",
+              "notes": "Screen readers announce Q&A panel opened. Submit questions or view answers as attendee."
+            }
+          ]
+        },
+        {
+          "name": "Zoom Specific Features",
+          "shortcuts": [
+            {
+              "action": "Open Zoom Apps",
+              "keys": "Alt + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + A"},
+                {"os": "macOS", "keys": "Cmd + Shift + A"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt, Shift, and A together to open Zoom Apps panel for using integrated third-party apps.",
+              "notes": "Screen readers announce Zoom Apps panel opened. Access apps like polls, whiteboard, etc."
+            },
+            {
+              "action": "Take screenshot",
+              "keys": "Alt + Shift + T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + T"},
+                {"os": "macOS", "keys": "Cmd + T"}
+              ],
+              "context": "During meeting",
+              "description": "Press Alt, Shift, and T together to take screenshot of current meeting view.",
+              "notes": "Screen readers announce screenshot taken. Saves to default screenshots folder."
+            },
+            {
+              "action": "Zoom in on shared screen",
+              "keys": "Ctrl + Plus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + +"},
+                {"os": "macOS", "keys": "Cmd + +"}
+              ],
+              "context": "When viewing shared screen",
+              "description": "Press Control and Plus together to zoom in on shared screen content for better visibility.",
+              "notes": "Screen readers may announce zoom level. Magnifies shared content."
+            },
+            {
+              "action": "Zoom out on shared screen",
+              "keys": "Ctrl + Minus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + -"},
+                {"os": "macOS", "keys": "Cmd + -"}
+              ],
+              "context": "When viewing shared screen",
+              "description": "Press Control and Minus together to zoom out on shared screen content.",
+              "notes": "Screen readers may announce zoom level."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "Zoom.exe"},
+        {"type": "process", "value": "zoom.us"},
+        {"type": "window_title", "value": "Zoom Meeting"},
+        {"type": "window_title", "value": "*Zoom*"}
+      ],
+      "source": [
+        "https://support.zoom.us/hc/en-us/articles/205683899-Hot-Keys-and-Keyboard-Shortcuts-for-Zoom",
+        "https://explore.zoom.us/en/accessibility/",
+        "https://support.zoom.us/hc/en-us/articles/207279736-Getting-started-with-accessibility-features-in-Zoom"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

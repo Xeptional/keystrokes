@@ -1,0 +1,1041 @@
+{
+  "applications": [
+    {
+      "name": "Microsoft PowerPoint",
+      "slug": "powerpoint",
+      "platforms": ["Windows", "macOS"],
+      "description": "Microsoft PowerPoint is a presentation application used for creating, editing, and delivering slideshows with text, images, animations, and multimedia content.",
+      "categories": [
+        {
+          "name": "File Tab",
+          "shortcuts": [
+            {
+              "action": "Open presentation",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Control and O together to open the file browser dialog where you can select a presentation to open.",
+              "notes": "Screen readers will announce the dialog and file list. Navigate files with arrow keys and press Enter to open."
+            },
+            {
+              "action": "Save presentation",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Control and S together to save the current presentation. Opens Save As dialog for new presentations.",
+              "notes": "Screen readers will announce save confirmation or present Save As dialog for unsaved files."
+            },
+            {
+              "action": "Save As dialog",
+              "keys": "F12",
+              "variants": [
+                {"os": "Windows", "keys": "F12"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press F12 to open the Save As dialog where you can choose location and filename for your presentation.",
+              "notes": "Focus moves to filename field. Screen readers announce dialog and current filename."
+            },
+            {
+              "action": "Print dialog",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Control and P together to open the print dialog where you can configure printer settings and print slides.",
+              "notes": "Screen readers announce print settings. Tab through options to select layout and number of copies."
+            },
+            {
+              "action": "New blank presentation",
+              "keys": "Ctrl + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + N"},
+                {"os": "macOS", "keys": "Cmd + N"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Control and N together to create a new blank presentation with a title slide.",
+              "notes": "Screen readers announce new presentation created. Focus moves to title placeholder."
+            },
+            {
+              "action": "Close presentation",
+              "keys": "Ctrl + W",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + W"},
+                {"os": "macOS", "keys": "Cmd + W"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Control and W together to close the current presentation. Prompts to save if there are unsaved changes.",
+              "notes": "Screen readers will announce any save prompt before closing."
+            },
+            {
+              "action": "Access File menu via ribbon",
+              "keys": "Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F"}
+              ],
+              "context": "Available in presentation view",
+              "description": "Press Alt then F to open the File backstage view for accessing file operations.",
+              "notes": "Screen readers announce backstage view. Use arrow keys to navigate menu options."
+            }
+          ]
+        },
+        {
+          "name": "Home Tab - Text Formatting",
+          "shortcuts": [
+            {
+              "action": "Bold text",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"}
+              ],
+              "context": "When text is selected in placeholder or text box",
+              "description": "Press Control and B together to make selected text bold or toggle bold off if already applied.",
+              "notes": "Screen readers will announce bold formatting when applied, depending on verbosity settings."
+            },
+            {
+              "action": "Italic text",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and I together to make selected text italic or toggle italic off if already applied.",
+              "notes": "Screen readers may announce italic formatting depending on verbosity level."
+            },
+            {
+              "action": "Underline text",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and U together to underline selected text or toggle underline off if already applied.",
+              "notes": "Screen readers may announce underline formatting based on user settings."
+            },
+            {
+              "action": "Change font",
+              "keys": "Ctrl + Shift + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and F together to place focus in the font dropdown for changing font family.",
+              "notes": "Screen readers announce font dropdown and current font. Type to filter or use arrow keys."
+            },
+            {
+              "action": "Change font size",
+              "keys": "Ctrl + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + P"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and P together to place focus in the font size dropdown.",
+              "notes": "Screen readers announce font size dropdown and current size value."
+            },
+            {
+              "action": "Increase font size",
+              "keys": "Ctrl + Shift + >",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + >"},
+                {"os": "macOS", "keys": "Cmd + Shift + >"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Greater Than together to increase font size to the next available size.",
+              "notes": "Screen readers may announce new font size depending on settings."
+            },
+            {
+              "action": "Decrease font size",
+              "keys": "Ctrl + Shift + <",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + <"},
+                {"os": "macOS", "keys": "Cmd + Shift + <"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Less Than together to decrease font size to the next smaller size.",
+              "notes": "Screen readers may announce reduced font size when format reporting is enabled."
+            },
+            {
+              "action": "Change text case",
+              "keys": "Shift + F3",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F3"},
+                {"os": "macOS", "keys": "Shift + F3"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Shift and F3 together to cycle through text case options: sentence case, lowercase, uppercase, and title case.",
+              "notes": "Screen readers typically do not announce case changes. Use review commands to verify."
+            },
+            {
+              "action": "Subscript",
+              "keys": "Ctrl + =",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ="},
+                {"os": "macOS", "keys": "Cmd + ="}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and Equals together to format text as subscript.",
+              "notes": "Screen readers may announce subscript formatting when reading character attributes."
+            },
+            {
+              "action": "Superscript",
+              "keys": "Ctrl + Shift + =",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ="},
+                {"os": "macOS", "keys": "Cmd + Shift + ="}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Equals together to format text as superscript.",
+              "notes": "Screen readers may announce superscript when reading character attributes."
+            },
+            {
+              "action": "Center align text",
+              "keys": "Ctrl + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + E"},
+                {"os": "macOS", "keys": "Cmd + E"}
+              ],
+              "context": "When text or paragraph is selected",
+              "description": "Press Control and E together to center align the selected paragraph.",
+              "notes": "Screen readers will announce center alignment when reading paragraph attributes."
+            },
+            {
+              "action": "Left align text",
+              "keys": "Ctrl + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + L"},
+                {"os": "macOS", "keys": "Cmd + L"}
+              ],
+              "context": "When text or paragraph is selected",
+              "description": "Press Control and L together to left align the selected paragraph.",
+              "notes": "Screen readers will announce left alignment in paragraph formatting."
+            },
+            {
+              "action": "Right align text",
+              "keys": "Ctrl + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + R"},
+                {"os": "macOS", "keys": "Cmd + R"}
+              ],
+              "context": "When text or paragraph is selected",
+              "description": "Press Control and R together to right align the selected paragraph.",
+              "notes": "Screen readers will announce right alignment when checking paragraph format."
+            },
+            {
+              "action": "Justify text",
+              "keys": "Ctrl + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + J"},
+                {"os": "macOS", "keys": "Cmd + J"}
+              ],
+              "context": "When text or paragraph is selected",
+              "description": "Press Control and J together to justify the selected paragraph to both left and right margins.",
+              "notes": "Screen readers will announce justified alignment in paragraph attributes."
+            }
+          ]
+        },
+        {
+          "name": "Slides Management",
+          "shortcuts": [
+            {
+              "action": "New slide",
+              "keys": "Ctrl + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + M"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"}
+              ],
+              "context": "Available in Normal or Slide Sorter view",
+              "description": "Press Control and M together to insert a new slide with the same layout as the current slide.",
+              "notes": "Screen readers announce new slide created and slide number. Focus moves to title placeholder."
+            },
+            {
+              "action": "Duplicate slide",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"}
+              ],
+              "context": "When slide is selected in Slide Sorter or thumbnail pane",
+              "description": "Press Control and D together to create a duplicate copy of the selected slide.",
+              "notes": "Screen readers announce slide duplicated and new slide number."
+            },
+            {
+              "action": "Delete slide",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When slide is selected in Slide Sorter or thumbnail pane",
+              "description": "Press Delete to remove the selected slide from the presentation.",
+              "notes": "Screen readers announce slide deleted and move focus to next slide."
+            },
+            {
+              "action": "Move to next slide",
+              "keys": "Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Page Down"},
+                {"os": "macOS", "keys": "Fn + Down Arrow"}
+              ],
+              "context": "In Normal view or when editing",
+              "description": "Press Page Down to navigate to the next slide in the presentation.",
+              "notes": "Screen readers announce new slide number and slide title if present."
+            },
+            {
+              "action": "Move to previous slide",
+              "keys": "Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Page Up"},
+                {"os": "macOS", "keys": "Fn + Up Arrow"}
+              ],
+              "context": "In Normal view or when editing",
+              "description": "Press Page Up to navigate to the previous slide in the presentation.",
+              "notes": "Screen readers announce previous slide number and title."
+            },
+            {
+              "action": "Move to first slide",
+              "keys": "Ctrl + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Home"},
+                {"os": "macOS", "keys": "Cmd + Home"}
+              ],
+              "context": "In Normal or Slide Sorter view",
+              "description": "Press Control and Home together to jump to the first slide in the presentation.",
+              "notes": "Screen readers announce slide one and read slide title."
+            },
+            {
+              "action": "Move to last slide",
+              "keys": "Ctrl + End",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + End"},
+                {"os": "macOS", "keys": "Cmd + End"}
+              ],
+              "context": "In Normal or Slide Sorter view",
+              "description": "Press Control and End together to jump to the last slide in the presentation.",
+              "notes": "Screen readers announce final slide number and title."
+            },
+            {
+              "action": "Change slide layout",
+              "keys": "Alt + H, L",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, L"}
+              ],
+              "context": "When slide is selected",
+              "description": "Press Alt then H then L to open the slide layout gallery for changing the current slide layout.",
+              "notes": "Screen readers announce layout gallery. Use arrow keys to navigate layouts and Enter to apply."
+            }
+          ]
+        },
+        {
+          "name": "Insert Tab",
+          "shortcuts": [
+            {
+              "action": "Insert hyperlink",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"}
+              ],
+              "context": "When text is selected or cursor is positioned",
+              "description": "Press Control and K together to open the Insert Hyperlink dialog for adding links to text or objects.",
+              "notes": "Screen readers announce hyperlink dialog. Focus moves to URL field for text entry."
+            },
+            {
+              "action": "Insert comment",
+              "keys": "Ctrl + Alt + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + M"}
+              ],
+              "context": "When slide or object is selected",
+              "description": "Press Control, Alt, and M together to insert a comment on the current slide.",
+              "notes": "Screen readers announce comment pane and place focus in comment text field."
+            },
+            {
+              "action": "Insert new text box",
+              "keys": "Alt + N, X",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, X"}
+              ],
+              "context": "Available in slide editing",
+              "description": "Press Alt then N then X to activate text box drawing mode. Click or drag to place text box.",
+              "notes": "Screen readers announce text box mode active. Use arrow keys to position and Enter to place."
+            },
+            {
+              "action": "Insert table",
+              "keys": "Alt + N, T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, T"}
+              ],
+              "context": "Available in slide editing",
+              "description": "Press Alt then N then T to open table insertion interface for adding tables to slides.",
+              "notes": "Screen readers announce table grid or dialog. Specify rows and columns using arrow keys or input fields."
+            },
+            {
+              "action": "Insert picture",
+              "keys": "Alt + N, P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, P"}
+              ],
+              "context": "Available in slide editing",
+              "description": "Press Alt then N then P to open picture insertion options for adding images to slides.",
+              "notes": "Screen readers announce picture menu. Choose from file, online, or other sources."
+            },
+            {
+              "action": "Insert chart",
+              "keys": "Alt + N, C",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, C"}
+              ],
+              "context": "Available in slide editing",
+              "description": "Press Alt then N then C to open chart insertion dialog for adding charts to slides.",
+              "notes": "Screen readers announce chart type selector. Navigate chart types with arrow keys."
+            },
+            {
+              "action": "Insert shape",
+              "keys": "Alt + N, S, H",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, S, H"}
+              ],
+              "context": "Available in slide editing",
+              "description": "Press Alt then N then S then H to open shapes gallery for inserting shapes on slides.",
+              "notes": "Screen readers announce shapes menu. Navigate shape categories and types with arrow keys."
+            }
+          ]
+        },
+        {
+          "name": "Navigation and Selection",
+          "shortcuts": [
+            {
+              "action": "Move between placeholders",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"}
+              ],
+              "context": "When in slide editing mode",
+              "description": "Press Tab to move focus forward through text placeholders and objects on the current slide.",
+              "notes": "Screen readers announce each placeholder or object type and any text content as focus moves."
+            },
+            {
+              "action": "Move backward between placeholders",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"}
+              ],
+              "context": "When in slide editing mode",
+              "description": "Press Shift and Tab together to move focus backward through placeholders and objects.",
+              "notes": "Screen readers announce previous placeholder or object as focus moves backward."
+            },
+            {
+              "action": "Select all objects on slide",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When not editing text",
+              "description": "Press Control and A together to select all objects on the current slide.",
+              "notes": "Screen readers announce number of objects selected on slide."
+            },
+            {
+              "action": "Select all text",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When editing text in placeholder",
+              "description": "Press Control and A together when in text editing mode to select all text in the current placeholder.",
+              "notes": "Screen readers announce text selection with character or word count."
+            },
+            {
+              "action": "Move object forward one layer",
+              "keys": "Ctrl + Shift + ]",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ]"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control, Shift, and Right Bracket together to move selected object forward one layer in stacking order.",
+              "notes": "Screen readers typically do not announce layer changes. Visual positioning only."
+            },
+            {
+              "action": "Move object backward one layer",
+              "keys": "Ctrl + Shift + [",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ["}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control, Shift, and Left Bracket together to move selected object backward one layer.",
+              "notes": "Screen readers do not announce layer order changes."
+            },
+            {
+              "action": "Bring object to front",
+              "keys": "Alt + H, G, R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, G, R"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Alt then H then G then R to bring selected object to the front of all other objects.",
+              "notes": "Screen readers announce object arrangement command but not visual result."
+            },
+            {
+              "action": "Send object to back",
+              "keys": "Alt + H, G, K",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, G, K"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Alt then H then G then K to send selected object to the back behind all other objects.",
+              "notes": "Screen readers announce send to back command without describing visual result."
+            }
+          ]
+        },
+        {
+          "name": "Editing Operations",
+          "shortcuts": [
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"}
+              ],
+              "context": "When text or object is selected",
+              "description": "Press Control and X together to cut selected text or objects and place on clipboard.",
+              "notes": "Screen readers announce content cut to clipboard."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"}
+              ],
+              "context": "When text or object is selected",
+              "description": "Press Control and C together to copy selected text or objects to clipboard.",
+              "notes": "Screen readers announce content copied to clipboard."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"}
+              ],
+              "context": "When clipboard has content",
+              "description": "Press Control and V together to paste clipboard content at cursor position or on slide.",
+              "notes": "Screen readers may announce paste occurred. Navigate to pasted content to hear details."
+            },
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"}
+              ],
+              "context": "After making changes",
+              "description": "Press Control and Z together to undo the last action or edit.",
+              "notes": "Screen readers may announce what action was undone depending on verbosity."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"}
+              ],
+              "context": "After undoing actions",
+              "description": "Press Control and Y together to redo the last action that was undone.",
+              "notes": "Screen readers may announce redo action completion."
+            },
+            {
+              "action": "Find",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and F together to open the Find dialog for searching text in the presentation.",
+              "notes": "Screen readers announce Find dialog and place focus in search field."
+            },
+            {
+              "action": "Replace",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and H together to open Find and Replace dialog for searching and replacing text.",
+              "notes": "Screen readers announce dialog. Tab between Find and Replace fields."
+            },
+            {
+              "action": "Group objects",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G"},
+                {"os": "macOS", "keys": "Cmd + Option + G"}
+              ],
+              "context": "When multiple objects are selected",
+              "description": "Press Control and G together to group selected objects so they can be moved and formatted together.",
+              "notes": "Screen readers announce objects grouped. Group can now be manipulated as single unit."
+            },
+            {
+              "action": "Ungroup objects",
+              "keys": "Ctrl + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + G"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + G"}
+              ],
+              "context": "When grouped object is selected",
+              "description": "Press Control, Shift, and G together to ungroup objects so they can be edited individually.",
+              "notes": "Screen readers announce objects ungrouped and available for individual selection."
+            }
+          ]
+        },
+        {
+          "name": "Slide Show",
+          "shortcuts": [
+            {
+              "action": "Start slide show from beginning",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "Fn + F5"}
+              ],
+              "context": "Available in any view",
+              "description": "Press F5 to start the slide show presentation from the first slide in full screen mode.",
+              "notes": "Screen readers announce slide show starting. May have limited functionality during presentation depending on screen reader."
+            },
+            {
+              "action": "Start slide show from current slide",
+              "keys": "Shift + F5",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F5"},
+                {"os": "macOS", "keys": "Shift + F5"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Shift and F5 together to start the slide show from the currently selected slide.",
+              "notes": "Screen readers announce slide show starting from current position."
+            },
+            {
+              "action": "Next slide in show",
+              "keys": "N",
+              "variants": [
+                {"os": "Windows", "keys": "N"},
+                {"os": "macOS", "keys": "N"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press N during a slide show to advance to the next slide or animation.",
+              "notes": "Screen readers may not announce slide changes during presentation mode. Spacebar and arrow keys also advance slides."
+            },
+            {
+              "action": "Previous slide in show",
+              "keys": "P",
+              "variants": [
+                {"os": "Windows", "keys": "P"},
+                {"os": "macOS", "keys": "P"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press P during a slide show to go back to the previous slide.",
+              "notes": "Screen readers may have limited announcements during slide show mode."
+            },
+            {
+              "action": "Go to specific slide",
+              "keys": "Number + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Number + Enter"},
+                {"os": "macOS", "keys": "Number + Enter"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press a slide number then Enter during a slide show to jump directly to that slide.",
+              "notes": "Type the number then press Enter. Screen readers may not announce the navigation."
+            },
+            {
+              "action": "End slide show",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press Escape to end the slide show and return to editing view.",
+              "notes": "Screen readers announce return to editing mode and current slide."
+            },
+            {
+              "action": "Black or unblack screen",
+              "keys": "B",
+              "variants": [
+                {"os": "Windows", "keys": "B"},
+                {"os": "macOS", "keys": "B"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press B during a slide show to black out the screen or return from black screen.",
+              "notes": "Useful for pausing presentation focus. Screen readers may not announce screen state."
+            },
+            {
+              "action": "White or unwhite screen",
+              "keys": "W",
+              "variants": [
+                {"os": "Windows", "keys": "W"},
+                {"os": "macOS", "keys": "W"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press W during a slide show to white out the screen or return from white screen.",
+              "notes": "Creates pause effect during presentation. Screen readers may not announce."
+            },
+            {
+              "action": "Display slide show controls",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"}
+              ],
+              "context": "During slide show presentation",
+              "description": "Press Control and P during slide show to display pointer options and slide show controls.",
+              "notes": "Screen readers may announce menu opening with pen and pointer tool options."
+            }
+          ]
+        },
+        {
+          "name": "View and Display",
+          "shortcuts": [
+            {
+              "action": "Normal view",
+              "keys": "Alt + W, L",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, L"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W then L to switch to Normal view for editing slides with thumbnails pane.",
+              "notes": "Screen readers announce Normal view activated. Standard editing layout."
+            },
+            {
+              "action": "Slide Sorter view",
+              "keys": "Alt + W, I",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, I"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W then I to switch to Slide Sorter view for seeing all slides as thumbnails.",
+              "notes": "Screen readers announce Slide Sorter view. Navigate slides with arrow keys."
+            },
+            {
+              "action": "Outline view",
+              "keys": "Alt + W, P, O",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, P, O"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W then P then O to switch to Outline view for editing text content of slides.",
+              "notes": "Screen readers announce Outline view. Best for screen reader users to edit slide text."
+            },
+            {
+              "action": "Notes Page view",
+              "keys": "Alt + W, P, N",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, P, N"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W then P then N to switch to Notes Page view for adding speaker notes.",
+              "notes": "Screen readers announce Notes Page view. Navigate to notes area to add content."
+            },
+            {
+              "action": "Zoom dialog",
+              "keys": "Alt + W, Q",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, Q"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W then Q to open Zoom dialog for setting slide magnification level.",
+              "notes": "Screen readers announce zoom dialog. Type percentage or select preset zoom level."
+            },
+            {
+              "action": "Show or hide ruler",
+              "keys": "Alt + W, R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, R"}
+              ],
+              "context": "Available in Normal view",
+              "description": "Press Alt then W then R to toggle the ruler display on or off in editing view.",
+              "notes": "Screen readers typically do not announce ruler visibility. Visual aid for positioning."
+            },
+            {
+              "action": "Show or hide guides",
+              "keys": "Alt + F9",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F9"}
+              ],
+              "context": "Available in editing view",
+              "description": "Press Alt and F9 together to toggle alignment guides on or off for positioning objects.",
+              "notes": "Screen readers do not announce guide visibility. Visual positioning aids."
+            },
+            {
+              "action": "Grid and guides settings",
+              "keys": "Alt + W, G",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, G"}
+              ],
+              "context": "Available in editing view",
+              "description": "Press Alt then W then G to open Grid and Guides settings dialog.",
+              "notes": "Screen readers announce dialog with options for grid spacing and snap settings."
+            }
+          ]
+        },
+        {
+          "name": "Tables",
+          "shortcuts": [
+            {
+              "action": "Move to next cell in table",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Tab to move to the next cell in the table row or first cell of next row.",
+              "notes": "Screen readers announce cell position and content as you navigate through table."
+            },
+            {
+              "action": "Move to previous cell in table",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Shift and Tab together to move to the previous cell in the table.",
+              "notes": "Screen readers announce previous cell position and any text content."
+            },
+            {
+              "action": "Insert row below",
+              "keys": "Ctrl + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Enter"}
+              ],
+              "context": "When cursor is in last cell of table",
+              "description": "Press Control and Enter together when in last table cell to add a new row below.",
+              "notes": "Screen readers announce new row creation and move focus to first cell of new row."
+            },
+            {
+              "action": "Move to start of row",
+              "keys": "Home",
+              "variants": [
+                {"os": "Windows", "keys": "Home"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Home to move to the first cell in the current table row.",
+              "notes": "Screen readers announce first cell of row and any content."
+            },
+            {
+              "action": "Move to end of row",
+              "keys": "End",
+              "variants": [
+                {"os": "Windows", "keys": "End"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press End to move to the last cell in the current table row.",
+              "notes": "Screen readers announce last cell of row and content."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "shortcuts": [
+            {
+              "action": "Check accessibility",
+              "keys": "Alt + R, A, 1",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R, A, 1"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Alt then R then A then 1 to open Accessibility Checker pane showing accessibility issues.",
+              "notes": "Screen readers announce pane and list issues. Tab through to review each accessibility problem."
+            },
+            {
+              "action": "Add alt text to object",
+              "keys": "Alt + J, P, Y",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + J, P, Y"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Alt then J then P then Y to open Alt Text pane for adding descriptions to images and objects.",
+              "notes": "Screen readers announce Alt Text pane. Focus moves to description field for entering alternative text."
+            },
+            {
+              "action": "Show context menu",
+              "keys": "Shift + F10",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10"},
+                {"os": "macOS", "keys": "Fn + Shift + F10"}
+              ],
+              "context": "When object or text is selected",
+              "description": "Press Shift and F10 together to open context menu for selected object or text.",
+              "notes": "Screen readers announce context menu and available commands. Navigate with arrow keys."
+            },
+            {
+              "action": "Check reading order",
+              "keys": "Alt + H, F, D, O",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, F, D, O"}
+              ],
+              "context": "Available in editing view",
+              "description": "Press Alt then H then F then D then O to open Selection Pane showing object reading order.",
+              "notes": "Screen readers announce Selection Pane. Reorder objects to improve screen reader navigation sequence."
+            }
+          ]
+        },
+        {
+          "name": "Animations and Transitions",
+          "shortcuts": [
+            {
+              "action": "Open Animations pane",
+              "keys": "Alt + A, P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A, P"}
+              ],
+              "context": "Available in editing view",
+              "description": "Press Alt then A then P to open Animations pane for adding and managing animations.",
+              "notes": "Screen readers announce Animations pane. Navigate animation list with arrow keys."
+            },
+            {
+              "action": "Preview animations",
+              "keys": "Alt + A, V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A, V"}
+              ],
+              "context": "When animations are applied to slide",
+              "description": "Press Alt then A then V to preview all animations on the current slide.",
+              "notes": "Animations play in editing view. Screen readers may not fully describe animation effects."
+            },
+            {
+              "action": "Apply transition",
+              "keys": "Alt + K",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + K"}
+              ],
+              "context": "Available in editing view",
+              "description": "Press Alt then K to activate Transitions tab for applying slide transitions.",
+              "notes": "Screen readers announce Transitions tab. Navigate transition options with Tab and arrow keys."
+            }
+          ]
+        },
+        {
+          "name": "Ribbon Navigation",
+          "shortcuts": [
+            {
+              "action": "Show ribbon key tips",
+              "keys": "Alt",
+              "variants": [
+                {"os": "Windows", "keys": "Alt"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt to display key tip badges showing letters for accessing ribbon tabs and commands.",
+              "notes": "Screen readers announce key tips activated. Press displayed letters to navigate ribbon."
+            },
+            {
+              "action": "Access Home tab",
+              "keys": "Alt + H",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then H to activate Home tab ribbon with formatting and slide commands.",
+              "notes": "Screen readers announce Home tab active. Continue with keys for specific commands."
+            },
+            {
+              "action": "Access Insert tab",
+              "keys": "Alt + N",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then N to activate Insert tab for adding content to slides.",
+              "notes": "Screen readers announce Insert tab active."
+            },
+            {
+              "action": "Access Design tab",
+              "keys": "Alt + G",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + G"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then G to activate Design tab for themes and slide design options.",
+              "notes": "Screen readers announce Design tab activated."
+            },
+            {
+              "action": "Access Transitions tab",
+              "keys": "Alt + K",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + K"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then K to activate Transitions tab for slide transition effects.",
+              "notes": "Screen readers announce Transitions tab active."
+            },
+            {
+              "action": "Access Animations tab",
+              "keys": "Alt + A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then A to activate Animations tab for object animation effects.",
+              "notes": "Screen readers announce Animations tab activated."
+            },
+            {
+              "action": "Access Slide Show tab",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + S"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then S to activate Slide Show tab for presentation settings.",
+              "notes": "Screen readers announce Slide Show tab active."
+            },
+            {
+              "action": "Access Review tab",
+              "keys": "Alt + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then R to activate Review tab with comments and accessibility tools.",
+              "notes": "Screen readers announce Review tab activated."
+            },
+            {
+              "action": "Access View tab",
+              "keys": "Alt + W",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Alt then W to activate View tab for controlling presentation views.",
+              "notes": "Screen readers announce View tab active."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "POWERPNT.EXE"},
+        {"type": "process", "value": "Microsoft PowerPoint"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-powerpoint-ebb3d20e-dcd4-444f-a38e-bb5c5ed180f4",
+        "https://support.microsoft.com/en-us/office/use-a-screen-reader-to-explore-and-navigate-powerpoint-96e2238c-6c26-46be-ad38-f98b8bc54476"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

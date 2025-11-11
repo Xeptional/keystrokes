@@ -1,0 +1,979 @@
+{
+  "applications": [
+    {
+      "name": "Microsoft Edge",
+      "slug": "edge",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Microsoft Edge is a modern web browser built on Chromium with integrated Microsoft services, enhanced privacy features, immersive reader mode, and vertical tabs. Edge includes strong accessibility support with screen reader compatibility, high contrast modes, and keyboard navigation.",
+      "categories": [
+        {
+          "name": "Tab and Window Management",
+          "shortcuts": [
+            {
+              "action": "Open new tab",
+              "keys": "Ctrl + T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + T"},
+                {"os": "macOS", "keys": "Cmd + T"},
+                {"os": "Linux", "keys": "Ctrl + T"}
+              ],
+              "context": "Available in browser window",
+              "description": "Press Control and T together to open a new blank tab and place focus in the address bar for typing URL or search.",
+              "notes": "Screen readers announce new tab opened and focus in address bar. Tab appears at end of tab strip."
+            },
+            {
+              "action": "Open new window",
+              "keys": "Ctrl + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + N"},
+                {"os": "macOS", "keys": "Cmd + N"},
+                {"os": "Linux", "keys": "Ctrl + N"}
+              ],
+              "context": "Available in browser window",
+              "description": "Press Control and N together to open a new Edge browser window with a blank tab.",
+              "notes": "Screen readers announce new window opened. Useful for organizing different browsing tasks."
+            },
+            {
+              "action": "Open new InPrivate window",
+              "keys": "Ctrl + Shift + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + N"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"},
+                {"os": "Linux", "keys": "Ctrl + Shift + N"}
+              ],
+              "context": "Available in browser window",
+              "description": "Press Control, Shift, and N together to open new InPrivate browsing window that doesn't save history or cookies.",
+              "notes": "Screen readers announce InPrivate window opened. Browsing data not saved after window closes. Enhanced tracking prevention enabled."
+            },
+            {
+              "action": "Close current tab",
+              "keys": "Ctrl + W",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + W"},
+                {"os": "macOS", "keys": "Cmd + W"},
+                {"os": "Linux", "keys": "Ctrl + W"}
+              ],
+              "context": "When tab is active",
+              "description": "Press Control and W together to close the currently active tab and switch to adjacent tab.",
+              "notes": "Screen readers announce tab closed and read title of newly active tab. Can reopen with Ctrl+Shift+T."
+            },
+            {
+              "action": "Close current window",
+              "keys": "Alt + F4",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F4"},
+                {"os": "macOS", "keys": "Cmd + Q"},
+                {"os": "Linux", "keys": "Alt + F4"}
+              ],
+              "context": "When browser window is active",
+              "description": "Press Alt and F4 together to close the entire browser window and all its tabs.",
+              "notes": "Screen readers announce window closing. All tabs in window will close. Recent tabs can be restored."
+            },
+            {
+              "action": "Reopen closed tab",
+              "keys": "Ctrl + Shift + T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + T"},
+                {"os": "macOS", "keys": "Cmd + Shift + T"},
+                {"os": "Linux", "keys": "Ctrl + Shift + T"}
+              ],
+              "context": "After closing tabs",
+              "description": "Press Control, Shift, and T together to reopen the most recently closed tab in the order they were closed.",
+              "notes": "Screen readers announce tab reopened and read page title. Press repeatedly to restore multiple tabs in reverse order."
+            },
+            {
+              "action": "Switch to next tab",
+              "keys": "Ctrl + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Tab"},
+                {"os": "macOS", "keys": "Cmd + Option + Right Arrow"},
+                {"os": "Linux", "keys": "Ctrl + Tab"}
+              ],
+              "context": "When multiple tabs open",
+              "description": "Press Control and Tab together to switch to the next tab to the right in the tab strip.",
+              "notes": "Screen readers announce new active tab title and URL. Cycles to first tab after reaching end."
+            },
+            {
+              "action": "Switch to previous tab",
+              "keys": "Ctrl + Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Tab"},
+                {"os": "macOS", "keys": "Cmd + Option + Left Arrow"},
+                {"os": "Linux", "keys": "Ctrl + Shift + Tab"}
+              ],
+              "context": "When multiple tabs open",
+              "description": "Press Control, Shift, and Tab together to switch to the previous tab to the left in the tab strip.",
+              "notes": "Screen readers announce previous tab title and URL. Cycles to last tab when reaching beginning."
+            },
+            {
+              "action": "Jump to specific tab",
+              "keys": "Ctrl + 1 through Ctrl + 8",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1 through Ctrl + 8"},
+                {"os": "macOS", "keys": "Cmd + 1 through Cmd + 8"},
+                {"os": "Linux", "keys": "Ctrl + 1 through Ctrl + 8"}
+              ],
+              "context": "When multiple tabs open",
+              "description": "Press Control and a number from 1 to 8 to jump directly to that tab position. Ctrl+1 goes to first tab.",
+              "notes": "Screen readers announce selected tab title. Efficient navigation to specific tabs without cycling."
+            },
+            {
+              "action": "Jump to last tab",
+              "keys": "Ctrl + 9",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 9"},
+                {"os": "macOS", "keys": "Cmd + 9"},
+                {"os": "Linux", "keys": "Ctrl + 9"}
+              ],
+              "context": "When multiple tabs open",
+              "description": "Press Control and 9 together to jump to the last tab regardless of how many tabs are open.",
+              "notes": "Screen readers announce last tab title. Always jumps to rightmost tab."
+            },
+            {
+              "action": "Duplicate tab",
+              "keys": "Ctrl + Shift + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + K"},
+                {"os": "macOS", "keys": "Cmd + Shift + K"},
+                {"os": "Linux", "keys": "Ctrl + Shift + K"}
+              ],
+              "context": "When tab is active",
+              "description": "Press Control, Shift, and K together to create a duplicate copy of the current tab including navigation history.",
+              "notes": "Screen readers announce new tab created. Duplicated tab appears immediately after original."
+            },
+            {
+              "action": "Pin or unpin tab",
+              "keys": "Ctrl + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + P"}
+              ],
+              "context": "When tab is active",
+              "description": "Press Control, Shift, and P together to pin or unpin the current tab making it smaller and fixed to left.",
+              "notes": "Screen readers announce tab pinned or unpinned. Pinned tabs stay open and protected from accidental closing."
+            },
+            {
+              "action": "Mute tab",
+              "keys": "Ctrl + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + M"},
+                {"os": "macOS", "keys": "Cmd + M"},
+                {"os": "Linux", "keys": "Ctrl + M"}
+              ],
+              "context": "When tab is playing audio",
+              "description": "Press Control and M together to mute or unmute audio from the current tab without closing it.",
+              "notes": "Screen readers announce tab muted or unmuted. Prevents media audio from interfering with screen reader."
+            },
+            {
+              "action": "Open vertical tabs",
+              "keys": "Ctrl + Shift + Comma",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Comma"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and Comma together to toggle vertical tabs mode showing tabs in left sidebar instead of top.",
+              "notes": "Screen readers announce vertical tabs enabled or disabled. Provides more horizontal space for page content."
+            }
+          ]
+        },
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Go back",
+              "keys": "Alt + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Left Arrow"},
+                {"os": "macOS", "keys": "Cmd + Left Arrow"},
+                {"os": "Linux", "keys": "Alt + Left Arrow"}
+              ],
+              "context": "When browsing web pages",
+              "description": "Press Alt and Left Arrow together to navigate back to the previous page in current tab's history.",
+              "notes": "Screen readers announce previous page loading and read title when loaded. Standard back button."
+            },
+            {
+              "action": "Go forward",
+              "keys": "Alt + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Right Arrow"},
+                {"os": "macOS", "keys": "Cmd + Right Arrow"},
+                {"os": "Linux", "keys": "Alt + Right Arrow"}
+              ],
+              "context": "After going back",
+              "description": "Press Alt and Right Arrow together to navigate forward to next page in history.",
+              "notes": "Screen readers announce next page loading. Only works if you've previously gone back."
+            },
+            {
+              "action": "Reload page",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "Cmd + R"},
+                {"os": "Linux", "keys": "F5"}
+              ],
+              "context": "When viewing web page",
+              "description": "Press F5 to reload the current page and refresh its content from the server.",
+              "notes": "Screen readers announce page reloading. Updates content and fixes loading errors."
+            },
+            {
+              "action": "Hard reload",
+              "keys": "Ctrl + F5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F5"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"},
+                {"os": "Linux", "keys": "Ctrl + F5"}
+              ],
+              "context": "When viewing web page",
+              "description": "Press Control and F5 together to reload page bypassing cached content and downloading fresh resources.",
+              "notes": "Screen readers announce page reloading. Forces complete refresh showing latest version. Slower than normal reload."
+            },
+            {
+              "action": "Stop loading",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Cmd + Period"},
+                {"os": "Linux", "keys": "Esc"}
+              ],
+              "context": "While page is loading",
+              "description": "Press Escape to stop the current page from loading, displaying whatever content has loaded so far.",
+              "notes": "Screen readers announce loading stopped. Useful for slow pages or stopping redirects."
+            },
+            {
+              "action": "Go to homepage",
+              "keys": "Alt + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Home"},
+                {"os": "macOS", "keys": "Option + Home"},
+                {"os": "Linux", "keys": "Alt + Home"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Alt and Home together to navigate to your configured homepage in current tab.",
+              "notes": "Screen readers announce homepage loading. Homepage can be configured in Edge settings."
+            },
+            {
+              "action": "Scroll down",
+              "keys": "Space",
+              "variants": [
+                {"os": "Windows", "keys": "Space"},
+                {"os": "macOS", "keys": "Space"},
+                {"os": "Linux", "keys": "Space"}
+              ],
+              "context": "When browsing page",
+              "description": "Press Space bar to scroll down approximately one screen height on the current page.",
+              "notes": "Screen readers may announce new visible content. Standard incremental page reading method."
+            },
+            {
+              "action": "Scroll up",
+              "keys": "Shift + Space",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Space"},
+                {"os": "macOS", "keys": "Shift + Space"},
+                {"os": "Linux", "keys": "Shift + Space"}
+              ],
+              "context": "When browsing page",
+              "description": "Press Shift and Space together to scroll up approximately one screen height on the page.",
+              "notes": "Screen readers may announce content as viewport changes upward."
+            },
+            {
+              "action": "Jump to top",
+              "keys": "Home",
+              "variants": [
+                {"os": "Windows", "keys": "Home"},
+                {"os": "macOS", "keys": "Home"},
+                {"os": "Linux", "keys": "Home"}
+              ],
+              "context": "When browsing page",
+              "description": "Press Home to scroll instantly to the top of the current web page.",
+              "notes": "Screen readers announce top of page. Visual scroll may not affect screen reader cursor position."
+            },
+            {
+              "action": "Jump to bottom",
+              "keys": "End",
+              "variants": [
+                {"os": "Windows", "keys": "End"},
+                {"os": "macOS", "keys": "End"},
+                {"os": "Linux", "keys": "End"}
+              ],
+              "context": "When browsing page",
+              "description": "Press End to scroll instantly to the bottom of the current web page.",
+              "notes": "Screen readers announce bottom of page. Quick way to reach footer content."
+            }
+          ]
+        },
+        {
+          "name": "Address Bar and Search",
+          "shortcuts": [
+            {
+              "action": "Focus address bar",
+              "keys": "Ctrl + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + L"},
+                {"os": "macOS", "keys": "Cmd + L"},
+                {"os": "Linux", "keys": "Ctrl + L"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control and L together to place focus in address bar and select current URL for easy replacement.",
+              "notes": "Screen readers announce address bar focused and read current URL. Type new URL or search term."
+            },
+            {
+              "action": "Focus address bar alternate",
+              "keys": "Alt + D",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + D"},
+                {"os": "macOS", "keys": "Cmd + L"},
+                {"os": "Linux", "keys": "Alt + D"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Alt and D together to focus address bar, alternative to Ctrl+L.",
+              "notes": "Screen readers announce address bar focused. Same function as Ctrl+L."
+            },
+            {
+              "action": "Search in address bar",
+              "keys": "Type and Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Type search term and Enter"},
+                {"os": "macOS", "keys": "Type and Enter"},
+                {"os": "Linux", "keys": "Type and Enter"}
+              ],
+              "context": "When address bar has focus",
+              "description": "Type search term in address bar and press Enter to search with default search engine.",
+              "notes": "Screen readers announce suggestions as you type. Address bar functions as combined URL and search box."
+            },
+            {
+              "action": "Open URL in new tab",
+              "keys": "Alt + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Enter"},
+                {"os": "macOS", "keys": "Cmd + Enter"},
+                {"os": "Linux", "keys": "Alt + Enter"}
+              ],
+              "context": "When address bar has URL typed",
+              "description": "Type URL or search term then press Alt and Enter to open in new background tab while staying on current tab.",
+              "notes": "Screen readers announce new tab opened in background. Current tab remains active."
+            },
+            {
+              "action": "Navigate suggestions",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"},
+                {"os": "macOS", "keys": "Up/Down Arrow"},
+                {"os": "Linux", "keys": "Up/Down Arrow"}
+              ],
+              "context": "When address bar shows suggestions",
+              "description": "Press Up or Down Arrow to navigate through address bar suggestions including history, bookmarks, and search.",
+              "notes": "Screen readers announce each suggestion. Press Enter to open selected item."
+            },
+            {
+              "action": "Delete suggestion",
+              "keys": "Shift + Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Delete"},
+                {"os": "macOS", "keys": "Shift + Fn + Delete"},
+                {"os": "Linux", "keys": "Shift + Delete"}
+              ],
+              "context": "When navigating suggestions",
+              "description": "Navigate to a suggestion and press Shift and Delete to remove it from history.",
+              "notes": "Screen readers announce suggestion deleted. Removes unwanted autocomplete entries."
+            }
+          ]
+        },
+        {
+          "name": "Page Actions",
+          "shortcuts": [
+            {
+              "action": "Print page",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"},
+                {"os": "Linux", "keys": "Ctrl + P"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and P together to open print dialog for printing page or saving as PDF.",
+              "notes": "Screen readers announce print dialog opened. Navigate options and select printer or PDF."
+            },
+            {
+              "action": "Save page",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"},
+                {"os": "Linux", "keys": "Ctrl + S"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and S together to save current page to computer as HTML or complete web page.",
+              "notes": "Screen readers announce save dialog. Choose location and format for saved content."
+            },
+            {
+              "action": "Find on page",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"},
+                {"os": "Linux", "keys": "Ctrl + F"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and F together to open find bar for searching text on current page.",
+              "notes": "Screen readers announce find bar opened and focus in search field. Type term and press Enter to find."
+            },
+            {
+              "action": "Find next",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G"},
+                {"os": "macOS", "keys": "Cmd + G"},
+                {"os": "Linux", "keys": "Ctrl + G"}
+              ],
+              "context": "After searching on page",
+              "description": "Press Control and G together to jump to next occurrence of search term on page.",
+              "notes": "Screen readers announce match number and may read surrounding text. Cycles through matches."
+            },
+            {
+              "action": "Find previous",
+              "keys": "Ctrl + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + G"},
+                {"os": "macOS", "keys": "Cmd + Shift + G"},
+                {"os": "Linux", "keys": "Ctrl + Shift + G"}
+              ],
+              "context": "After searching on page",
+              "description": "Press Control, Shift, and G together to jump to previous occurrence of search term.",
+              "notes": "Screen readers announce previous match. Navigates backward through results."
+            },
+            {
+              "action": "Open Immersive Reader",
+              "keys": "F9",
+              "variants": [
+                {"os": "Windows", "keys": "F9"},
+                {"os": "macOS", "keys": "F9"},
+                {"os": "Linux", "keys": "F9"}
+              ],
+              "context": "On compatible pages",
+              "description": "Press F9 to open Immersive Reader which displays article text in clean, distraction-free format with customizable settings.",
+              "notes": "Screen readers announce Immersive Reader opened. Simplified layout with adjustable text size, spacing, and themes. Includes text-to-speech. Not available on all pages."
+            },
+            {
+              "action": "Read aloud",
+              "keys": "Ctrl + Shift + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + U"},
+                {"os": "macOS", "keys": "Cmd + Shift + U"},
+                {"os": "Linux", "keys": "Ctrl + Shift + U"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and U together to start Read Aloud feature which reads page content using text-to-speech.",
+              "notes": "Edge announces Read Aloud started and begins reading. Control playback with toolbar. Works alongside screen readers. Press again to stop."
+            },
+            {
+              "action": "View page source",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + Option + U"},
+                {"os": "Linux", "keys": "Ctrl + U"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and U together to open new tab showing HTML source code of current page.",
+              "notes": "Screen readers announce source view opened. Useful for developers to inspect markup."
+            },
+            {
+              "action": "Zoom in",
+              "keys": "Ctrl + Plus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Plus"},
+                {"os": "macOS", "keys": "Cmd + Plus"},
+                {"os": "Linux", "keys": "Ctrl + Plus"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and Plus Sign together to increase zoom level making text and images larger.",
+              "notes": "Screen readers may announce zoom percentage. Helpful for users with low vision."
+            },
+            {
+              "action": "Zoom out",
+              "keys": "Ctrl + Minus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Minus"},
+                {"os": "macOS", "keys": "Cmd + Minus"},
+                {"os": "Linux", "keys": "Ctrl + Minus"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and Minus Sign together to decrease zoom level making content smaller.",
+              "notes": "Screen readers may announce zoom percentage. Fits more content on screen."
+            },
+            {
+              "action": "Reset zoom",
+              "keys": "Ctrl + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 0"},
+                {"os": "macOS", "keys": "Cmd + 0"},
+                {"os": "Linux", "keys": "Ctrl + 0"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and Zero together to reset zoom to default one hundred percent.",
+              "notes": "Screen readers announce zoom reset. Returns page to original size."
+            },
+            {
+              "action": "Enter fullscreen",
+              "keys": "F11",
+              "variants": [
+                {"os": "Windows", "keys": "F11"},
+                {"os": "macOS", "keys": "Cmd + Ctrl + F"},
+                {"os": "Linux", "keys": "F11"}
+              ],
+              "context": "When viewing page",
+              "description": "Press F11 to enter fullscreen mode hiding browser toolbars and showing only page content. Press F11 again to exit.",
+              "notes": "Screen readers announce fullscreen mode. Maximizes viewing area. Press F11 or Esc to exit."
+            }
+          ]
+        },
+        {
+          "name": "Favorites and Collections",
+          "shortcuts": [
+            {
+              "action": "Add to favorites",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"},
+                {"os": "Linux", "keys": "Ctrl + D"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control and D together to add current page to favorites, opening dialog to edit name and choose folder.",
+              "notes": "Screen readers announce favorites dialog opened. Edit name, select folder, press Enter to save."
+            },
+            {
+              "action": "Show favorites bar",
+              "keys": "Ctrl + Shift + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + B"},
+                {"os": "macOS", "keys": "Cmd + Shift + B"},
+                {"os": "Linux", "keys": "Ctrl + Shift + B"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and B together to toggle visibility of favorites bar below address bar.",
+              "notes": "Screen readers announce favorites bar shown or hidden. Provides quick access to bookmarked sites."
+            },
+            {
+              "action": "Open favorites",
+              "keys": "Ctrl + Shift + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + O"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and O together to open Favorites panel for managing and organizing favorites.",
+              "notes": "Screen readers announce Favorites panel opened. Search, organize folders, and edit favorites."
+            },
+            {
+              "action": "Add to collections",
+              "keys": "Ctrl + Shift + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Y"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and Y together to add current page to a collection for organizing related content.",
+              "notes": "Screen readers announce Collections panel opened. Select existing collection or create new one."
+            },
+            {
+              "action": "Open collections",
+              "keys": "Ctrl + Shift + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Y"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and Y together to open Collections panel showing saved collections.",
+              "notes": "Screen readers announce Collections panel. Manage collections of pages, images, and notes."
+            }
+          ]
+        },
+        {
+          "name": "History and Downloads",
+          "shortcuts": [
+            {
+              "action": "Open history",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H"},
+                {"os": "macOS", "keys": "Cmd + Y"},
+                {"os": "Linux", "keys": "Ctrl + H"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control and H together to open History panel showing recently visited pages organized by date.",
+              "notes": "Screen readers announce History panel opened. Navigate with arrow keys, search history, or clear browsing data."
+            },
+            {
+              "action": "Open downloads",
+              "keys": "Ctrl + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + J"},
+                {"os": "macOS", "keys": "Cmd + Shift + J"},
+                {"os": "Linux", "keys": "Ctrl + J"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control and J together to open Downloads page showing recent downloads and their status.",
+              "notes": "Screen readers announce Downloads page opened. View, pause, resume, or open downloaded files."
+            },
+            {
+              "action": "Clear browsing data",
+              "keys": "Ctrl + Shift + Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Delete"},
+                {"os": "macOS", "keys": "Cmd + Shift + Delete"},
+                {"os": "Linux", "keys": "Ctrl + Shift + Delete"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and Delete together to open Clear browsing data dialog for removing history, cookies, and cache.",
+              "notes": "Screen readers announce dialog opened. Select time range and data types to clear."
+            }
+          ]
+        },
+        {
+          "name": "Edge Menu and Settings",
+          "shortcuts": [
+            {
+              "action": "Open Edge menu",
+              "keys": "Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F"},
+                {"os": "Linux", "keys": "Alt + F"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Alt and F together to open Edge menu with options for settings, extensions, history, and more.",
+              "notes": "Screen readers announce menu opened. Navigate with arrow keys and press Enter to select."
+            },
+            {
+              "action": "Open Settings",
+              "keys": "Alt + F, then S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F, then S"},
+                {"os": "macOS", "keys": "Cmd + Comma"},
+                {"os": "Linux", "keys": "Alt + F, then S"}
+              ],
+              "context": "From Edge menu or directly",
+              "description": "Open Edge menu and press S, or use direct shortcut, to open Settings page for configuring preferences.",
+              "notes": "Screen readers announce Settings page opened. Configure appearance, privacy, accessibility, and other options."
+            },
+            {
+              "action": "Open Extensions",
+              "keys": "Ctrl + Shift + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + X"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and X together to open Extensions page for managing browser extensions.",
+              "notes": "Screen readers announce Extensions page opened. Enable, disable, configure, or remove extensions."
+            },
+            {
+              "action": "Open help",
+              "keys": "F1",
+              "variants": [
+                {"os": "Windows", "keys": "F1"},
+                {"os": "macOS", "keys": "Cmd + ?"},
+                {"os": "Linux", "keys": "F1"}
+              ],
+              "context": "Available in browser",
+              "description": "Press F1 to open Edge Help and support page for troubleshooting and learning about features.",
+              "notes": "Screen readers announce Help page opened. Access documentation and support resources."
+            }
+          ]
+        },
+        {
+          "name": "Developer Tools",
+          "shortcuts": [
+            {
+              "action": "Open Developer Tools",
+              "keys": "F12",
+              "variants": [
+                {"os": "Windows", "keys": "F12"},
+                {"os": "macOS", "keys": "Cmd + Option + I"},
+                {"os": "Linux", "keys": "F12"}
+              ],
+              "context": "When viewing page",
+              "description": "Press F12 to open Edge Developer Tools for inspecting HTML, CSS, JavaScript, and debugging web pages.",
+              "notes": "Screen readers announce Developer Tools opened. Advanced tool for web developers with multiple panels."
+            },
+            {
+              "action": "Open Developer Tools alternate",
+              "keys": "Ctrl + Shift + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + I"},
+                {"os": "macOS", "keys": "Cmd + Option + I"},
+                {"os": "Linux", "keys": "Ctrl + Shift + I"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and I together to open Developer Tools, alternative to F12.",
+              "notes": "Screen readers announce Developer Tools panel. Same function as F12 key."
+            },
+            {
+              "action": "Open Console",
+              "keys": "Ctrl + Shift + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + J"},
+                {"os": "macOS", "keys": "Cmd + Option + J"},
+                {"os": "Linux", "keys": "Ctrl + Shift + J"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and J together to open Developer Tools with Console tab active for viewing JavaScript errors.",
+              "notes": "Screen readers announce Console opened. Shows JavaScript errors, warnings, and console output."
+            },
+            {
+              "action": "Inspect element",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Option + C"},
+                {"os": "Linux", "keys": "Ctrl + Shift + C"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and C together to activate element inspector mode for selecting page elements to inspect.",
+              "notes": "Screen readers announce inspect mode active. Click elements to view their HTML and CSS in Developer Tools."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility Features",
+          "shortcuts": [
+            {
+              "action": "Focus next element",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"},
+                {"os": "Linux", "keys": "Tab"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Tab to move focus forward through interactive elements like links, buttons, and form fields.",
+              "notes": "Screen readers announce each element type and label. Standard keyboard navigation for accessibility."
+            },
+            {
+              "action": "Focus previous element",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"},
+                {"os": "Linux", "keys": "Shift + Tab"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Shift and Tab together to move focus backward through interactive elements.",
+              "notes": "Screen readers announce previous element. Essential for accessible navigation."
+            },
+            {
+              "action": "Activate element",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"},
+                {"os": "macOS", "keys": "Enter"},
+                {"os": "Linux", "keys": "Enter"}
+              ],
+              "context": "When element has focus",
+              "description": "Press Enter to activate currently focused link, button, or other interactive element.",
+              "notes": "Screen readers announce action such as link activated or button pressed."
+            },
+            {
+              "action": "Open link in new tab",
+              "keys": "Ctrl + Click",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Click or Ctrl + Enter on focused link"},
+                {"os": "macOS", "keys": "Cmd + Click"},
+                {"os": "Linux", "keys": "Ctrl + Click"}
+              ],
+              "context": "When link has focus",
+              "description": "Hold Control and click link, or press Control and Enter on focused link, to open in new background tab.",
+              "notes": "Screen readers announce new tab opened. Current tab remains active."
+            },
+            {
+              "action": "Enable caret browsing",
+              "keys": "F7",
+              "variants": [
+                {"os": "Windows", "keys": "F7"},
+                {"os": "macOS", "keys": "F7"},
+                {"os": "Linux", "keys": "F7"}
+              ],
+              "context": "When viewing page",
+              "description": "Press F7 to toggle caret browsing mode which displays movable cursor for selecting text with keyboard.",
+              "notes": "Screen readers announce caret browsing enabled. Navigate and select text using arrow keys. Press F7 again to disable."
+            },
+            {
+              "action": "Move caret",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Arrow Keys"},
+                {"os": "macOS", "keys": "Arrow Keys"},
+                {"os": "Linux", "keys": "Arrow Keys"}
+              ],
+              "context": "When caret browsing enabled",
+              "description": "Press Arrow keys to move text cursor character by character or line by line through content.",
+              "notes": "Screen readers read text as caret moves. Hold Shift while moving to select text."
+            }
+          ]
+        },
+        {
+          "name": "Text Editing",
+          "shortcuts": [
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"},
+                {"os": "Linux", "keys": "Ctrl + A"}
+              ],
+              "context": "In text field or page",
+              "description": "Press Control and A together to select all text in current text field or all content on page.",
+              "notes": "Screen readers announce all content selected. Use in editable fields or with caret browsing."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"},
+                {"os": "Linux", "keys": "Ctrl + C"}
+              ],
+              "context": "When text selected",
+              "description": "Press Control and C together to copy selected text to clipboard for pasting elsewhere.",
+              "notes": "Screen readers announce text copied to clipboard. Standard copy operation."
+            },
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"},
+                {"os": "Linux", "keys": "Ctrl + X"}
+              ],
+              "context": "In editable field with selection",
+              "description": "Press Control and X together to cut selected text from editable field and place on clipboard.",
+              "notes": "Screen readers announce text cut. Removes text while copying to clipboard."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"},
+                {"os": "Linux", "keys": "Ctrl + V"}
+              ],
+              "context": "In editable field",
+              "description": "Press Control and V together to paste clipboard content at cursor position in editable field.",
+              "notes": "Screen readers may announce text pasted. Inserts previously copied or cut content."
+            },
+            {
+              "action": "Paste as plain text",
+              "keys": "Ctrl + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"},
+                {"os": "Linux", "keys": "Ctrl + Shift + V"}
+              ],
+              "context": "In editable field",
+              "description": "Press Control, Shift, and V together to paste clipboard content without formatting as plain text.",
+              "notes": "Screen readers announce text pasted. Removes formatting from pasted content."
+            },
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"},
+                {"os": "Linux", "keys": "Ctrl + Z"}
+              ],
+              "context": "In editable field",
+              "description": "Press Control and Z together to undo last text editing action in editable field.",
+              "notes": "Screen readers may announce undo action. Reverts most recent change."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"},
+                {"os": "Linux", "keys": "Ctrl + Y"}
+              ],
+              "context": "In editable field after undo",
+              "description": "Press Control and Y together to redo previously undone action in editable field.",
+              "notes": "Screen readers may announce redo action. Restores undone change."
+            }
+          ]
+        },
+        {
+          "name": "Edge Specific Features",
+          "shortcuts": [
+            {
+              "action": "Open Edge sidebar",
+              "keys": "Ctrl + Shift + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + /"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and Forward Slash together to toggle Edge sidebar with tools and apps.",
+              "notes": "Screen readers announce sidebar opened or closed. Access Copilot, search, tools, and more."
+            },
+            {
+              "action": "Open Copilot",
+              "keys": "Ctrl + Shift + Period",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ."}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and Period together to open Microsoft Copilot in Edge for AI assistance.",
+              "notes": "Screen readers announce Copilot panel opened. Ask questions and get AI-powered help."
+            },
+            {
+              "action": "Split screen",
+              "keys": "Ctrl + Shift + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 2"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and 2 together to enable split screen mode showing two pages side by side.",
+              "notes": "Screen readers announce split screen mode. Navigate between panes with keyboard."
+            },
+            {
+              "action": "Open profile menu",
+              "keys": "Ctrl + Shift + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + M"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Control, Shift, and M together to open profile menu for switching profiles or managing accounts.",
+              "notes": "Screen readers announce profile menu opened. Switch profiles or manage Microsoft account."
+            },
+            {
+              "action": "Open feedback",
+              "keys": "Alt + Shift + I",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + I"}
+              ],
+              "context": "Available in browser",
+              "description": "Press Alt, Shift, and I together to open feedback dialog for reporting issues or suggestions.",
+              "notes": "Screen readers announce feedback dialog opened. Submit feedback to Microsoft Edge team."
+            },
+            {
+              "action": "Open screenshot tool",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"}
+              ],
+              "context": "When viewing page",
+              "description": "Press Control, Shift, and S together to open web capture tool for taking screenshots of page areas.",
+              "notes": "Screen readers announce capture mode active. Select area to capture or use options for full page."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "msedge.exe"},
+        {"type": "process", "value": "Microsoft Edge"},
+        {"type": "window_class", "value": "Chrome_WidgetWin_1"},
+        {"type": "url_pattern", "value": "https://*"},
+        {"type": "url_pattern", "value": "http://*"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/microsoft-edge/keyboard-shortcuts-in-microsoft-edge-50d3edab-30d9-c7e4-21ce-37fe2713cfad",
+        "https://www.microsoft.com/en-us/edge/features/accessibility",
+        "https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/shortcuts/"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

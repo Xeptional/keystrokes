@@ -1,11 +1,20 @@
 import adobeAcrobatData from './adobe_acrobat_shortcuts.json';
 import dropboxData from './dropbox_shortcuts.json';
-import chromeData from './chrome_shortcuts.json'
+import chromeData from './chrome_shortcuts.json';
+import edgeData from './edge_shortcuts.json';
+import excelData from './excel_shortcuts.json';
+import firefoxData from './firefox_shortcuts.json';
+import gdocsData from './google_docs_shortcuts.json';
 
 export const applications = {
   'adobe-acrobat': adobeAcrobatData.applications[0],
   'dropbox': dropboxData.applications[0],
-  'chrome': chromeData.applications[0]
+  'chrome': chromeData.applications[0],
+  'edge': edgeData.applications[0],
+  'excel': excelData.applications[0],
+  'firefox': firefoxData.applications[0],
+  'google-docs': gdocsData.applications[0]
+
   // add more applications
 };
 

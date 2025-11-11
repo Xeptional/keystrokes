@@ -1,0 +1,418 @@
+{
+  "applications": [
+    {
+      "name": "Microsoft Outlook",
+      "slug": "outlook",
+      "platforms": ["Windows", "macOS"],
+      "description": "Microsoft Outlook is an email and personal information management application for managing email, calendar, contacts, tasks, and notes in personal and business environments.",
+      "categories": [
+        {
+          "name": "General Navigation",
+          "shortcuts": [
+            {
+              "action": "Switch to Mail view",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1"},
+                {"os": "macOS", "keys": "Cmd + 1"}
+              ],
+              "context": "Available from any Outlook view",
+              "description": "Press Control and 1 together to switch to the Mail inbox view.",
+              "notes": "Screen readers announce Mail view activated and read inbox folder name and message count."
+            },
+            {
+              "action": "Switch to Calendar view",
+              "keys": "Ctrl + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 2"},
+                {"os": "macOS", "keys": "Cmd + 2"}
+              ],
+              "context": "Available from any Outlook view",
+              "description": "Press Control and 2 together to switch to the Calendar view.",
+              "notes": "Screen readers announce Calendar view and current date or selected appointment."
+            },
+            {
+              "action": "Switch to Contacts view",
+              "keys": "Ctrl + 3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 3"},
+                {"os": "macOS", "keys": "Cmd + 3"}
+              ],
+              "context": "Available from any Outlook view",
+              "description": "Press Control and 3 together to switch to the Contacts view.",
+              "notes": "Screen readers announce Contacts view and number of contacts or selected contact."
+            },
+            {
+              "action": "Switch to Tasks view",
+              "keys": "Ctrl + 4",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 4"},
+                {"os": "macOS", "keys": "Cmd + 4"}
+              ],
+              "context": "Available from any Outlook view",
+              "description": "Press Control and 4 together to switch to the Tasks view.",
+              "notes": "Screen readers announce Tasks view and task list or selected task."
+            },
+            {
+              "action": "Switch to Notes view",
+              "keys": "Ctrl + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 5"},
+                {"os": "macOS", "keys": "Cmd + 5"}
+              ],
+              "context": "Available from any Outlook view",
+              "description": "Press Control and 5 together to switch to the Notes view.",
+              "notes": "Screen readers announce Notes view and note list."
+            },
+            {
+              "action": "Go to Inbox",
+              "keys": "Ctrl + Shift + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + I"},
+                {"os": "macOS", "keys": "Cmd + Shift + I"}
+              ],
+              "context": "Available in Mail view",
+              "description": "Press Control, Shift, and I together to navigate directly to the Inbox folder.",
+              "notes": "Screen readers announce Inbox folder and number of unread messages."
+            },
+            {
+              "action": "Go to Outbox",
+              "keys": "Ctrl + Shift + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + O"}
+              ],
+              "context": "Available in Mail view",
+              "description": "Press Control, Shift, and O together to navigate to the Outbox folder.",
+              "notes": "Screen readers announce Outbox folder and number of messages waiting to send."
+            },
+            {
+              "action": "Move between panes",
+              "keys": "F6",
+              "variants": [
+                {"os": "Windows", "keys": "F6"},
+                {"os": "macOS", "keys": "Fn + F6"}
+              ],
+              "context": "Available in any view",
+              "description": "Press F6 to cycle forward through the Outlook panes: folder pane, message list, reading pane, and To-Do bar.",
+              "notes": "Screen readers announce each pane name as focus moves. Essential for efficient navigation."
+            },
+            {
+              "action": "Move between panes backward",
+              "keys": "Shift + F6",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F6"},
+                {"os": "macOS", "keys": "Shift + F6"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Shift and F6 together to cycle backward through Outlook panes.",
+              "notes": "Screen readers announce previous pane name as focus moves backward."
+            },
+            {
+              "action": "Move between folder pane and message list",
+              "keys": "Ctrl + Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Tab"}
+              ],
+              "context": "Available in Mail view",
+              "description": "Press Control, Shift, and Tab together to move focus between folder pane and message list.",
+              "notes": "Screen readers announce whether focus is in folder list or message list."
+            },
+            {
+              "action": "Collapse or expand group in list",
+              "keys": "Left Arrow / Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Left Arrow / Right Arrow"}
+              ],
+              "context": "When focus is on a group header",
+              "description": "Press Left Arrow to collapse a group or Right Arrow to expand a group in message list or folder pane.",
+              "notes": "Screen readers announce group collapsed or expanded and group name."
+            }
+          ]
+        },
+        {
+          "name": "Mail - Creating and Sending",
+          "shortcuts": [
+            {
+              "action": "New email message",
+              "keys": "Ctrl + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + N"},
+                {"os": "macOS", "keys": "Cmd + N"}
+              ],
+              "context": "When in Mail view",
+              "description": "Press Control and N together to create a new email message.",
+              "notes": "Screen readers announce new message window and place focus in the To field."
+            },
+            {
+              "action": "Send message",
+              "keys": "Ctrl + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Enter"},
+                {"os": "macOS", "keys": "Cmd + Enter"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Control and Enter together to send the current email message.",
+              "notes": "Screen readers announce message sent. Message window closes and focus returns to inbox."
+            },
+            {
+              "action": "Reply to message",
+              "keys": "Ctrl + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + R"},
+                {"os": "macOS", "keys": "Cmd + R"}
+              ],
+              "context": "When message is selected or open",
+              "description": "Press Control and R together to reply to the sender of the selected message.",
+              "notes": "Screen readers announce reply window opened with sender in To field and focus in message body."
+            },
+            {
+              "action": "Reply all to message",
+              "keys": "Ctrl + Shift + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + R"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"}
+              ],
+              "context": "When message is selected or open",
+              "description": "Press Control, Shift, and R together to reply to all recipients of the selected message.",
+              "notes": "Screen readers announce reply all window with all recipients in To and CC fields."
+            },
+            {
+              "action": "Forward message",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"}
+              ],
+              "context": "When message is selected or open",
+              "description": "Press Control and F together to forward the selected message to other recipients.",
+              "notes": "Screen readers announce forward window opened with focus in To field and original message included."
+            },
+            {
+              "action": "Check names",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"}
+              ],
+              "context": "When composing a message with recipients",
+              "description": "Press Control and K together to check and resolve recipient names against address book.",
+              "notes": "Screen readers announce if names are resolved or if multiple matches require selection."
+            },
+            {
+              "action": "Check spelling",
+              "keys": "F7",
+              "variants": [
+                {"os": "Windows", "keys": "F7"},
+                {"os": "macOS", "keys": "Fn + F7"}
+              ],
+              "context": "When composing a message",
+              "description": "Press F7 to start spell checking the current message.",
+              "notes": "Screen readers announce spelling dialog with misspelled word and suggestions."
+            },
+            {
+              "action": "Insert file attachment",
+              "keys": "Ctrl + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + A"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Control, Shift, and A together to open file browser for attaching files to email.",
+              "notes": "Screen readers announce file picker dialog. Navigate files with arrow keys and press Enter to attach."
+            },
+            {
+              "action": "Show BCC field",
+              "keys": "Alt + B",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + B"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Alt and B together to display the BCC (blind carbon copy) field in the message header.",
+              "notes": "Screen readers announce BCC field displayed and may move focus to it."
+            },
+            {
+              "action": "Show CC field",
+              "keys": "Alt + C",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + C"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Alt and C together to display the CC (carbon copy) field in the message header.",
+              "notes": "Screen readers announce CC field displayed."
+            },
+            {
+              "action": "Show From field",
+              "keys": "Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Alt and F together to display the From field for selecting which email account to send from.",
+              "notes": "Screen readers announce From field displayed. Useful when managing multiple accounts."
+            },
+            {
+              "action": "Save draft",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "When composing a message",
+              "description": "Press Control and S together to save the current message as a draft.",
+              "notes": "Screen readers announce message saved to Drafts folder."
+            }
+          ]
+        },
+        {
+          "name": "Mail - Reading and Managing",
+          "shortcuts": [
+            {
+              "action": "Open selected message",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "When message is selected in list",
+              "description": "Press Control and O together to open the selected message in a new window.",
+              "notes": "Screen readers announce message window opened and read message header information."
+            },
+            {
+              "action": "Mark message as read",
+              "keys": "Ctrl + Q",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Q"},
+                {"os": "macOS", "keys": "Cmd + T"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control and Q together to mark the selected message or messages as read.",
+              "notes": "Screen readers announce message marked as read. Visual indicator changes."
+            },
+            {
+              "action": "Mark message as unread",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + Shift + U"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control and U together to mark the selected message or messages as unread.",
+              "notes": "Screen readers announce message marked as unread."
+            },
+            {
+              "action": "Delete message",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Delete to move the selected message to the Deleted Items folder.",
+              "notes": "Screen readers announce message deleted and move focus to next message in list."
+            },
+            {
+              "action": "Permanently delete message",
+              "keys": "Shift + Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Delete"},
+                {"os": "macOS", "keys": "Shift + Delete"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Shift and Delete together to permanently delete the message without moving to Deleted Items.",
+              "notes": "Screen readers may prompt for confirmation. Message is permanently removed."
+            },
+            {
+              "action": "Move to folder",
+              "keys": "Ctrl + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + V"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control, Shift, and V together to open dialog for moving selected message to a different folder.",
+              "notes": "Screen readers announce Move Items dialog. Type folder name or navigate with arrow keys."
+            },
+            {
+              "action": "Flag message",
+              "keys": "Insert",
+              "variants": [
+                {"os": "Windows", "keys": "Insert"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Insert to flag the selected message for follow-up.",
+              "notes": "Screen readers announce message flagged. Opens flag options dialog if held."
+            },
+            {
+              "action": "Mark as junk",
+              "keys": "Ctrl + Alt + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + J"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control, Alt, and J together to mark the selected message as junk and move to Junk Email folder.",
+              "notes": "Screen readers announce message moved to Junk Email folder."
+            },
+            {
+              "action": "Download images in message",
+              "keys": "Ctrl + Shift + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + I"}
+              ],
+              "context": "When reading a message with blocked images",
+              "description": "Press Control, Shift, and I together to download and display blocked images in the current message.",
+              "notes": "Screen readers announce images downloading or displayed."
+            },
+            {
+              "action": "Previous message",
+              "keys": "Ctrl + <",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + <"}
+              ],
+              "context": "When message is open",
+              "description": "Press Control and Less Than together to move to the previous message while keeping window open.",
+              "notes": "Screen readers announce previous message header and content."
+            },
+            {
+              "action": "Next message",
+              "keys": "Ctrl + >",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + >"}
+              ],
+              "context": "When message is open",
+              "description": "Press Control and Greater Than together to move to the next message while keeping window open.",
+              "notes": "Screen readers announce next message header and content."
+            },
+            {
+              "action": "Expand or collapse conversation",
+              "keys": "Left Arrow / Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Left Arrow / Right Arrow"}
+              ],
+              "context": "When conversation header is selected",
+              "description": "Press Left Arrow to collapse or Right Arrow to expand a conversation in the message list.",
+              "notes": "Screen readers announce conversation expanded or collapsed and number of messages in thread."
+            },
+            {
+              "action": "Create Quick Step",
+              "keys": "Ctrl + Shift + 1 to 9",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 1 to 9"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control, Shift, and a number from 1 to 9 to execute the corresponding Quick Step action.",
+              "notes": "Screen readers announce Quick Step executed. Quick Steps are customizable automated actions."
+            }
+          ]
+        },
+        {
+          "name": "Mail - Search and Filter",
+          "shortcuts": [
+            {
+              "action": "Find message or item",
+              "keys": "Ctrl + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + E"},
+                {"os": "macOS", "keys": "Cmd + Option + F"}
+              ],
+              "context": "Available in any view",
+              "description": "Press Control and E together to place focus in the search box for finding emails, contacts, or calendar items.",
+              "notes": "Screen readers announce search box active. Type search terms and press Enter to search."
+            

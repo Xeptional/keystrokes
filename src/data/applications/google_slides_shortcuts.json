@@ -1,0 +1,757 @@
+{
+  "applications": [
+    {
+      "name": "Google Slides",
+      "slug": "google-slides",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Google Slides is a cloud-based presentation application for creating, editing, and presenting slideshows with real-time collaboration. It includes accessibility features like screen reader support, keyboard navigation, and alt text for images.",
+      "categories": [
+        {
+          "name": "General Navigation",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Ctrl + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + /"},
+                {"os": "macOS", "keys": "Cmd + /"},
+                {"os": "Linux", "keys": "Ctrl + /"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and Forward Slash together to open searchable keyboard shortcuts reference dialog.",
+              "notes": "Screen readers announce shortcuts dialog opened. Search or browse all available shortcuts."
+            },
+            {
+              "action": "Search menus",
+              "keys": "Alt + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + /"},
+                {"os": "macOS", "keys": "Option + /"},
+                {"os": "Linux", "keys": "Alt + /"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Alt and Forward Slash together to search all menu commands in Google Slides.",
+              "notes": "Screen readers announce search box. Type command name for quick access to menu items."
+            },
+            {
+              "action": "Next slide",
+              "keys": "Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Page Down"},
+                {"os": "macOS", "keys": "Fn + Down Arrow"},
+                {"os": "Linux", "keys": "Page Down"}
+              ],
+              "context": "In slide thumbnails or editing",
+              "description": "Press Page Down to navigate to the next slide in the presentation.",
+              "notes": "Screen readers announce next slide number and title if present."
+            },
+            {
+              "action": "Previous slide",
+              "keys": "Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Page Up"},
+                {"os": "macOS", "keys": "Fn + Up Arrow"},
+                {"os": "Linux", "keys": "Page Up"}
+              ],
+              "context": "In slide thumbnails or editing",
+              "description": "Press Page Up to navigate to the previous slide in the presentation.",
+              "notes": "Screen readers announce previous slide number and title."
+            },
+            {
+              "action": "First slide",
+              "keys": "Ctrl + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Home"},
+                {"os": "macOS", "keys": "Cmd + Home"},
+                {"os": "Linux", "keys": "Ctrl + Home"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and Home together to jump to the first slide in the presentation.",
+              "notes": "Screen readers announce slide one and read slide title."
+            },
+            {
+              "action": "Last slide",
+              "keys": "Ctrl + End",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + End"},
+                {"os": "macOS", "keys": "Cmd + End"},
+                {"os": "Linux", "keys": "Ctrl + End"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and End together to jump to the last slide in the presentation.",
+              "notes": "Screen readers announce final slide number and title."
+            },
+            {
+              "action": "Move to filmstrip",
+              "keys": "Ctrl + Alt + Shift + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + F"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + F"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Alt, Shift, and F together to move focus to the slide filmstrip panel.",
+              "notes": "Screen readers announce filmstrip focused. Navigate slides with arrow keys."
+            },
+            {
+              "action": "Move to canvas",
+              "keys": "Ctrl + Alt + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + C"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Alt, Shift, and C together to move focus to the slide canvas editing area.",
+              "notes": "Screen readers announce canvas focused. Navigate objects with Tab."
+            }
+          ]
+        },
+        {
+          "name": "Slide Management",
+          "shortcuts": [
+            {
+              "action": "New slide",
+              "keys": "Ctrl + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + M"},
+                {"os": "macOS", "keys": "Cmd + M"},
+                {"os": "Linux", "keys": "Ctrl + M"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and M together to insert a new slide after the current slide with same layout.",
+              "notes": "Screen readers announce new slide created and slide number. Focus moves to new slide."
+            },
+            {
+              "action": "Duplicate slide",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"},
+                {"os": "Linux", "keys": "Ctrl + D"}
+              ],
+              "context": "When slide is selected",
+              "description": "Press Control and D together to create a duplicate copy of the selected slide.",
+              "notes": "Screen readers announce slide duplicated. Copy appears after original with all content."
+            },
+            {
+              "action": "Delete slide",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"},
+                {"os": "macOS", "keys": "Delete"},
+                {"os": "Linux", "keys": "Delete"}
+              ],
+              "context": "When slide is selected in filmstrip",
+              "description": "Press Delete to remove the selected slide from the presentation.",
+              "notes": "Screen readers announce slide deleted. Focus moves to next slide."
+            },
+            {
+              "action": "Move slide up",
+              "keys": "Ctrl + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Up Arrow"},
+                {"os": "Linux", "keys": "Ctrl + Up Arrow"}
+              ],
+              "context": "When slide is selected in filmstrip",
+              "description": "Press Control and Up Arrow together to move selected slide up one position in the presentation.",
+              "notes": "Screen readers may announce slide repositioned."
+            },
+            {
+              "action": "Move slide down",
+              "keys": "Ctrl + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Down Arrow"},
+                {"os": "Linux", "keys": "Ctrl + Down Arrow"}
+              ],
+              "context": "When slide is selected in filmstrip",
+              "description": "Press Control and Down Arrow together to move selected slide down one position.",
+              "notes": "Screen readers may announce slide moved down."
+            },
+            {
+              "action": "Move slide to beginning",
+              "keys": "Ctrl + Shift + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Up Arrow"}
+              ],
+              "context": "When slide is selected",
+              "description": "Press Control, Shift, and Up Arrow together to move selected slide to first position.",
+              "notes": "Screen readers announce slide moved to beginning."
+            },
+            {
+              "action": "Move slide to end",
+              "keys": "Ctrl + Shift + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Down Arrow"}
+              ],
+              "context": "When slide is selected",
+              "description": "Press Control, Shift, and Down Arrow together to move selected slide to last position.",
+              "notes": "Screen readers announce slide moved to end of presentation."
+            }
+          ]
+        },
+        {
+          "name": "Text Formatting",
+          "shortcuts": [
+            {
+              "action": "Bold",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"},
+                {"os": "Linux", "keys": "Ctrl + B"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and B together to make selected text bold or toggle bold off.",
+              "notes": "Screen readers announce bold formatting applied depending on verbosity settings."
+            },
+            {
+              "action": "Italic",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"},
+                {"os": "Linux", "keys": "Ctrl + I"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and I together to italicize selected text or toggle italic off.",
+              "notes": "Screen readers may announce italic formatting based on settings."
+            },
+            {
+              "action": "Underline",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"},
+                {"os": "Linux", "keys": "Ctrl + U"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and U together to underline selected text or remove underline.",
+              "notes": "Screen readers may announce underline formatting."
+            },
+            {
+              "action": "Strikethrough",
+              "keys": "Alt + Shift + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + 5"},
+                {"os": "macOS", "keys": "Cmd + Shift + X"},
+                {"os": "Linux", "keys": "Alt + Shift + 5"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Alt, Shift, and 5 together to apply strikethrough formatting to selected text.",
+              "notes": "Screen readers may announce strikethrough applied."
+            },
+            {
+              "action": "Increase font size",
+              "keys": "Ctrl + Shift + >",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + >"},
+                {"os": "macOS", "keys": "Cmd + Shift + >"},
+                {"os": "Linux", "keys": "Ctrl + Shift + >"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Greater Than together to increase font size to next available size.",
+              "notes": "Screen readers may announce new font size."
+            },
+            {
+              "action": "Decrease font size",
+              "keys": "Ctrl + Shift + <",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + <"},
+                {"os": "macOS", "keys": "Cmd + Shift + <"},
+                {"os": "Linux", "keys": "Ctrl + Shift + <"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Less Than together to decrease font size to next smaller size.",
+              "notes": "Screen readers may announce reduced font size."
+            },
+            {
+              "action": "Left align",
+              "keys": "Ctrl + Shift + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + L"},
+                {"os": "macOS", "keys": "Cmd + Shift + L"},
+                {"os": "Linux", "keys": "Ctrl + Shift + L"}
+              ],
+              "context": "When text box is selected",
+              "description": "Press Control, Shift, and L together to left align text in the text box.",
+              "notes": "Screen readers announce left alignment when checking text formatting."
+            },
+            {
+              "action": "Center align",
+              "keys": "Ctrl + Shift + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + E"},
+                {"os": "macOS", "keys": "Cmd + Shift + E"},
+                {"os": "Linux", "keys": "Ctrl + Shift + E"}
+              ],
+              "context": "When text box is selected",
+              "description": "Press Control, Shift, and E together to center align text in the text box.",
+              "notes": "Screen readers announce center alignment applied."
+            },
+            {
+              "action": "Right align",
+              "keys": "Ctrl + Shift + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + R"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"},
+                {"os": "Linux", "keys": "Ctrl + Shift + R"}
+              ],
+              "context": "When text box is selected",
+              "description": "Press Control, Shift, and R together to right align text in the text box.",
+              "notes": "Screen readers announce right alignment in text formatting."
+            },
+            {
+              "action": "Justify",
+              "keys": "Ctrl + Shift + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + J"},
+                {"os": "macOS", "keys": "Cmd + Shift + J"},
+                {"os": "Linux", "keys": "Ctrl + Shift + J"}
+              ],
+              "context": "When text box is selected",
+              "description": "Press Control, Shift, and J together to justify text in the text box.",
+              "notes": "Screen readers announce justified alignment."
+            },
+            {
+              "action": "Clear formatting",
+              "keys": "Ctrl + Backslash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + \\"},
+                {"os": "macOS", "keys": "Cmd + \\"},
+                {"os": "Linux", "keys": "Ctrl + \\"}
+              ],
+              "context": "When formatted text is selected",
+              "description": "Press Control and Backslash together to remove all formatting from selected text.",
+              "notes": "Screen readers announce formatting cleared. Returns text to default style."
+            },
+            {
+              "action": "Bulleted list",
+              "keys": "Ctrl + Shift + 8",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 8"},
+                {"os": "macOS", "keys": "Cmd + Shift + 8"},
+                {"os": "Linux", "keys": "Ctrl + Shift + 8"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and 8 together to create a bulleted list from selected text.",
+              "notes": "Screen readers announce bulleted list created."
+            },
+            {
+              "action": "Numbered list",
+              "keys": "Ctrl + Shift + 7",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 7"},
+                {"os": "macOS", "keys": "Cmd + Shift + 7"},
+                {"os": "Linux", "keys": "Ctrl + Shift + 7"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and 7 together to create a numbered list from selected text.",
+              "notes": "Screen readers announce numbered list created with sequential numbering."
+            }
+          ]
+        },
+        {
+          "name": "Objects and Shapes",
+          "shortcuts": [
+            {
+              "action": "Insert text box",
+              "keys": "Alt + I, then T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + I, then T"},
+                {"os": "macOS", "keys": "Option + I, then T"}
+              ],
+              "context": "Available on slide canvas",
+              "description": "Press Alt then I then T to insert a text box on the current slide.",
+              "notes": "Screen readers announce text box mode active. Click to place or drag to size text box."
+            },
+            {
+              "action": "Insert image",
+              "keys": "Alt + I, then I",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + I, then I"},
+                {"os": "macOS", "keys": "Option + I, then I"}
+              ],
+              "context": "Available on slide canvas",
+              "description": "Press Alt then I then I to open image insertion dialog for adding images to slide.",
+              "notes": "Screen readers announce image dialog. Choose from upload, URL, Drive, or search."
+            },
+            {
+              "action": "Insert link",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"},
+                {"os": "Linux", "keys": "Ctrl + K"}
+              ],
+              "context": "When text or object is selected",
+              "description": "Press Control and K together to insert or edit a hyperlink on selected text or object.",
+              "notes": "Screen readers announce link dialog opened. Enter URL and press Enter to apply."
+            },
+            {
+              "action": "Duplicate object",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"},
+                {"os": "Linux", "keys": "Ctrl + D"}
+              ],
+              "context": "When object is selected on slide",
+              "description": "Press Control and D together to create a duplicate copy of the selected object.",
+              "notes": "Screen readers announce object duplicated. Copy appears slightly offset from original."
+            },
+            {
+              "action": "Group objects",
+              "keys": "Ctrl + Alt + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + G"},
+                {"os": "macOS", "keys": "Cmd + Option + G"},
+                {"os": "Linux", "keys": "Ctrl + Alt + G"}
+              ],
+              "context": "When multiple objects are selected",
+              "description": "Press Control, Alt, and G together to group selected objects so they move and resize together.",
+              "notes": "Screen readers announce objects grouped. Can manipulate as single unit."
+            },
+            {
+              "action": "Ungroup objects",
+              "keys": "Ctrl + Alt + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + G"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + G"}
+              ],
+              "context": "When grouped object is selected",
+              "description": "Press Control, Alt, Shift, and G together to ungroup objects for individual editing.",
+              "notes": "Screen readers announce objects ungrouped."
+            },
+            {
+              "action": "Bring to front",
+              "keys": "Ctrl + Shift + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Up Arrow"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control, Shift, and Up Arrow together to bring selected object to front of all overlapping objects.",
+              "notes": "Screen readers typically don't announce layer changes. Visual positioning only."
+            },
+            {
+              "action": "Send to back",
+              "keys": "Ctrl + Shift + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Down Arrow"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control, Shift, and Down Arrow together to send selected object behind all overlapping objects.",
+              "notes": "Screen readers don't announce layer order changes."
+            },
+            {
+              "action": "Bring forward",
+              "keys": "Ctrl + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Up Arrow"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control and Up Arrow together to bring object forward one layer in stacking order.",
+              "notes": "Screen readers don't announce layer changes."
+            },
+            {
+              "action": "Send backward",
+              "keys": "Ctrl + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Down Arrow"}
+              ],
+              "context": "When object is selected",
+              "description": "Press Control and Down Arrow together to send object backward one layer in stacking order.",
+              "notes": "Screen readers don't announce layer order."
+            }
+          ]
+        },
+        {
+          "name": "Presenting",
+          "shortcuts": [
+            {
+              "action": "Start presentation from beginning",
+              "keys": "Ctrl + F5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F5"},
+                {"os": "macOS", "keys": "Cmd + Enter"},
+                {"os": "Linux", "keys": "Ctrl + F5"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and F5 together to start presenting from the first slide in full screen mode.",
+              "notes": "Screen readers announce presentation starting. Limited screen reader functionality during presentation mode."
+            },
+            {
+              "action": "Start from current slide",
+              "keys": "Ctrl + Shift + F5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F5"},
+                {"os": "macOS", "keys": "Cmd + Shift + Enter"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Shift, and F5 together to start presenting from the currently selected slide.",
+              "notes": "Screen readers announce presentation starting from current position."
+            },
+            {
+              "action": "Present with speaker notes",
+              "keys": "Ctrl + Alt + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + P"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Alt, Shift, and P together to start presentation with speaker notes visible.",
+              "notes": "Screen readers announce presenter view. Notes visible only to presenter."
+            },
+            {
+              "action": "Next slide in presentation",
+              "keys": "Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Right Arrow or Space or N"},
+                {"os": "macOS", "keys": "Right Arrow or Space or N"},
+                {"os": "Linux", "keys": "Right Arrow or Space"}
+              ],
+              "context": "During presentation",
+              "description": "Press Right Arrow, Space, or N to advance to next slide or animation during presentation.",
+              "notes": "Screen readers may have limited announcements during presentation mode."
+            },
+            {
+              "action": "Previous slide in presentation",
+              "keys": "Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Left Arrow or P"},
+                {"os": "macOS", "keys": "Left Arrow or P"},
+                {"os": "Linux", "keys": "Left Arrow"}
+              ],
+              "context": "During presentation",
+              "description": "Press Left Arrow or P to go back to previous slide during presentation.",
+              "notes": "Screen readers may not announce slide changes during presentation."
+            },
+            {
+              "action": "Go to specific slide",
+              "keys": "Number + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Type number, press Enter"},
+                {"os": "macOS", "keys": "Type number, press Enter"}
+              ],
+              "context": "During presentation",
+              "description": "Type a slide number then press Enter to jump directly to that slide during presentation.",
+              "notes": "Type number then Enter. Screen readers may not announce navigation."
+            },
+            {
+              "action": "End presentation",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"},
+                {"os": "Linux", "keys": "Esc"}
+              ],
+              "context": "During presentation",
+              "description": "Press Escape to exit presentation mode and return to editing view.",
+              "notes": "Screen readers announce presentation ended and return to editor."
+            },
+            {
+              "action": "Toggle fullscreen",
+              "keys": "F11",
+              "variants": [
+                {"os": "Windows", "keys": "F11"},
+                {"os": "macOS", "keys": "Cmd + Ctrl + F"}
+              ],
+              "context": "During presentation",
+              "description": "Press F11 to toggle between fullscreen and windowed presentation mode.",
+              "notes": "Screen readers announce fullscreen mode toggled."
+            }
+          ]
+        },
+        {
+          "name": "Editing Operations",
+          "shortcuts": [
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"},
+                {"os": "Linux", "keys": "Ctrl + Z"}
+              ],
+              "context": "After making changes",
+              "description": "Press Control and Z together to undo the last action or change made to the presentation.",
+              "notes": "Screen readers may announce what was undone depending on verbosity."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"},
+                {"os": "Linux", "keys": "Ctrl + Y"}
+              ],
+              "context": "After undoing",
+              "description": "Press Control and Y together to redo an action that was previously undone.",
+              "notes": "Screen readers may announce redo action completion."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"},
+                {"os": "Linux", "keys": "Ctrl + C"}
+              ],
+              "context": "When object or text is selected",
+              "description": "Press Control and C together to copy selected object or text to clipboard.",
+              "notes": "Screen readers announce copied to clipboard."
+            },
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"},
+                {"os": "Linux", "keys": "Ctrl + X"}
+              ],
+              "context": "When object or text is selected",
+              "description": "Press Control and X together to cut selected object or text and place on clipboard.",
+              "notes": "Screen readers announce cut to clipboard."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"},
+                {"os": "Linux", "keys": "Ctrl + V"}
+              ],
+              "context": "After copying or cutting",
+              "description": "Press Control and V together to paste clipboard content onto current slide.",
+              "notes": "Screen readers may announce paste occurred."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"},
+                {"os": "Linux", "keys": "Ctrl + A"}
+              ],
+              "context": "On slide canvas or in text",
+              "description": "Press Control and A together to select all objects on slide or all text in text box.",
+              "notes": "Screen readers announce all content selected."
+            },
+            {
+              "action": "Find and replace",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and H together to open Find and Replace dialog for searching and replacing text.",
+              "notes": "Screen readers announce dialog with find and replace fields."
+            }
+          ]
+        },
+        {
+          "name": "Comments and Notes",
+          "shortcuts": [
+            {
+              "action": "Insert comment",
+              "keys": "Ctrl + Alt + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + M"},
+                {"os": "macOS", "keys": "Cmd + Option + M"},
+                {"os": "Linux", "keys": "Ctrl + Alt + M"}
+              ],
+              "context": "When object or text is selected",
+              "description": "Press Control, Alt, and M together to add a comment on selected object or text.",
+              "notes": "Screen readers announce comment box opened. Type comment and press Ctrl+Enter to post."
+            },
+            {
+              "action": "Open speaker notes",
+              "keys": "Ctrl + Alt + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + S"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Alt, Shift, and S together to open speaker notes panel for adding presentation notes.",
+              "notes": "Screen readers announce speaker notes panel opened. Notes visible only during presenting with notes view."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "shortcuts": [
+            {
+              "action": "Enable screen reader support",
+              "keys": "Ctrl + Alt + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Z"},
+                {"os": "macOS", "keys": "Cmd + Option + Z"},
+                {"os": "Linux", "keys": "Ctrl + Alt + Z"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control, Alt, and Z together to enable screen reader optimized mode for Google Slides.",
+              "notes": "Screen readers announce screen reader support enabled. Improves object navigation and announcements."
+            },
+            {
+              "action": "Alt text",
+              "keys": "Ctrl + Alt + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Y"},
+                {"os": "macOS", "keys": "Cmd + Option + Y"}
+              ],
+              "context": "When image or object is selected",
+              "description": "Press Control, Alt, and Y together to open alt text dialog for adding description to images and objects.",
+              "notes": "Screen readers announce alt text dialog. Add descriptions for accessibility. Essential for screen reader users."
+            }
+          ]
+        },
+        {
+          "name": "File Operations",
+          "shortcuts": [
+            {
+              "action": "Open presentation",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"},
+                {"os": "Linux", "keys": "Ctrl + O"}
+              ],
+              "context": "Available in Google Slides",
+              "description": "Press Control and O together to open file picker for selecting a presentation from Google Drive.",
+              "notes": "Screen readers announce file picker dialog. Navigate files with arrow keys."
+            },
+            {
+              "action": "Print",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"},
+                {"os": "Linux", "keys": "Ctrl + P"}
+              ],
+              "context": "Available in presentation",
+              "description": "Press Control and P together to open print dialog for printing slides or saving as PDF.",
+              "notes": "Screen readers announce print dialog. Configure layout and print options."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://docs.google.com/presentation/*"},
+        {"type": "url_pattern", "value": "https://slides.google.com/*"},
+        {"type": "window_title", "value": "* - Google Slides"}
+      ],
+      "source": [
+        "https://support.google.com/docs/answer/1696787",
+        "https://support.google.com/docs/answer/6282736",
+        "https://www.google.com/accessibility/products-features/"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "applications": [
+    {
+      "name": "Microsoft Excel",
+      "slug": "excel",
+      "platforms": ["Windows", "macOS"],
+      "description": "Microsoft Excel is a spreadsheet application used for data organization, calculation, analysis, and visualization through formulas, charts, and pivot tables.",
+      "categories": [
+        {
+          "name": "File Tab",
+          "shortcuts": [
+            {
+              "action": "Open workbook",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Control and O together to open the file browser dialog where you can select an Excel workbook to open.",
+              "notes": "Screen readers will announce the dialog and file list. Use arrow keys to navigate files and Enter to open."
+            },
+            {
+              "action": "Save workbook",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Control and S together to save the current workbook. Opens Save As dialog for new workbooks.",
+              "notes": "Screen readers will announce save confirmation or present Save As dialog for unsaved workbooks."
+            },
+            {
+              "action": "Save As dialog",
+              "keys": "F12",
+              "variants": [
+                {"os": "Windows", "keys": "F12"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press F12 to open the Save As dialog where you can choose location and filename for your workbook.",
+              "notes": "Focus moves to filename field. Screen readers announce dialog and current filename if applicable."
+            },
+            {
+              "action": "Print dialog",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Control and P together to open the print dialog where you can configure printer settings and print worksheets.",
+              "notes": "Screen readers announce print preview and settings. Tab through options to configure printing."
+            },
+            {
+              "action": "New blank workbook",
+              "keys": "Ctrl + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + N"},
+                {"os": "macOS", "keys": "Cmd + N"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Control and N together to create a new blank workbook in a new window.",
+              "notes": "Focus moves to cell A1 of new workbook. Screen readers announce new workbook creation."
+            },
+            {
+              "action": "Close workbook",
+              "keys": "Ctrl + W",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + W"},
+                {"os": "macOS", "keys": "Cmd + W"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Control and W together to close the current workbook. Prompts to save if there are unsaved changes.",
+              "notes": "Screen readers will announce any save prompt before closing workbook."
+            },
+            {
+              "action": "Access File menu via ribbon",
+              "keys": "Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F"}
+              ],
+              "context": "Available in workbook view",
+              "description": "Press Alt then F to open the File backstage view for accessing file operations like save, open, and options.",
+              "notes": "Screen readers announce backstage view. Use arrow keys to navigate menu options."
+            }
+          ]
+        },
+        {
+          "name": "Home Tab - Cell Formatting",
+          "shortcuts": [
+            {
+              "action": "Bold cell content",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"}
+              ],
+              "context": "When cell is selected or text is selected in formula bar",
+              "description": "Press Control and B together to make cell content bold or remove bold if already applied.",
+              "notes": "Screen readers may announce bold formatting depending on verbosity settings when reading cell content."
+            },
+            {
+              "action": "Italic cell content",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"}
+              ],
+              "context": "When cell is selected or text is selected in formula bar",
+              "description": "Press Control and I together to make cell content italic or remove italic if already applied.",
+              "notes": "Screen readers may announce italic formatting when reading cell attributes."
+            },
+            {
+              "action": "Underline cell content",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control and U together to underline cell content or remove underline if already applied.",
+              "notes": "Screen readers may announce underline formatting based on user verbosity preferences."
+            },
+            {
+              "action": "Strikethrough cell content",
+              "keys": "Ctrl + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 5"},
+                {"os": "macOS", "keys": "Cmd + Shift + X"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control and 5 together to apply or remove strikethrough formatting on cell content.",
+              "notes": "Most screen readers do not automatically announce strikethrough. Use cell formatting commands to verify."
+            },
+            {
+              "action": "Format cells dialog",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1"},
+                {"os": "macOS", "keys": "Cmd + 1"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control and 1 together to open the Format Cells dialog where you can set number format, alignment, font, and borders.",
+              "notes": "Screen readers announce dialog and current tab. Use Ctrl+Tab to switch between tabs within dialog."
+            },
+            {
+              "action": "Apply general number format",
+              "keys": "Ctrl + Shift + ~",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ~"},
+                {"os": "macOS", "keys": "Ctrl + Shift + ~"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Tilde together to apply the general number format to selected cells.",
+              "notes": "Screen readers typically do not announce format changes. Verify by reading cell value."
+            },
+            {
+              "action": "Apply currency format",
+              "keys": "Ctrl + Shift + $",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + $"},
+                {"os": "macOS", "keys": "Ctrl + Shift + $"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Dollar Sign together to apply currency format with two decimal places to selected cells.",
+              "notes": "Screen readers will read formatted value with currency symbol when navigating to cell."
+            },
+            {
+              "action": "Apply percentage format",
+              "keys": "Ctrl + Shift + %",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + %"},
+                {"os": "macOS", "keys": "Ctrl + Shift + %"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Percent together to apply percentage format with no decimal places to selected cells.",
+              "notes": "Screen readers will read cell value as percentage when navigating."
+            },
+            {
+              "action": "Apply scientific notation",
+              "keys": "Ctrl + Shift + ^",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ^"},
+                {"os": "macOS", "keys": "Ctrl + Shift + ^"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Caret together to apply scientific notation format with two decimal places.",
+              "notes": "Screen readers will read value in scientific notation format like 1 point 23 E plus 04."
+            },
+            {
+              "action": "Apply date format",
+              "keys": "Ctrl + Shift + #",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + #"},
+                {"os": "macOS", "keys": "Ctrl + Shift + #"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Hash together to apply date format showing day, month, and year.",
+              "notes": "Screen readers will read formatted date value when cell is selected."
+            },
+            {
+              "action": "Apply time format",
+              "keys": "Ctrl + Shift + @",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + @"},
+                {"os": "macOS", "keys": "Ctrl + Shift + @"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and At Sign together to apply time format showing hours and minutes with AM or PM.",
+              "notes": "Screen readers will read formatted time value when navigating to cell."
+            },
+            {
+              "action": "Apply outline border",
+              "keys": "Ctrl + Shift + &",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + &"},
+                {"os": "macOS", "keys": "Cmd + Option + 0"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control, Shift, and Ampersand together to apply an outline border around selected cells.",
+              "notes": "Screen readers typically do not announce border formatting. Visual change only."
+            },
+            {
+              "action": "Remove all borders",
+              "keys": "Ctrl + Shift + _",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + _"},
+                {"os": "macOS", "keys": "Cmd + Option + -"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control, Shift, and Underscore together to remove all borders from selected cells.",
+              "notes": "Screen readers do not announce border removal. Visual formatting only."
+            }
+          ]
+        },
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Move one cell up",
+              "keys": "Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Up Arrow"},
+                {"os": "macOS", "keys": "Up Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Up Arrow to move the active cell selection one row up in the worksheet.",
+              "notes": "Screen readers announce new cell address and content when moving between cells."
+            },
+            {
+              "action": "Move one cell down",
+              "keys": "Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Down Arrow"},
+                {"os": "macOS", "keys": "Down Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Down Arrow to move the active cell selection one row down in the worksheet.",
+              "notes": "Screen readers announce cell address and content as you navigate downward."
+            },
+            {
+              "action": "Move one cell left",
+              "keys": "Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Left Arrow"},
+                {"os": "macOS", "keys": "Left Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Left Arrow to move the active cell selection one column to the left.",
+              "notes": "Screen readers announce new cell reference and content when moving left."
+            },
+            {
+              "action": "Move one cell right",
+              "keys": "Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Right Arrow"},
+                {"os": "macOS", "keys": "Right Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Right Arrow to move the active cell selection one column to the right.",
+              "notes": "Screen readers announce cell address and content as you move right through columns."
+            },
+            {
+              "action": "Move to edge of data region right",
+              "keys": "Ctrl + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Right Arrow"},
+                {"os": "macOS", "keys": "Cmd + Right Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control and Right Arrow together to jump to the last filled cell in the current row before an empty cell.",
+              "notes": "Screen readers announce destination cell. Very useful for navigating large datasets quickly."
+            },
+            {
+              "action": "Move to edge of data region left",
+              "keys": "Ctrl + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Left Arrow"},
+                {"os": "macOS", "keys": "Cmd + Left Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control and Left Arrow together to jump to the first filled cell in the current row before an empty cell.",
+              "notes": "Screen readers announce destination cell address and content."
+            },
+            {
+              "action": "Move to edge of data region down",
+              "keys": "Ctrl + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Down Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control and Down Arrow together to jump to the last filled cell in the current column before an empty cell.",
+              "notes": "Screen readers announce destination cell. Efficient for navigating to end of data columns."
+            },
+            {
+              "action": "Move to edge of data region up",
+              "keys": "Ctrl + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Up Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control and Up Arrow together to jump to the first filled cell in the current column before an empty cell.",
+              "notes": "Screen readers announce destination cell address and content."
+            },
+            {
+              "action": "Move to beginning of row",
+              "keys": "Home",
+              "variants": [
+                {"os": "Windows", "keys": "Home"},
+                {"os": "macOS", "keys": "Fn + Left Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Home to move to column A of the current row.",
+              "notes": "Screen readers announce cell A and the row number along with cell content."
+            },
+            {
+              "action": "Move to cell A1",
+              "keys": "Ctrl + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Home"},
+                {"os": "macOS", "keys": "Cmd + Home"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Control and Home together to move to cell A1, the top-left cell of the worksheet.",
+              "notes": "Screen readers announce cell A1 and its content. Quick way to return to worksheet start."
+            },
+            {
+              "action": "Move to last used cell",
+              "keys": "Ctrl + End",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + End"},
+                {"os": "macOS", "keys": "Cmd + End"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Control and End together to move to the last cell in the used range of the worksheet.",
+              "notes": "Screen readers announce the last used cell address and content. Defines worksheet data boundaries."
+            },
+            {
+              "action": "Move one screen down",
+              "keys": "Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Page Down"},
+                {"os": "macOS", "keys": "Fn + Down Arrow"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Page Down to move the active cell down by one visible screen of rows.",
+              "notes": "Screen readers announce new cell position. Number of rows depends on screen size and zoom level."
+            },
+            {
+              "action": "Move one screen up",
+              "keys": "Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Page Up"},
+                {"os": "macOS", "keys": "Fn + Up Arrow"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Page Up to move the active cell up by one visible screen of rows.",
+              "notes": "Screen readers announce new cell location after moving up one screen."
+            },
+            {
+              "action": "Move one screen right",
+              "keys": "Alt + Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Page Down"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Alt and Page Down together to move the active cell right by one visible screen of columns.",
+              "notes": "Screen readers announce new cell address after horizontal screen movement."
+            },
+            {
+              "action": "Move one screen left",
+              "keys": "Alt + Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Page Up"}
+              ],
+              "context": "When in worksheet",
+              "description": "Press Alt and Page Up together to move the active cell left by one visible screen of columns.",
+              "notes": "Screen readers announce destination cell after moving left one screen."
+            },
+            {
+              "action": "Go to cell dialog",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G"},
+                {"os": "macOS", "keys": "Cmd + G"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Control and G together to open the Go To dialog where you can navigate to a specific cell reference or named range.",
+              "notes": "Screen readers announce dialog. Type cell address like B12 or range name and press Enter to navigate."
+            },
+            {
+              "action": "Go to cell dialog (F5)",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "Fn + F5"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press F5 to open the Go To dialog for navigating to specific cells, ranges, or special cell types.",
+              "notes": "Screen readers announce the Go To dialog. Use Special button to access Go To Special options."
+            },
+            {
+              "action": "Switch between worksheets forward",
+              "keys": "Ctrl + Page Down",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Page Down"},
+                {"os": "macOS", "keys": "Fn + Ctrl + Down Arrow"}
+              ],
+              "context": "When in workbook with multiple sheets",
+              "description": "Press Control and Page Down together to move to the next worksheet tab in the workbook.",
+              "notes": "Screen readers announce the new sheet name and active cell on that sheet."
+            },
+            {
+              "action": "Switch between worksheets backward",
+              "keys": "Ctrl + Page Up",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Page Up"},
+                {"os": "macOS", "keys": "Fn + Ctrl + Up Arrow"}
+              ],
+              "context": "When in workbook with multiple sheets",
+              "description": "Press Control and Page Up together to move to the previous worksheet tab in the workbook.",
+              "notes": "Screen readers announce previous sheet name and current cell location."
+            }
+          ]
+        },
+        {
+          "name": "Selection",
+          "shortcuts": [
+            {
+              "action": "Select all cells",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control and A together to select the current data region or entire worksheet depending on cursor position.",
+              "notes": "Screen readers announce selected range dimensions like 100 rows by 10 columns selected."
+            },
+            {
+              "action": "Extend selection by one cell right",
+              "keys": "Shift + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Right Arrow"},
+                {"os": "macOS", "keys": "Shift + Right Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and Right Arrow together to extend the selection one cell to the right.",
+              "notes": "Screen readers announce cells being added to selection as range expands."
+            },
+            {
+              "action": "Extend selection by one cell left",
+              "keys": "Shift + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Left Arrow"},
+                {"os": "macOS", "keys": "Shift + Left Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and Left Arrow together to extend the selection one cell to the left.",
+              "notes": "Screen readers announce cells added to selection as you extend leftward."
+            },
+            {
+              "action": "Extend selection by one cell down",
+              "keys": "Shift + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Down Arrow"},
+                {"os": "macOS", "keys": "Shift + Down Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and Down Arrow together to extend the selection one cell downward.",
+              "notes": "Screen readers announce additional cells as selection grows downward."
+            },
+            {
+              "action": "Extend selection by one cell up",
+              "keys": "Shift + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Up Arrow"},
+                {"os": "macOS", "keys": "Shift + Up Arrow"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and Up Arrow together to extend the selection one cell upward.",
+              "notes": "Screen readers announce cells being added as selection extends upward."
+            },
+            {
+              "action": "Extend selection to last used cell",
+              "keys": "Ctrl + Shift + End",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + End"},
+                {"os": "macOS", "keys": "Cmd + Shift + End"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and End together to extend selection from active cell to the last used cell in worksheet.",
+              "notes": "Screen readers announce the selection range dimensions after extending."
+            },
+            {
+              "action": "Extend selection to cell A1",
+              "keys": "Ctrl + Shift + Home",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Home"},
+                {"os": "macOS", "keys": "Cmd + Shift + Home"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Home together to extend selection from active cell to cell A1.",
+              "notes": "Screen readers announce selection range after extending to worksheet start."
+            },
+            {
+              "action": "Extend selection to edge of data right",
+              "keys": "Ctrl + Shift + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Right Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Right Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control, Shift, and Right Arrow together to extend selection to the last filled cell in the row.",
+              "notes": "Screen readers announce selection extension to edge of data region."
+            },
+            {
+              "action": "Extend selection to edge of data left",
+              "keys": "Ctrl + Shift + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Left Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Left Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control, Shift, and Left Arrow together to extend selection to the first filled cell in the row.",
+              "notes": "Screen readers announce selection spanning to data region boundary."
+            },
+            {
+              "action": "Extend selection to edge of data down",
+              "keys": "Ctrl + Shift + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Down Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Down Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control, Shift, and Down Arrow together to extend selection to the last filled cell in the column.",
+              "notes": "Screen readers announce selection extending to bottom of data column."
+            },
+            {
+              "action": "Extend selection to edge of data up",
+              "keys": "Ctrl + Shift + Up Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Up Arrow"},
+                {"os": "macOS", "keys": "Cmd + Shift + Up Arrow"}
+              ],
+              "context": "When cell is selected in data region",
+              "description": "Press Control, Shift, and Up Arrow together to extend selection to the first filled cell in the column.",
+              "notes": "Screen readers announce selection extending to top of data column."
+            },
+            {
+              "action": "Select entire column",
+              "keys": "Ctrl + Space",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Space"},
+                {"os": "macOS", "keys": "Ctrl + Space"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control and Spacebar together to select the entire column containing the active cell.",
+              "notes": "Screen readers announce entire column selected with column letter."
+            },
+            {
+              "action": "Select entire row",
+              "keys": "Shift + Space",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Space"},
+                {"os": "macOS", "keys": "Shift + Space"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and Spacebar together to select the entire row containing the active cell.",
+              "notes": "Screen readers announce entire row selected with row number."
+            },
+            {
+              "action": "Select current region",
+              "keys": "Ctrl + Shift + *",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + *"},
+                {"os": "macOS", "keys": "Cmd + Shift + *"}
+              ],
+              "context": "When cell is in data region",
+              "description": "Press Control, Shift, and Asterisk together to select the current region around the active cell bounded by empty rows and columns.",
+              "notes": "Screen readers announce the selected range dimensions. Useful for selecting tables."
+            }
+          ]
+        },
+        {
+          "name": "Editing Operations",
+          "shortcuts": [
+            {
+              "action": "Edit active cell",
+              "keys": "F2",
+              "variants": [
+                {"os": "Windows", "keys": "F2"},
+                {"os": "macOS", "keys": "Fn + F2"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press F2 to enter edit mode for the active cell, allowing you to modify its content directly in the cell.",
+              "notes": "Screen readers announce edit mode and read cell content. Cursor is placed at end of cell text."
+            },
+            {
+              "action": "Cancel cell entry",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "When editing a cell",
+              "description": "Press Escape to cancel editing and restore the original cell content before changes.",
+              "notes": "Screen readers announce edit cancelled and read original cell value."
+            },
+            {
+              "action": "Complete cell entry and move down",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"},
+                {"os": "macOS", "keys": "Enter"}
+              ],
+              "context": "When editing a cell",
+              "description": "Press Enter to complete the cell entry and move the active cell down one row.",
+              "notes": "Screen readers announce new cell address and content after entering data."
+            },
+            {
+              "action": "Complete cell entry and move up",
+              "keys": "Shift + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Enter"},
+                {"os": "macOS", "keys": "Shift + Enter"}
+              ],
+              "context": "When editing a cell",
+              "description": "Press Shift and Enter together to complete the cell entry and move the active cell up one row.",
+              "notes": "Screen readers announce cell above and its content after data entry."
+            },
+            {
+              "action": "Complete cell entry and move right",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"}
+              ],
+              "context": "When editing a cell",
+              "description": "Press Tab to complete the cell entry and move the active cell one column to the right.",
+              "notes": "Screen readers announce next cell to the right and its content."
+            },
+            {
+              "action": "Complete cell entry and move left",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"}
+              ],
+              "context": "When editing a cell",
+              "description": "Press Shift and Tab together to complete the cell entry and move the active cell one column to the left.",
+              "notes": "Screen readers announce cell to the left and its content after entry."
+            },
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control and X together to cut selected cells and place them on clipboard for pasting elsewhere.",
+              "notes": "Screen readers announce content cut to clipboard. Selected cells show moving border."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control and C together to copy selected cells to clipboard without removing them.",
+              "notes": "Screen readers announce content copied. Copied cells display moving border indicator."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"}
+              ],
+              "context": "When clipboard has content",
+              "description": "Press Control and V together to paste clipboard content starting at the active cell.",
+              "notes": "Screen readers may announce paste occurred. Navigate to pasted cells to hear content."
+            },
+            {
+              "action": "Paste special",
+              "keys": "Ctrl + Alt + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + V"},
+                {"os": "macOS", "keys": "Cmd + Ctrl + V"}
+              ],
+              "context": "When clipboard has content",
+              "description": "Press Control, Alt, and V together to open Paste Special dialog for selective pasting options.",
+              "notes": "Screen readers announce dialog. Use arrow keys to select paste type like values, formulas, or formats."
+            },
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"}
+              ],
+              "context": "After making changes",
+              "description": "Press Control and Z together to undo the last action or edit performed.",
+              "notes": "Screen readers may announce what action was undone depending on verbosity."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"}
+              ],
+              "context": "After undoing actions",
+              "description": "Press Control and Y together to redo the last action that was undone.",
+              "notes": "Screen readers may announce redo action completion."
+            },
+            {
+              "action": "Delete cell contents",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Delete to clear the contents of selected cells without removing formatting or comments.",
+              "notes": "Screen readers announce cells cleared. Cell formatting and structure remain intact."
+            },
+            {
+              "action": "Delete cells dialog",
+              "keys": "Ctrl + -",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + -"},
+                {"os": "macOS", "keys": "Cmd + -"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control and Minus together to open Delete dialog where you can choose to delete cells and shift surrounding cells.",
+              "notes": "Screen readers announce dialog options. Choose to shift cells left, up, or delete entire rows or columns."
+            },
+            {
+              "action": "Insert cells dialog",
+              "keys": "Ctrl + Shift + +",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + +"},
+                {"os": "macOS", "keys": "Cmd + Shift + +"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control, Shift, and Plus together to open Insert dialog for inserting new cells, rows, or columns.",
+              "notes": "Screen readers announce dialog. Select whether to shift cells right, down, or insert entire rows or columns."
+            },
+            {
+              "action": "Fill down",
+              "keys": "Ctrl + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + D"},
+                {"os": "macOS", "keys": "Cmd + D"}
+              ],
+              "context": "When range of cells is selected vertically",
+              "description": "Press Control and D together to fill the selected range with content from the topmost cell in the selection.",
+              "notes": "Screen readers announce fill completion. Navigate through filled cells to verify content."
+            },
+            {
+              "action": "Fill right",
+              "keys": "Ctrl + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + R"},
+                {"os": "macOS", "keys": "Cmd + R"}
+              ],
+              "context": "When range of cells is selected horizontally",
+              "description": "Press Control and R together to fill the selected range with content from the leftmost cell in the selection.",
+              "notes": "Screen readers announce fill operation. Check filled cells by navigating right."
+            },
+            {
+              "action": "Find",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Control and F together to open the Find dialog for searching cell content in the worksheet.",
+              "notes": "Screen readers announce Find dialog and place focus in search field. Results navigate to matching cells."
+            },
+            {
+              "action": "Find and replace",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Control and H together to open Find and Replace dialog for searching and replacing cell content.",
+              "notes": "Screen readers announce dialog. Tab between Find and Replace fields to enter search and replacement text."
+            },
+            {
+              "action": "Clear all formatting",
+              "keys": "Alt + H, E, F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, E, F"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Alt then H then E then F to clear all formatting from selected cells while keeping content.",
+              "notes": "Screen readers do not typically announce formatting removal. Content remains unchanged."
+            }
+          ]
+        },
+        {
+          "name": "Formulas and Functions",
+          "shortcuts": [
+            {
+              "action": "Start formula",
+              "keys": "=",
+              "variants": [
+                {"os": "Windows", "keys": "="},
+                {"os": "macOS", "keys": "="}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Equals sign to begin entering a formula in the active cell.",
+              "notes": "Screen readers announce formula mode. As you type, Excel may suggest functions."
+            },
+            {
+              "action": "Insert function",
+              "keys": "Shift + F3",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F3"},
+                {"os": "macOS", "keys": "Shift + F3"}
+              ],
+              "context": "When entering or editing a formula",
+              "description": "Press Shift and F3 together to open the Insert Function dialog for searching and inserting Excel functions.",
+              "notes": "Screen readers announce dialog. Type function name or browse categories with Tab and arrow keys."
+            },
+            {
+              "action": "Calculate all worksheets",
+              "keys": "F9",
+              "variants": [
+                {"os": "Windows", "keys": "F9"},
+                {"os": "macOS", "keys": "Fn + F9"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press F9 to manually recalculate all formulas in all open workbooks.",
+              "notes": "Screen readers typically do not announce calculation completion. Navigate to cells to hear updated values."
+            },
+            {
+              "action": "Calculate active worksheet",
+              "keys": "Shift + F9",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F9"},
+                {"os": "macOS", "keys": "Shift + F9"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Shift and F9 together to recalculate formulas only in the active worksheet.",
+              "notes": "Screen readers do not announce recalculation. Check formula results by navigating to cells."
+            },
+            {
+              "action": "Toggle formula display",
+              "keys": "Ctrl + `",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + `"},
+                {"os": "macOS", "keys": "Ctrl + `"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Control and Grave Accent together to toggle between displaying formula results and formula text in cells.",
+              "notes": "Screen readers will read formulas as text when formula view is active instead of results."
+            },
+            {
+              "action": "Insert SUM function",
+              "keys": "Alt + =",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + ="},
+                {"os": "macOS", "keys": "Cmd + Shift + T"}
+              ],
+              "context": "When cell is selected below or beside data",
+              "description": "Press Alt and Equals together to automatically insert a SUM function for adjacent cells.",
+              "notes": "Screen readers announce the inserted SUM formula with cell range. Press Enter to confirm."
+            },
+            {
+              "action": "Define name",
+              "keys": "Ctrl + F3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F3"},
+                {"os": "macOS", "keys": "Fn + Ctrl + F3"}
+              ],
+              "context": "When cell or range is selected",
+              "description": "Press Control and F3 together to open Name Manager where you can create, edit, or delete named ranges.",
+              "notes": "Screen readers announce Name Manager dialog. Tab to create new name or edit existing names."
+            },
+            {
+              "action": "Create name from selection",
+              "keys": "Ctrl + Shift + F3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F3"}
+              ],
+              "context": "When range with headers is selected",
+              "description": "Press Control, Shift, and F3 together to create named ranges automatically using row or column headers.",
+              "notes": "Screen readers announce dialog. Choose whether to use top row, left column, or other edges as names."
+            },
+            {
+              "action": "Paste name into formula",
+              "keys": "F3",
+              "variants": [
+                {"os": "Windows", "keys": "F3"},
+                {"os": "macOS", "keys": "Fn + F3"}
+              ],
+              "context": "When editing a formula",
+              "description": "Press F3 to open Paste Name dialog showing all named ranges you can insert into the current formula.",
+              "notes": "Screen readers announce dialog with list of defined names. Select name and press Enter to insert."
+            },
+            {
+              "action": "Array formula",
+              "keys": "Ctrl + Shift + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Enter"},
+                {"os": "macOS", "keys": "Cmd + Shift + Enter"}
+              ],
+              "context": "When entering a formula",
+              "description": "Press Control, Shift, and Enter together to complete an array formula that performs multiple calculations.",
+              "notes": "Screen readers will read formula with curly braces indicating array formula when reviewing cell."
+            }
+          ]
+        },
+        {
+          "name": "Data and Tables",
+          "shortcuts": [
+            {
+              "action": "Create table",
+              "keys": "Ctrl + T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + T"},
+                {"os": "macOS", "keys": "Cmd + T"}
+              ],
+              "context": "When cell is in data range",
+              "description": "Press Control and T together to create an Excel table from the selected range with automatic filtering and formatting.",
+              "notes": "Screen readers announce table creation. Table provides structured navigation with filter buttons in header row."
+            },
+            {
+              "action": "Create table (alternative)",
+              "keys": "Ctrl + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + L"},
+                {"os": "macOS", "keys": "Cmd + L"}
+              ],
+              "context": "When cell is in data range",
+              "description": "Press Control and L together to create an Excel table from selected data, same function as Ctrl+T.",
+              "notes": "Screen readers announce table dialog. Verify if data has headers before confirming."
+            },
+            {
+              "action": "Toggle autofilter",
+              "keys": "Ctrl + Shift + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + L"},
+                {"os": "macOS", "keys": "Cmd + Shift + F"}
+              ],
+              "context": "When cell is in data range",
+              "description": "Press Control, Shift, and L together to turn autofilter on or off for the current data range.",
+              "notes": "Screen readers announce filter buttons added to header row. Use Alt+Down Arrow to open filter menus."
+            },
+            {
+              "action": "Open filter dropdown",
+              "keys": "Alt + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Down Arrow"},
+                {"os": "macOS", "keys": "Option + Down Arrow"}
+              ],
+              "context": "When cell with filter button is selected",
+              "description": "Press Alt and Down Arrow together when in header cell to open the filter dropdown menu.",
+              "notes": "Screen readers announce filter menu. Use arrow keys to navigate filter options and spacebar to check items."
+            },
+            {
+              "action": "Sort ascending",
+              "keys": "Alt + A, S, A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A, S, A"}
+              ],
+              "context": "When cell is in data column",
+              "description": "Press Alt then A then S then A to sort the data in ascending order based on the selected column.",
+              "notes": "Screen readers announce sort completion. Navigate cells to verify sort order."
+            },
+            {
+              "action": "Sort descending",
+              "keys": "Alt + A, S, D",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A, S, D"}
+              ],
+              "context": "When cell is in data column",
+              "description": "Press Alt then A then S then D to sort the data in descending order based on the selected column.",
+              "notes": "Screen readers announce descending sort applied. Check data order by navigating cells."
+            },
+            {
+              "action": "Group rows or columns",
+              "keys": "Alt + Shift + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + Right Arrow"}
+              ],
+              "context": "When rows or columns are selected",
+              "description": "Press Alt, Shift, and Right Arrow together to group selected rows or columns with collapsible outline.",
+              "notes": "Screen readers announce grouping created. Use Alt+Shift+Left Arrow to ungroup."
+            },
+            {
+              "action": "Ungroup rows or columns",
+              "keys": "Alt + Shift + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + Left Arrow"}
+              ],
+              "context": "When grouped rows or columns are selected",
+              "description": "Press Alt, Shift, and Left Arrow together to remove grouping from selected rows or columns.",
+              "notes": "Screen readers announce ungrouping. Outline controls are removed from worksheet."
+            },
+            {
+              "action": "Subtotal",
+              "keys": "Alt + Shift + =",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + ="}
+              ],
+              "context": "When cell is below data column",
+              "description": "Press Alt, Shift, and Equals together to insert AutoSum for the data directly above the active cell.",
+              "notes": "Screen readers announce SUM formula inserted. Formula includes range above until blank cell or header."
+            },
+            {
+              "action": "Insert current date",
+              "keys": "Ctrl + ;",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ;"},
+                {"os": "macOS", "keys": "Cmd + ;"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control and Semicolon together to insert the current date as a static value in the active cell.",
+              "notes": "Screen readers will read the inserted date value when cell is selected or during entry."
+            },
+            {
+              "action": "Insert current time",
+              "keys": "Ctrl + Shift + ;",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + ;"},
+                {"os": "macOS", "keys": "Cmd + Shift + ;"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Semicolon together to insert the current time as a static value.",
+              "notes": "Screen readers will read the inserted time value in the active cell."
+            }
+          ]
+        },
+        {
+          "name": "Charts and Objects",
+          "shortcuts": [
+            {
+              "action": "Create chart with default type",
+              "keys": "F11",
+              "variants": [
+                {"os": "Windows", "keys": "F11"},
+                {"os": "macOS", "keys": "Fn + F11"}
+              ],
+              "context": "When data range is selected",
+              "description": "Press F11 to create a chart on a new sheet using the default chart type for the selected data.",
+              "notes": "Screen readers announce new chart sheet created. Chart elements may not be fully accessible without additional navigation."
+            },
+            {
+              "action": "Create embedded chart",
+              "keys": "Alt + F1",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F1"}
+              ],
+              "context": "When data range is selected",
+              "description": "Press Alt and F1 together to create an embedded chart on the current worksheet using selected data.",
+              "notes": "Screen readers announce chart object inserted. Navigate to chart using Tab or arrow keys."
+            },
+            {
+              "action": "Insert new worksheet",
+              "keys": "Shift + F11",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F11"},
+                {"os": "macOS", "keys": "Shift + F11"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Shift and F11 together to insert a new blank worksheet before the active sheet.",
+              "notes": "Screen readers announce new sheet created and sheet name. Focus moves to new sheet."
+            },
+            {
+              "action": "Edit object",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1"}
+              ],
+              "context": "When chart or object is selected",
+              "description": "Press Control and 1 together when object is selected to open formatting dialog for that object.",
+              "notes": "Screen readers announce format dialog for selected chart element or object."
+            }
+          ]
+        },
+        {
+          "name": "PivotTables",
+          "shortcuts": [
+            {
+              "action": "Create PivotTable",
+              "keys": "Alt + N, V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, V"}
+              ],
+              "context": "When cell is in data range",
+              "description": "Press Alt then N then V to open the Create PivotTable dialog for summarizing data.",
+              "notes": "Screen readers announce PivotTable dialog. Choose data range and destination for new PivotTable."
+            },
+            {
+              "action": "Group PivotTable items",
+              "keys": "Alt + Shift + Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + Right Arrow"}
+              ],
+              "context": "When PivotTable items are selected",
+              "description": "Press Alt, Shift, and Right Arrow together to group selected items in a PivotTable field.",
+              "notes": "Screen readers announce group creation. Grouped items appear under single header."
+            },
+            {
+              "action": "Ungroup PivotTable items",
+              "keys": "Alt + Shift + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + Left Arrow"}
+              ],
+              "context": "When grouped PivotTable items are selected",
+              "description": "Press Alt, Shift, and Left Arrow together to ungroup items in a PivotTable field.",
+              "notes": "Screen readers announce ungrouping. Items return to individual entries."
+            }
+          ]
+        },
+        {
+          "name": "Comments and Notes",
+          "shortcuts": [
+            {
+              "action": "Insert or edit comment",
+              "keys": "Shift + F2",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F2"},
+                {"os": "macOS", "keys": "Shift + F2"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Shift and F2 together to insert a new comment or edit an existing comment in the selected cell.",
+              "notes": "Screen readers announce comment entry mode. Focus moves to comment text area for typing."
+            },
+            {
+              "action": "Insert threaded comment",
+              "keys": "Ctrl + Shift + F2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F2"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and F2 together to insert a new threaded comment that supports replies and collaboration.",
+              "notes": "Screen readers announce comment pane opening. Type comment text and press Post to add."
+            },
+            {
+              "action": "Delete comment",
+              "keys": "Shift + F10, D",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, D"}
+              ],
+              "context": "When cell with comment is selected",
+              "description": "Press Shift and F10 then D to open context menu and delete the comment in the selected cell.",
+              "notes": "Screen readers announce context menu. D key activates delete comment command."
+            }
+          ]
+        },
+        {
+          "name": "View and Window",
+          "shortcuts": [
+            {
+              "action": "Zoom dialog",
+              "keys": "Alt + W, Q",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, Q"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Alt then W then Q to open the Zoom dialog where you can set worksheet magnification level.",
+              "notes": "Screen readers announce zoom dialog. Type percentage or select preset zoom level."
+            },
+            {
+              "action": "Page Break Preview",
+              "keys": "Alt + W, I",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, I"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Alt then W then I to switch to Page Break Preview mode for adjusting print page boundaries.",
+              "notes": "Screen readers announce view change to Page Break Preview."
+            },
+            {
+              "action": "Normal view",
+              "keys": "Alt + W, L",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, L"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Alt then W then L to return to Normal view for standard worksheet editing.",
+              "notes": "Screen readers announce return to Normal view."
+            },
+            {
+              "action": "Page Layout view",
+              "keys": "Alt + W, P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, P"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Alt then W then P to switch to Page Layout view showing headers, footers, and page margins.",
+              "notes": "Screen readers announce Page Layout view activated."
+            },
+            {
+              "action": "Freeze panes",
+              "keys": "Alt + W, F, F",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, F, F"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Alt then W then F then F to freeze rows above and columns left of the selected cell.",
+              "notes": "Screen readers announce freeze panes activated. Frozen areas remain visible when scrolling."
+            },
+            {
+              "action": "Split window",
+              "keys": "Alt + W, S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W, S"}
+              ],
+              "context": "Available in worksheet",
+              "description": "Press Alt then W then S to split the window into resizable panes at the active cell position.",
+              "notes": "Screen readers announce window split. Each pane can scroll independently."
+            },
+            {
+              "action": "Hide rows",
+              "keys": "Ctrl + 9",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 9"},
+                {"os": "macOS", "keys": "Cmd + 9"}
+              ],
+              "context": "When rows are selected",
+              "description": "Press Control and 9 together to hide the selected rows from view without deleting them.",
+              "notes": "Screen readers announce rows hidden. Row numbers will skip hidden rows when navigating."
+            },
+            {
+              "action": "Hide columns",
+              "keys": "Ctrl + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 0"},
+                {"os": "macOS", "keys": "Cmd + 0"}
+              ],
+              "context": "When columns are selected",
+              "description": "Press Control and 0 together to hide the selected columns from view without deleting them.",
+              "notes": "Screen readers announce columns hidden. Column letters will skip hidden columns."
+            },
+            {
+              "action": "Unhide rows",
+              "keys": "Ctrl + Shift + 9",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 9"},
+                {"os": "macOS", "keys": "Cmd + Shift + 9"}
+              ],
+              "context": "When rows surrounding hidden rows are selected",
+              "description": "Press Control, Shift, and 9 together to unhide rows within the selected range.",
+              "notes": "Screen readers announce rows unhidden. Previously hidden rows become visible and accessible."
+            },
+            {
+              "action": "Unhide columns",
+              "keys": "Ctrl + Shift + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 0"},
+                {"os": "macOS", "keys": "Cmd + Shift + 0"}
+              ],
+              "context": "When columns surrounding hidden columns are selected",
+              "description": "Press Control, Shift, and 0 together to unhide columns within the selected range.",
+              "notes": "Screen readers announce columns unhidden. Hidden columns reappear in worksheet."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility and Screen Reader",
+          "shortcuts": [
+            {
+              "action": "Check accessibility",
+              "keys": "Alt + R, A, C",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R, A, C"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then R then A then C to open Accessibility Checker pane showing accessibility issues in the workbook.",
+              "notes": "Screen readers announce pane with list of issues. Tab through to review and fix each accessibility problem."
+            },
+            {
+              "action": "Show context menu",
+              "keys": "Shift + F10",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10"},
+                {"os": "macOS", "keys": "Fn + Shift + F10"}
+              ],
+              "context": "When cell or object is selected",
+              "description": "Press Shift and F10 together to open the context menu for the selected cell or object.",
+              "notes": "Screen readers announce context menu opening. Use arrow keys to navigate menu options."
+            },
+            {
+              "action": "Alt text for object",
+              "keys": "Alt + J, P, P, A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + J, P, P, A"}
+              ],
+              "context": "When object or chart is selected",
+              "description": "Press Alt then J then P then P then A to open Alt Text pane for adding descriptions to objects.",
+              "notes": "Screen readers announce Alt Text pane. Focus moves to description field for entering alternative text."
+            },
+            {
+              "action": "Read cell information",
+              "keys": "Ctrl + Shift + `",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + `"}
+              ],
+              "context": "When cell is selected",
+              "description": "Press Control, Shift, and Grave Accent together with some screen readers to hear detailed cell information.",
+              "notes": "Specific to certain screen reader configurations. May announce cell reference, value, formula, and formatting."
+            }
+          ]
+        },
+        {
+          "name": "Ribbon and Dialog Navigation",
+          "shortcuts": [
+            {
+              "action": "Show ribbon key tips",
+              "keys": "Alt",
+              "variants": [
+                {"os": "Windows", "keys": "Alt"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt to display key tip badges showing letters to press for accessing ribbon tabs and commands.",
+              "notes": "Screen readers announce key tips activated. Press displayed letters to navigate ribbon commands."
+            },
+            {
+              "action": "Access Home tab",
+              "keys": "Alt + H",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then H to activate the Home tab ribbon with formatting and editing commands.",
+              "notes": "Screen readers announce Home tab active. Continue with additional keys for specific commands."
+            },
+            {
+              "action": "Access Insert tab",
+              "keys": "Alt + N",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then N to activate the Insert tab for adding tables, charts, and other objects.",
+              "notes": "Screen readers announce Insert tab. Use additional key sequences for insertion commands."
+            },
+            {
+              "action": "Access Data tab",
+              "keys": "Alt + A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then A to activate the Data tab with sorting, filtering, and data tools.",
+              "notes": "Screen readers announce Data tab activated."
+            },
+            {
+              "action": "Access Formulas tab",
+              "keys": "Alt + M",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + M"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then M to activate the Formulas tab for function library and formula auditing tools.",
+              "notes": "Screen readers announce Formulas tab active."
+            },
+            {
+              "action": "Access Review tab",
+              "keys": "Alt + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then R to activate the Review tab with comments, protection, and accessibility checking.",
+              "notes": "Screen readers announce Review tab activated."
+            },
+            {
+              "action": "Access View tab",
+              "keys": "Alt + W",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W"}
+              ],
+              "context": "Available in workbook",
+              "description": "Press Alt then W to activate the View tab for controlling worksheet views, zoom, and window options.",
+              "notes": "Screen readers announce View tab active."
+            },
+            {
+              "action": "Move between dialog tabs",
+              "keys": "Ctrl + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Tab"},
+                {"os": "macOS", "keys": "Ctrl + Tab"}
+              ],
+              "context": "When in multi-tab dialog",
+              "description": "Press Control and Tab together to move forward through tabs in dialogs like Format Cells.",
+              "notes": "Screen readers announce each tab name as you move through dialog tabs."
+            },
+            {
+              "action": "Move backward between dialog tabs",
+              "keys": "Ctrl + Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Tab"},
+                {"os": "macOS", "keys": "Ctrl + Shift + Tab"}
+              ],
+              "context": "When in multi-tab dialog",
+              "description": "Press Control, Shift, and Tab together to move backward through tabs in dialogs.",
+              "notes": "Screen readers announce previous tab name when navigating backwards."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "EXCEL.EXE"},
+        {"type": "process", "value": "Microsoft Excel"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f",
+        "https://support.microsoft.com/en-us/office/use-a-screen-reader-to-explore-and-navigate-excel-1c0b201c-f5c7-4c67-853e-8b9b7e5f1b58\"/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f",
+        "https://support.microsoft.com/en-us/office"
+      ]
+    }
+  ]
+}
+            

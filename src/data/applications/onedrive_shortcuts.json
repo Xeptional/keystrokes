@@ -1,0 +1,505 @@
+{
+  "applications": [
+    {
+      "name": "OneDrive",
+      "slug": "onedrive",
+      "platforms": ["Windows", "macOS"],
+      "description": "OneDrive is Microsoft's cloud storage service integrated with Windows and Office 365 for storing, syncing, and sharing files. The web interface supports keyboard navigation and screen readers for accessible file management.",
+      "categories": [
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Question Mark",
+              "variants": [
+                {"os": "Windows", "keys": "?"},
+                {"os": "macOS", "keys": "?"}
+              ],
+              "context": "Available in OneDrive web",
+              "description": "Press Question Mark to display list of all keyboard shortcuts available in OneDrive.",
+              "notes": "Screen readers announce keyboard shortcuts panel opened. Browse all available shortcuts."
+            },
+            {
+              "action": "Search OneDrive",
+              "keys": "Ctrl + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + E"},
+                {"os": "macOS", "keys": "Cmd + E"}
+              ],
+              "context": "Available in OneDrive",
+              "description": "Press Control and E together to place focus in search box for searching files and folders.",
+              "notes": "Screen readers announce search box focused. Type filename or content keywords to search."
+            },
+            {
+              "action": "Navigate files list",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down/Left/Right Arrow"},
+                {"os": "macOS", "keys": "Up/Down/Left/Right Arrow"}
+              ],
+              "context": "When in files view",
+              "description": "Press arrow keys to navigate through files and folders in list or tile view.",
+              "notes": "Screen readers announce file name, type, size, and modified date for each item."
+            },
+            {
+              "action": "Open file or folder",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"},
+                {"os": "macOS", "keys": "Enter"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Enter to open selected file for viewing or navigate into selected folder.",
+              "notes": "Screen readers announce file opening in preview or folder contents loading."
+            },
+            {
+              "action": "Go to parent folder",
+              "keys": "Backspace",
+              "variants": [
+                {"os": "Windows", "keys": "Backspace"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When viewing folder contents",
+              "description": "Press Backspace to navigate up to parent folder in folder hierarchy.",
+              "notes": "Screen readers announce parent folder name and updated file list."
+            },
+            {
+              "action": "Jump to navigation pane",
+              "keys": "Ctrl + Shift + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + N"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"}
+              ],
+              "context": "Available in OneDrive",
+              "description": "Press Control, Shift, and N together to move focus to left navigation pane with folders.",
+              "notes": "Screen readers announce navigation pane focused. Navigate folders with arrow keys."
+            },
+            {
+              "action": "Jump to main content",
+              "keys": "Ctrl + Shift + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + M"},
+                {"os": "macOS", "keys": "Cmd + Shift + M"}
+              ],
+              "context": "Available in OneDrive",
+              "description": "Press Control, Shift, and M together to move focus to main files list area.",
+              "notes": "Screen readers announce main content area focused with file list."
+            },
+            {
+              "action": "Show command bar",
+              "keys": "Ctrl + Shift + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + K"},
+                {"os": "macOS", "keys": "Cmd + Shift + K"}
+              ],
+              "context": "Available in OneDrive",
+              "description": "Press Control, Shift, and K together to show command bar with file operation commands.",
+              "notes": "Screen readers announce command bar shown. Access commands like share, move, delete."
+            }
+          ]
+        },
+        {
+          "name": "File Operations",
+          "shortcuts": [
+            {
+              "action": "Select item",
+              "keys": "Space",
+              "variants": [
+                {"os": "Windows", "keys": "Space"},
+                {"os": "macOS", "keys": "Space"}
+              ],
+              "context": "When file or folder is focused",
+              "description": "Press Space to select or deselect focused file or folder without moving focus.",
+              "notes": "Screen readers announce item selected or deselected. Build multiple selection."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When in files view",
+              "description": "Press Control and A together to select all files and folders in current view.",
+              "notes": "Screen readers announce all items selected with count."
+            },
+            {
+              "action": "Clear selection",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "When items are selected",
+              "description": "Press Escape to clear all file and folder selections.",
+              "notes": "Screen readers announce selection cleared."
+            },
+            {
+              "action": "New folder",
+              "keys": "Ctrl + Shift + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + N"},
+                {"os": "macOS", "keys": "Cmd + Shift + N"}
+              ],
+              "context": "When in files view",
+              "description": "Press Control, Shift, and N together to create new folder in current location.",
+              "notes": "Screen readers announce new folder dialog. Type name and press Enter to create."
+            },
+            {
+              "action": "Upload files",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"}
+              ],
+              "context": "When in files view",
+              "description": "Press Control and U together to open file upload dialog for uploading from computer.",
+              "notes": "Screen readers announce upload dialog. Select files to upload to OneDrive."
+            },
+            {
+              "action": "Download",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "When file is selected",
+              "description": "Press Control and S together to download selected file to your computer.",
+              "notes": "Screen readers announce download started. File saves to downloads folder."
+            },
+            {
+              "action": "Rename",
+              "keys": "F2",
+              "variants": [
+                {"os": "Windows", "keys": "F2"},
+                {"os": "macOS", "keys": "Enter"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press F2 to rename selected file or folder.",
+              "notes": "Screen readers announce rename mode active. Type new name and press Enter."
+            },
+            {
+              "action": "Delete",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"},
+                {"os": "macOS", "keys": "Delete"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Delete to move selected items to recycle bin.",
+              "notes": "Screen readers announce items moved to recycle bin. Can be restored within retention period."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Control and C together to copy selected items for pasting elsewhere.",
+              "notes": "Screen readers announce items copied. Navigate to destination and paste."
+            },
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Control and X together to cut selected items for moving to different location.",
+              "notes": "Screen readers announce items cut. Items will move when pasted."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"}
+              ],
+              "context": "After copying or cutting",
+              "description": "Press Control and V together to paste previously copied or cut items to current location.",
+              "notes": "Screen readers announce items pasted. Items appear in current folder."
+            },
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"}
+              ],
+              "context": "After file operation",
+              "description": "Press Control and Z together to undo last file operation like move or rename.",
+              "notes": "Screen readers announce action undone. Limited undo history available."
+            }
+          ]
+        },
+        {
+          "name": "Sharing and Details",
+          "shortcuts": [
+            {
+              "action": "Share",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Control and K together to open sharing dialog for selected item.",
+              "notes": "Screen readers announce share dialog opened. Add people and set permissions."
+            },
+            {
+              "action": "Copy link",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Control, Shift, and C together to copy shareable link to clipboard.",
+              "notes": "Screen readers announce link copied. Paste link to share with others."
+            },
+            {
+              "action": "Show details pane",
+              "keys": "Ctrl + Shift + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + D"},
+                {"os": "macOS", "keys": "Cmd + Shift + D"}
+              ],
+              "context": "When file is selected",
+              "description": "Press Control, Shift, and D together to show details pane with file properties and activity.",
+              "notes": "Screen readers announce details pane opened. View size, modified date, sharing status."
+            },
+            {
+              "action": "Open in Office Online",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "When Office file is selected",
+              "description": "Press Control and O together to open selected Office document in web editor.",
+              "notes": "Screen readers announce opening in Office Online. Word, Excel, or PowerPoint opens in browser."
+            }
+          ]
+        },
+        {
+          "name": "View Options",
+          "shortcuts": [
+            {
+              "action": "Toggle list/tiles view",
+              "keys": "Ctrl + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"}
+              ],
+              "context": "When viewing files",
+              "description": "Press Control, Shift, and V together to toggle between list view and tiles view.",
+              "notes": "Screen readers announce view changed. List view more accessible for screen readers."
+            },
+            {
+              "action": "Sort files",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "When viewing files",
+              "description": "Press Control, Shift, and S together to open sort menu for changing sort order.",
+              "notes": "Screen readers announce sort menu. Sort by name, modified date, size, or type."
+            },
+            {
+              "action": "Refresh",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "Cmd + R"}
+              ],
+              "context": "When viewing files",
+              "description": "Press F5 to refresh current view and show latest file changes.",
+              "notes": "Screen readers announce view refreshed. Updates file list with recent changes."
+            },
+            {
+              "action": "Close preview or dialog",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"}
+              ],
+              "context": "When preview or dialog is open",
+              "description": "Press Escape to close file preview, dialog, or panel.",
+              "notes": "Screen readers announce preview closed. Returns focus to file list."
+            }
+          ]
+        },
+        {
+          "name": "Photos and Albums",
+          "shortcuts": [
+            {
+              "action": "Start slideshow",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"},
+                {"os": "macOS", "keys": "F5"}
+              ],
+              "context": "When viewing photos",
+              "description": "Press F5 to start slideshow of photos in current folder or album.",
+              "notes": "Screen readers announce slideshow started. Photos display automatically in sequence."
+            },
+            {
+              "action": "Next photo",
+              "keys": "Right Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Right Arrow"},
+                {"os": "macOS", "keys": "Right Arrow"}
+              ],
+              "context": "When viewing photo",
+              "description": "Press Right Arrow to view next photo in current folder or album.",
+              "notes": "Screen readers announce next photo filename if available."
+            },
+            {
+              "action": "Previous photo",
+              "keys": "Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Left Arrow"},
+                {"os": "macOS", "keys": "Left Arrow"}
+              ],
+              "context": "When viewing photo",
+              "description": "Press Left Arrow to view previous photo in current folder or album.",
+              "notes": "Screen readers announce previous photo filename."
+            }
+          ]
+        },
+        {
+          "name": "OneDrive Desktop App",
+          "shortcuts": [
+            {
+              "action": "Open OneDrive folder",
+              "keys": "Win + E, then OneDrive",
+              "variants": [
+                {"os": "Windows", "keys": "Win + E, navigate to OneDrive"},
+                {"os": "macOS", "keys": "Cmd + Shift + O"}
+              ],
+              "context": "When OneDrive desktop app is installed",
+              "description": "Press Windows and E to open File Explorer, then navigate to OneDrive folder to access synced files locally.",
+              "notes": "Screen readers announce File Explorer opening. OneDrive folder appears in navigation pane."
+            },
+            {
+              "action": "Sync files on demand",
+              "keys": "Right-click, Always keep on this device",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select option"},
+                {"os": "macOS", "keys": "Context menu"}
+              ],
+              "context": "When viewing OneDrive files in File Explorer",
+              "description": "Open context menu on file and select sync option to download or free up space.",
+              "notes": "Screen readers announce context menu. Choose to always keep on device or free up space."
+            },
+            {
+              "action": "View OneDrive settings",
+              "keys": "System tray icon menu",
+              "variants": [
+                {"os": "Windows", "keys": "Click OneDrive icon in system tray"},
+                {"os": "macOS", "keys": "Click OneDrive icon in menu bar"}
+              ],
+              "context": "When OneDrive app is running",
+              "description": "Click OneDrive icon in system tray or menu bar to access settings, sync status, and account options.",
+              "notes": "Screen readers announce OneDrive menu. Access settings, pause sync, view storage, and account details."
+            }
+          ]
+        },
+        {
+          "name": "Microsoft Office Integration",
+          "shortcuts": [
+            {
+              "action": "Save to OneDrive from Office",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S in Office app"},
+                {"os": "macOS", "keys": "Cmd + S in Office app"}
+              ],
+              "context": "When editing Office document",
+              "description": "Press Control and S in Office applications to save document to OneDrive with auto-sync.",
+              "notes": "Screen readers announce document saved. Changes sync automatically to OneDrive cloud."
+            },
+            {
+              "action": "Open from OneDrive in Office",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O in Office app"},
+                {"os": "macOS", "keys": "Cmd + O in Office app"}
+              ],
+              "context": "When in Office application",
+              "description": "Press Control and O in Office apps to open file dialog with OneDrive as default location.",
+              "notes": "Screen readers announce open dialog. OneDrive files accessible directly from Office applications."
+            },
+            {
+              "action": "Share from Office",
+              "keys": "Alt + H, S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, then S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "When editing OneDrive document in Office",
+              "description": "Access share menu in Office to share OneDrive document with others via email or link.",
+              "notes": "Screen readers announce share options. Add people or copy link for sharing."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility Features",
+          "shortcuts": [
+            {
+              "action": "Screen reader announcements",
+              "keys": "Navigation with screen reader",
+              "variants": [
+                {"os": "Windows", "keys": "Use NVDA, JAWS, or Narrator"},
+                {"os": "macOS", "keys": "Use VoiceOver"}
+              ],
+              "context": "Throughout OneDrive",
+              "description": "OneDrive web interface supports screen readers with ARIA labels and keyboard navigation throughout.",
+              "notes": "Screen readers announce file names, types, sizes, dates, and actions. Use Tab to navigate interface. OneDrive provides good screen reader support with proper labeling."
+            },
+            {
+              "action": "High contrast mode support",
+              "keys": "Windows high contrast",
+              "variants": [
+                {"os": "Windows", "keys": "Left Alt + Left Shift + Print Screen"},
+                {"os": "macOS", "keys": "System accessibility settings"}
+              ],
+              "context": "System-wide accessibility",
+              "description": "OneDrive web interface respects system high contrast mode for better visual clarity.",
+              "notes": "OneDrive adapts to system high contrast themes. Improves readability for users with low vision."
+            },
+            {
+              "action": "Keyboard-only navigation",
+              "keys": "Tab and Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Tab, Shift + Tab, Arrow keys"},
+                {"os": "macOS", "keys": "Tab, Shift + Tab, Arrow keys"}
+              ],
+              "context": "Throughout OneDrive",
+              "description": "Complete OneDrive functionality accessible via keyboard without requiring mouse interaction.",
+              "notes": "Screen readers announce all interactive elements. Tab through interface, use arrows in lists, Enter to activate. Full keyboard accessibility throughout OneDrive."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://onedrive.live.com/*"},
+        {"type": "url_pattern", "value": "https://*.sharepoint.com/*"},
+        {"type": "window_title", "value": "*OneDrive*"},
+        {"type": "process", "value": "OneDrive.exe"},
+        {"type": "process", "value": "OneDriveStandaloneUpdater.exe"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-onedrive-2346ea87-c2e5-4ea2-a6f0-825cdb0d5a30",
+        "https://support.microsoft.com/en-us/office/accessibility-support-for-onedrive-6b894393-896d-4ccc-b011-636ba1d5c6c1",
+        "https://www.microsoft.com/en-us/accessibility/onedrive"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,934 @@
+{
+  "applications": [
+    {
+      "name": "Google Docs",
+      "slug": "google-docs",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Google Docs is a cloud-based word processing application for creating, editing, and collaborating on documents in real-time. It includes accessibility features like screen reader support, voice typing, and keyboard navigation throughout the interface.",
+      "categories": [
+        {
+          "name": "General Navigation",
+          "shortcuts": [
+            {
+              "action": "Open keyboard shortcuts help",
+              "keys": "Ctrl + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"},
+                {"os": "Linux", "keys": "Tab"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Tab to move to the next cell in the table row or first cell of next row if at end.",
+              "notes": "Screen readers announce cell position such as Row 2 Column 3 and read cell content."
+            },
+            {
+              "action": "Search the menus",
+              "keys": "Alt + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + /"},
+                {"os": "macOS", "keys": "Option + /"},
+                {"os": "Linux", "keys": "Alt + /"}
+              ],
+              "context": "Available in document",
+              "description": "Press Alt and Forward Slash together to search all menu items and commands available in Google Docs.",
+              "notes": "Screen readers announce search box. Type command name to quickly access any menu item. More efficient than navigating menus."
+            },
+            {
+              "action": "Show document outline",
+              "keys": "Ctrl + Alt + A, then H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + A, then H"},
+                {"os": "macOS", "keys": "Cmd + Option + A, then H"}
+              ],
+              "context": "When document has headings",
+              "description": "Press Control, Alt, and A together, release, then press H to open document outline showing heading structure.",
+              "notes": "Screen readers announce outline panel opened. Navigate document structure by headings. Click heading to jump to that section."
+            },
+            {
+              "action": "Show comments panel",
+              "keys": "Ctrl + Alt + A, then C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + A, then C"},
+                {"os": "macOS", "keys": "Cmd + Option + A, then C"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, and A together, release, then press C to open comments panel showing all comments.",
+              "notes": "Screen readers announce comments panel. View, add, resolve, or reply to comments."
+            },
+            {
+              "action": "Move to next heading",
+              "keys": "Ctrl + Alt + N, then H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + N, then H"},
+                {"os": "macOS", "keys": "Cmd + Option + N, then H"}
+              ],
+              "context": "When document has headings",
+              "description": "Press Control, Alt, and N together, release, then press H to jump to the next heading in the document.",
+              "notes": "Screen readers announce next heading and read heading text. Efficient navigation for structured documents."
+            },
+            {
+              "action": "Move to previous heading",
+              "keys": "Ctrl + Alt + P, then H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + P, then H"},
+                {"os": "macOS", "keys": "Cmd + Option + P, then H"}
+              ],
+              "context": "When document has headings",
+              "description": "Press Control, Alt, and P together, release, then press H to jump to the previous heading in the document.",
+              "notes": "Screen readers announce previous heading. Navigate backward through document structure."
+            },
+            {
+              "action": "Move to next comment",
+              "keys": "Ctrl + Alt + N, then C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + N, then C"},
+                {"os": "macOS", "keys": "Cmd + Option + N, then C"}
+              ],
+              "context": "When document has comments",
+              "description": "Press Control, Alt, and N together, release, then press C to navigate to the next comment in the document.",
+              "notes": "Screen readers announce comment and read comment text. Efficient for reviewing feedback."
+            },
+            {
+              "action": "Move to previous comment",
+              "keys": "Ctrl + Alt + P, then C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + P, then C"},
+                {"os": "macOS", "keys": "Cmd + Option + P, then C"}
+              ],
+              "context": "When document has comments",
+              "description": "Press Control, Alt, and P together, release, then press C to navigate to the previous comment.",
+              "notes": "Screen readers announce previous comment. Navigate backward through comments."
+            },
+            {
+              "action": "Open revision history",
+              "keys": "Ctrl + Alt + Shift + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + H"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + H"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, Shift, and H together to open version history showing all document revisions.",
+              "notes": "Screen readers announce revision history panel. View changes by date and author, restore previous versions."
+            }
+          ]
+        },
+        {
+          "name": "Text Formatting",
+          "shortcuts": [
+            {
+              "action": "Bold text",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"},
+                {"os": "Linux", "keys": "Ctrl + B"}
+              ],
+              "context": "When text is selected or cursor positioned",
+              "description": "Press Control and B together to make selected text bold or toggle bold formatting off if already applied.",
+              "notes": "Screen readers announce bold formatting applied or removed depending on verbosity settings."
+            },
+            {
+              "action": "Italic text",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"},
+                {"os": "Linux", "keys": "Ctrl + I"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and I together to italicize selected text or toggle italic formatting off.",
+              "notes": "Screen readers may announce italic formatting based on verbosity level."
+            },
+            {
+              "action": "Underline text",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"},
+                {"os": "Linux", "keys": "Ctrl + U"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and U together to underline selected text or remove underline if already applied.",
+              "notes": "Screen readers may announce underline formatting depending on settings."
+            },
+            {
+              "action": "Strikethrough text",
+              "keys": "Alt + Shift + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Shift + 5"},
+                {"os": "macOS", "keys": "Cmd + Shift + X"},
+                {"os": "Linux", "keys": "Alt + Shift + 5"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Alt, Shift, and 5 together to apply strikethrough formatting to selected text.",
+              "notes": "Screen readers may announce strikethrough formatting. Useful for showing deletions or completed items."
+            },
+            {
+              "action": "Superscript",
+              "keys": "Ctrl + Period",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ."},
+                {"os": "macOS", "keys": "Cmd + ."},
+                {"os": "Linux", "keys": "Ctrl + ."}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and Period together to format selected text as superscript for footnotes or exponents.",
+              "notes": "Screen readers may announce superscript formatting when reading character attributes."
+            },
+            {
+              "action": "Subscript",
+              "keys": "Ctrl + Comma",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ,"},
+                {"os": "macOS", "keys": "Cmd + ,"},
+                {"os": "Linux", "keys": "Ctrl + ,"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and Comma together to format selected text as subscript for chemical formulas or mathematical notation.",
+              "notes": "Screen readers may announce subscript formatting when checking character properties."
+            },
+            {
+              "action": "Increase font size",
+              "keys": "Ctrl + Shift + >",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + >"},
+                {"os": "macOS", "keys": "Cmd + Shift + >"},
+                {"os": "Linux", "keys": "Ctrl + Shift + >"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Greater Than together to increase font size of selected text to next available size.",
+              "notes": "Screen readers may announce new font size depending on settings."
+            },
+            {
+              "action": "Decrease font size",
+              "keys": "Ctrl + Shift + <",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + <"},
+                {"os": "macOS", "keys": "Cmd + Shift + <"},
+                {"os": "Linux", "keys": "Ctrl + Shift + <"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Shift, and Less Than together to decrease font size of selected text to next smaller size.",
+              "notes": "Screen readers may announce reduced font size when format reporting enabled."
+            },
+            {
+              "action": "Copy formatting",
+              "keys": "Ctrl + Alt + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + C"},
+                {"os": "macOS", "keys": "Cmd + Option + C"},
+                {"os": "Linux", "keys": "Ctrl + Alt + C"}
+              ],
+              "context": "When text with formatting is selected",
+              "description": "Press Control, Alt, and C together to copy formatting from selected text for applying to other text.",
+              "notes": "Screen readers announce formatting copied. Select destination text and paste formatting."
+            },
+            {
+              "action": "Paste formatting",
+              "keys": "Ctrl + Alt + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + V"},
+                {"os": "macOS", "keys": "Cmd + Option + V"},
+                {"os": "Linux", "keys": "Ctrl + Alt + V"}
+              ],
+              "context": "After copying formatting",
+              "description": "Press Control, Alt, and V together to apply previously copied formatting to selected text.",
+              "notes": "Screen readers announce formatting applied. Changes font, size, color, and other attributes."
+            },
+            {
+              "action": "Clear formatting",
+              "keys": "Ctrl + Backslash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + \\"},
+                {"os": "macOS", "keys": "Cmd + \\"},
+                {"os": "Linux", "keys": "Ctrl + \\"}
+              ],
+              "context": "When formatted text is selected",
+              "description": "Press Control and Backslash together to remove all formatting from selected text returning it to default style.",
+              "notes": "Screen readers announce formatting cleared. Removes bold, italic, color, font changes, etc."
+            }
+          ]
+        },
+        {
+          "name": "Paragraph Formatting",
+          "shortcuts": [
+            {
+              "action": "Apply normal text style",
+              "keys": "Ctrl + Alt + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + 0"},
+                {"os": "macOS", "keys": "Cmd + Option + 0"},
+                {"os": "Linux", "keys": "Ctrl + Alt + 0"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Alt, and Zero together to apply Normal text paragraph style to current paragraph.",
+              "notes": "Screen readers announce paragraph style changed to Normal text."
+            },
+            {
+              "action": "Apply Heading 1",
+              "keys": "Ctrl + Alt + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + 1"},
+                {"os": "macOS", "keys": "Cmd + Option + 1"},
+                {"os": "Linux", "keys": "Ctrl + Alt + 1"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Alt, and 1 together to apply Heading 1 style to current paragraph.",
+              "notes": "Screen readers announce Heading 1 applied. Creates major section heading in document outline."
+            },
+            {
+              "action": "Apply Heading 2",
+              "keys": "Ctrl + Alt + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + 2"},
+                {"os": "macOS", "keys": "Cmd + Option + 2"},
+                {"os": "Linux", "keys": "Ctrl + Alt + 2"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Alt, and 2 together to apply Heading 2 style to current paragraph.",
+              "notes": "Screen readers announce Heading 2 applied. Creates subsection heading."
+            },
+            {
+              "action": "Apply Heading 3",
+              "keys": "Ctrl + Alt + 3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + 3"},
+                {"os": "macOS", "keys": "Cmd + Option + 3"},
+                {"os": "Linux", "keys": "Ctrl + Alt + 3"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Alt, and 3 together to apply Heading 3 style to current paragraph.",
+              "notes": "Screen readers announce Heading 3 applied. Creates sub-subsection heading."
+            },
+            {
+              "action": "Left align",
+              "keys": "Ctrl + Shift + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + L"},
+                {"os": "macOS", "keys": "Cmd + Shift + L"},
+                {"os": "Linux", "keys": "Ctrl + Shift + L"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and L together to align current paragraph or selected paragraphs to the left margin.",
+              "notes": "Screen readers announce left alignment applied when checking paragraph formatting."
+            },
+            {
+              "action": "Center align",
+              "keys": "Ctrl + Shift + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + E"},
+                {"os": "macOS", "keys": "Cmd + Shift + E"},
+                {"os": "Linux", "keys": "Ctrl + Shift + E"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and E together to center align current paragraph between left and right margins.",
+              "notes": "Screen readers announce center alignment when reading paragraph attributes."
+            },
+            {
+              "action": "Right align",
+              "keys": "Ctrl + Shift + R",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + R"},
+                {"os": "macOS", "keys": "Cmd + Shift + R"},
+                {"os": "Linux", "keys": "Ctrl + Shift + R"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and R together to align current paragraph or selected paragraphs to the right margin.",
+              "notes": "Screen readers announce right alignment in paragraph formatting."
+            },
+            {
+              "action": "Justify text",
+              "keys": "Ctrl + Shift + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + J"},
+                {"os": "macOS", "keys": "Cmd + Shift + J"},
+                {"os": "Linux", "keys": "Ctrl + Shift + J"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and J together to justify paragraph aligning to both left and right margins.",
+              "notes": "Screen readers announce justified alignment. Adds spacing between words to fill line width."
+            },
+            {
+              "action": "Increase indent",
+              "keys": "Ctrl + ]",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ]"},
+                {"os": "macOS", "keys": "Cmd + ]"},
+                {"os": "Linux", "keys": "Ctrl + ]"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control and Right Bracket together to increase indentation level of current paragraph.",
+              "notes": "Screen readers may announce indent level increased. Moves paragraph right."
+            },
+            {
+              "action": "Decrease indent",
+              "keys": "Ctrl + [",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ["},
+                {"os": "macOS", "keys": "Cmd + ["},
+                {"os": "Linux", "keys": "Ctrl + ["}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control and Left Bracket together to decrease indentation level of current paragraph.",
+              "notes": "Screen readers may announce indent level decreased. Moves paragraph left."
+            },
+            {
+              "action": "Create numbered list",
+              "keys": "Ctrl + Shift + 7",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 7"},
+                {"os": "macOS", "keys": "Cmd + Shift + 7"},
+                {"os": "Linux", "keys": "Ctrl + Shift + 7"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and 7 together to convert current paragraph to numbered list item or toggle off.",
+              "notes": "Screen readers announce numbered list and item number. Creates sequential numbering."
+            },
+            {
+              "action": "Create bulleted list",
+              "keys": "Ctrl + Shift + 8",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 8"},
+                {"os": "macOS", "keys": "Cmd + Shift + 8"},
+                {"os": "Linux", "keys": "Ctrl + Shift + 8"}
+              ],
+              "context": "When cursor is in paragraph",
+              "description": "Press Control, Shift, and 8 together to convert current paragraph to bulleted list item or toggle off.",
+              "notes": "Screen readers announce bulleted list. Creates list with bullet markers."
+            },
+            {
+              "action": "Increase list level",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab"},
+                {"os": "macOS", "keys": "Tab"},
+                {"os": "Linux", "keys": "Tab"}
+              ],
+              "context": "When cursor is in list item",
+              "description": "Press Tab at the beginning of a list item to increase its nesting level creating a sub-list.",
+              "notes": "Screen readers announce list level increased. Creates nested sub-items."
+            },
+            {
+              "action": "Decrease list level",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"},
+                {"os": "Linux", "keys": "Shift + Tab"}
+              ],
+              "context": "When cursor is in nested list item",
+              "description": "Press Shift and Tab at the beginning of a nested list item to decrease its level moving it up one level.",
+              "notes": "Screen readers announce list level decreased. Promotes item to parent level."
+            }
+          ]
+        },
+        {
+          "name": "Editing and Selection",
+          "shortcuts": [
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"},
+                {"os": "Linux", "keys": "Ctrl + Z"}
+              ],
+              "context": "After making changes",
+              "description": "Press Control and Z together to undo the last editing action or change made to the document.",
+              "notes": "Screen readers may announce what action was undone depending on verbosity settings."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"},
+                {"os": "Linux", "keys": "Ctrl + Y"}
+              ],
+              "context": "After undoing actions",
+              "description": "Press Control and Y together to redo an action that was previously undone.",
+              "notes": "Screen readers may announce redo action completion."
+            },
+            {
+              "action": "Cut",
+              "keys": "Ctrl + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + X"},
+                {"os": "macOS", "keys": "Cmd + X"},
+                {"os": "Linux", "keys": "Ctrl + X"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and X together to cut selected text removing it from document and placing on clipboard.",
+              "notes": "Screen readers announce text cut to clipboard."
+            },
+            {
+              "action": "Copy",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"},
+                {"os": "macOS", "keys": "Cmd + C"},
+                {"os": "Linux", "keys": "Ctrl + C"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control and C together to copy selected text to clipboard without removing from document.",
+              "notes": "Screen readers announce text copied to clipboard."
+            },
+            {
+              "action": "Paste",
+              "keys": "Ctrl + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + V"},
+                {"os": "macOS", "keys": "Cmd + V"},
+                {"os": "Linux", "keys": "Ctrl + V"}
+              ],
+              "context": "When clipboard has content",
+              "description": "Press Control and V together to paste clipboard content at cursor position with original formatting.",
+              "notes": "Screen readers may announce paste occurred. Formatting is preserved from source."
+            },
+            {
+              "action": "Paste without formatting",
+              "keys": "Ctrl + Shift + V",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + V"},
+                {"os": "macOS", "keys": "Cmd + Shift + V"},
+                {"os": "Linux", "keys": "Ctrl + Shift + V"}
+              ],
+              "context": "When clipboard has content",
+              "description": "Press Control, Shift, and V together to paste clipboard content as plain text without any formatting.",
+              "notes": "Screen readers announce text pasted. Removes fonts, colors, styles from pasted content."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"},
+                {"os": "Linux", "keys": "Ctrl + A"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control and A together to select all text and content in the entire document.",
+              "notes": "Screen readers announce all content selected or report selection range."
+            },
+            {
+              "action": "Find",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"},
+                {"os": "macOS", "keys": "Cmd + F"},
+                {"os": "Linux", "keys": "Ctrl + F"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control and F together to open find dialog for searching text within the document.",
+              "notes": "Screen readers announce find dialog and place focus in search field."
+            },
+            {
+              "action": "Find and replace",
+              "keys": "Ctrl + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"},
+                {"os": "Linux", "keys": "Ctrl + H"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control and H together to open Find and Replace dialog for searching and replacing text.",
+              "notes": "Screen readers announce dialog with find and replace fields. Tab between fields."
+            },
+            {
+              "action": "Find next",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G"},
+                {"os": "macOS", "keys": "Cmd + G"},
+                {"os": "Linux", "keys": "Ctrl + G"}
+              ],
+              "context": "After searching",
+              "description": "Press Control and G together to jump to the next occurrence of the current search term.",
+              "notes": "Screen readers announce match found and may read surrounding text."
+            },
+            {
+              "action": "Find previous",
+              "keys": "Ctrl + Shift + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + G"},
+                {"os": "macOS", "keys": "Cmd + Shift + G"},
+                {"os": "Linux", "keys": "Ctrl + Shift + G"}
+              ],
+              "context": "After searching",
+              "description": "Press Control, Shift, and G together to jump to the previous occurrence of the search term.",
+              "notes": "Screen readers announce previous match found."
+            }
+          ]
+        },
+        {
+          "name": "Document Operations",
+          "shortcuts": [
+            {
+              "action": "Print document",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"},
+                {"os": "Linux", "keys": "Ctrl + P"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control and P together to open print dialog for printing the document or saving as PDF.",
+              "notes": "Screen readers announce print dialog. Navigate options with Tab and select printer or PDF output."
+            },
+            {
+              "action": "Open document",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"},
+                {"os": "Linux", "keys": "Ctrl + O"}
+              ],
+              "context": "Available in Google Docs",
+              "description": "Press Control and O together to open the file picker for selecting a document to open from Google Drive.",
+              "notes": "Screen readers announce file picker dialog. Navigate files with arrow keys and press Enter to open."
+            },
+            {
+              "action": "Make a copy",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Shift, and S together to create a copy of the current document in Google Drive.",
+              "notes": "Screen readers announce copy dialog. Name the copy and choose location."
+            }
+          ]
+        },
+        {
+          "name": "Comments and Suggestions",
+          "shortcuts": [
+            {
+              "action": "Insert comment",
+              "keys": "Ctrl + Alt + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + M"},
+                {"os": "macOS", "keys": "Cmd + Option + M"},
+                {"os": "Linux", "keys": "Ctrl + Alt + M"}
+              ],
+              "context": "When text is selected or cursor positioned",
+              "description": "Press Control, Alt, and M together to insert a comment on selected text or at cursor position.",
+              "notes": "Screen readers announce comment box opened. Type comment text and press Ctrl+Enter to post."
+            },
+            {
+              "action": "Open discussion thread",
+              "keys": "Ctrl + Alt + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + A"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + A"}
+              ],
+              "context": "When cursor is on commented text",
+              "description": "Press Control, Alt, Shift, and A together to open comment thread at current cursor position.",
+              "notes": "Screen readers announce comment thread opened. Read replies and add your own."
+            },
+            {
+              "action": "Enter current comment",
+              "keys": "Ctrl + Alt + E, then C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + E, then C"},
+                {"os": "macOS", "keys": "Cmd + Option + E, then C"}
+              ],
+              "context": "When cursor is on commented text",
+              "description": "Press Control, Alt, and E together, release, then press C to enter and focus the current comment thread.",
+              "notes": "Screen readers announce comment focused. Navigate replies with arrow keys."
+            }
+          ]
+        },
+        {
+          "name": "Tables",
+          "shortcuts": [
+            {
+              "action": "Insert table",
+              "keys": "Ctrl + Alt + Shift + T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + T"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + T"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, Shift, and T together to insert a table at cursor position with dialog to specify size.",
+              "notes": "Screen readers announce table insertion dialog. Specify number of rows and columns."
+            },
+            {
+              "action": "Move to next cell",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "key": ""}
+              ]
+            },
+            {
+              "action": "Move to previous cell",
+              "keys": "Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Tab"},
+                {"os": "macOS", "keys": "Shift + Tab"},
+                {"os": "Linux", "keys": "Shift + Tab"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Shift and Tab together to move to the previous cell in the table.",
+              "notes": "Screen readers announce previous cell position and content."
+            },
+            {
+              "action": "Move to start of row",
+              "keys": "Ctrl + Alt + Shift + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + H"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + H"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Control, Alt, Shift, and H together to move cursor to the first cell in the current row.",
+              "notes": "Screen readers announce first cell of row."
+            },
+            {
+              "action": "Move to end of row",
+              "keys": "Ctrl + Alt + Shift + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + K"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + K"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Control, Alt, Shift, and K together to move cursor to the last cell in the current row.",
+              "notes": "Screen readers announce last cell of row."
+            },
+            {
+              "action": "Move to start of column",
+              "keys": "Ctrl + Alt + Shift + J",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + J"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + J"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Control, Alt, Shift, and J together to move cursor to the first cell in the current column.",
+              "notes": "Screen readers announce first cell of column."
+            },
+            {
+              "action": "Move to end of column",
+              "keys": "Ctrl + Alt + Shift + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + L"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + L"}
+              ],
+              "context": "When cursor is in table cell",
+              "description": "Press Control, Alt, Shift, and L together to move cursor to the last cell in the current column.",
+              "notes": "Screen readers announce last cell of column."
+            },
+            {
+              "action": "Move to next table",
+              "keys": "Ctrl + Alt + N, then T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + N, then T"},
+                {"os": "macOS", "keys": "Cmd + Option + N, then T"}
+              ],
+              "context": "When document has multiple tables",
+              "description": "Press Control, Alt, and N together, release, then press T to jump to the next table in the document.",
+              "notes": "Screen readers announce next table found and position."
+            },
+            {
+              "action": "Move to previous table",
+              "keys": "Ctrl + Alt + P, then T",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + P, then T"},
+                {"os": "macOS", "keys": "Cmd + Option + P, then T"}
+              ],
+              "context": "When document has multiple tables",
+              "description": "Press Control, Alt, and P together, release, then press T to jump to the previous table.",
+              "notes": "Screen readers announce previous table found."
+            }
+          ]
+        },
+        {
+          "name": "Insert Elements",
+          "shortcuts": [
+            {
+              "action": "Insert link",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"},
+                {"os": "Linux", "keys": "Ctrl + K"}
+              ],
+              "context": "When text is selected or cursor positioned",
+              "description": "Press Control and K together to insert or edit a hyperlink on selected text or at cursor position.",
+              "notes": "Screen readers announce link dialog opened. Enter URL and press Enter to apply."
+            },
+            {
+              "action": "Insert image",
+              "keys": "Ctrl + Alt + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + I"},
+                {"os": "macOS", "keys": "Cmd + Option + I"},
+                {"os": "Linux", "keys": "Ctrl + Alt + I"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, and I together to open image insertion dialog for adding images from various sources.",
+              "notes": "Screen readers announce image dialog. Choose from upload, URL, Drive, Photos, or search."
+            },
+            {
+              "action": "Insert page break",
+              "keys": "Ctrl + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Enter"},
+                {"os": "macOS", "keys": "Cmd + Enter"},
+                {"os": "Linux", "keys": "Ctrl + Enter"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control and Enter together to insert a page break at cursor position starting new page.",
+              "notes": "Screen readers announce page break inserted. Content after break moves to next page."
+            },
+            {
+              "action": "Insert horizontal line",
+              "keys": "Ctrl + Alt + Shift + -",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + -"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + -"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, Shift, and Minus together to insert a horizontal line across the page.",
+              "notes": "Screen readers announce horizontal line inserted. Visual separator for content sections."
+            },
+            {
+              "action": "Insert footnote",
+              "keys": "Ctrl + Alt + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + F"},
+                {"os": "macOS", "keys": "Cmd + Option + F"},
+                {"os": "Linux", "keys": "Ctrl + Alt + F"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, and F together to insert a footnote at cursor position with auto-numbering.",
+              "notes": "Screen readers announce footnote inserted. Cursor moves to footnote area at bottom to type footnote text."
+            },
+            {
+              "action": "Insert equation",
+              "keys": "Alt + =",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + ="},
+                {"os": "macOS", "keys": "Option + ="}
+              ],
+              "context": "Available in document",
+              "description": "Press Alt and Equals together to insert mathematical equation using equation editor.",
+              "notes": "Screen readers announce equation editor opened. Type LaTeX or use equation tools."
+            }
+          ]
+        },
+        {
+          "name": "Screen Reader Specific",
+          "shortcuts": [
+            {
+              "action": "Enable screen reader support",
+              "keys": "Ctrl + Alt + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Z"},
+                {"os": "macOS", "keys": "Cmd + Option + Z"},
+                {"os": "Linux", "keys": "Ctrl + Alt + Z"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, and Z together to enable screen reader support mode which optimizes Google Docs for screen readers.",
+              "notes": "Screen readers announce screen reader support enabled. Improves navigation and announces formatting changes more reliably."
+            },
+            {
+              "action": "Speak selection",
+              "keys": "Ctrl + Alt + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + X"},
+                {"os": "macOS", "keys": "Cmd + Option + X"}
+              ],
+              "context": "When text is selected",
+              "description": "Press Control, Alt, and X together to have Google Docs read the selected text aloud using text-to-speech.",
+              "notes": "Google Docs announces and begins reading selection. Uses built-in TTS, works alongside screen readers."
+            },
+            {
+              "action": "Show braille support",
+              "keys": "Ctrl + Alt + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + H"},
+                {"os": "macOS", "keys": "Cmd + Option + H"}
+              ],
+              "context": "When using braille display",
+              "description": "Press Control, Alt, and H together to toggle braille support for refreshable braille displays.",
+              "notes": "Screen readers announce braille support enabled or disabled. Optimizes output for braille displays."
+            },
+            {
+              "action": "Announce cursor location",
+              "keys": "Ctrl + Alt + A, then L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + A, then L"},
+                {"os": "macOS", "keys": "Cmd + Option + A, then L"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, and A together, release, then press L to have Google Docs announce the current cursor location.",
+              "notes": "Screen readers announce page number, line, and character position of cursor."
+            },
+            {
+              "action": "Announce formatting",
+              "keys": "Ctrl + Alt + A, then F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + A, then F"},
+                {"os": "macOS", "keys": "Cmd + Option + A, then F"}
+              ],
+              "context": "When cursor is positioned",
+              "description": "Press Control, Alt, and A together, release, then press F to announce formatting at current cursor position.",
+              "notes": "Screen readers announce font, size, bold, italic, color, and other formatting attributes."
+            }
+          ]
+        },
+        {
+          "name": "Voice Typing",
+          "shortcuts": [
+            {
+              "action": "Start voice typing",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Shift, and S together to activate voice typing for dictating text using microphone.",
+              "notes": "Screen readers announce voice typing started. Speak clearly to dictate text. Click microphone icon or press shortcut again to stop."
+            }
+          ]
+        },
+        {
+          "name": "Collaboration",
+          "shortcuts": [
+            {
+              "action": "Share document",
+              "keys": "Ctrl + Alt + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + S"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, Shift, and S together to open share dialog for giving others access to the document.",
+              "notes": "Screen readers announce share dialog. Add email addresses and set permissions."
+            },
+            {
+              "action": "Show version history",
+              "keys": "Ctrl + Alt + Shift + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Shift + H"},
+                {"os": "macOS", "keys": "Cmd + Option + Shift + H"}
+              ],
+              "context": "Available in document",
+              "description": "Press Control, Alt, Shift, and H together to view document version history and restore previous versions.",
+              "notes": "Screen readers announce history panel opened. Navigate versions by date and author."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://docs.google.com/document/*"},
+        {"type": "url_pattern", "value": "https://docs.google.com/*/d/*"},
+        {"type": "window_title", "value": "* - Google Docs"}
+      ],
+      "source": [
+        "https://support.google.com/docs/answer/179738",
+        "https://support.google.com/docs/answer/6282736",
+        "https://www.google.com/accessibility/products-features/"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

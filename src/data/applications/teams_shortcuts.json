@@ -1,0 +1,571 @@
+{
+  "applications": [
+    {
+      "name": "Microsoft Teams",
+      "slug": "microsoft-teams",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Microsoft Teams is a collaboration platform for chat, meetings, calls, and file sharing in workplaces. It includes accessibility features like screen reader support, keyboard navigation, live captions, and high contrast modes for inclusive communication.",
+      "categories": [
+        {
+          "name": "General Navigation",
+          "shortcuts": [
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Ctrl + Period",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ."},
+                {"os": "macOS", "keys": "Cmd + ."},
+                {"os": "Linux", "keys": "Ctrl + ."}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and Period together to open keyboard shortcuts reference showing all available shortcuts.",
+              "notes": "Screen readers announce shortcuts dialog opened. Search or browse shortcuts by category."
+            },
+            {
+              "action": "Search",
+              "keys": "Ctrl + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + E"},
+                {"os": "macOS", "keys": "Cmd + E"},
+                {"os": "Linux", "keys": "Ctrl + E"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and E together to move focus to search box for finding messages, people, and files.",
+              "notes": "Screen readers announce search box focused. Type to search across Teams content."
+            },
+            {
+              "action": "Go to Activity",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 1"},
+                {"os": "macOS", "keys": "Cmd + 1"},
+                {"os": "Linux", "keys": "Ctrl + 1"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 1 together to navigate to Activity feed showing notifications and mentions.",
+              "notes": "Screen readers announce Activity feed opened. Shows recent notifications and @mentions."
+            },
+            {
+              "action": "Go to Chat",
+              "keys": "Ctrl + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 2"},
+                {"os": "macOS", "keys": "Cmd + 2"},
+                {"os": "Linux", "keys": "Ctrl + 2"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 2 together to navigate to Chat view showing your conversations.",
+              "notes": "Screen readers announce Chat opened with list of conversations."
+            },
+            {
+              "action": "Go to Teams",
+              "keys": "Ctrl + 3",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 3"},
+                {"os": "macOS", "keys": "Cmd + 3"},
+                {"os": "Linux", "keys": "Ctrl + 3"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 3 together to navigate to Teams view showing your teams and channels.",
+              "notes": "Screen readers announce Teams section opened. Shows list of teams and channels."
+            },
+            {
+              "action": "Go to Calendar",
+              "keys": "Ctrl + 4",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 4"},
+                {"os": "macOS", "keys": "Cmd + 4"},
+                {"os": "Linux", "keys": "Ctrl + 4"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 4 together to navigate to Calendar view showing meetings and appointments.",
+              "notes": "Screen readers announce Calendar opened. Navigate events with arrow keys."
+            },
+            {
+              "action": "Go to Calls",
+              "keys": "Ctrl + 5",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 5"},
+                {"os": "macOS", "keys": "Cmd + 5"},
+                {"os": "Linux", "keys": "Ctrl + 5"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 5 together to navigate to Calls view showing call history and dial pad.",
+              "notes": "Screen readers announce Calls section opened. Access call history and make calls."
+            },
+            {
+              "action": "Go to Files",
+              "keys": "Ctrl + 6",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 6"},
+                {"os": "macOS", "keys": "Cmd + 6"},
+                {"os": "Linux", "keys": "Ctrl + 6"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and 6 together to navigate to Files view showing shared files.",
+              "notes": "Screen readers announce Files section opened. Navigate shared documents."
+            },
+            {
+              "action": "Open Settings",
+              "keys": "Ctrl + Comma",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ,"},
+                {"os": "macOS", "keys": "Cmd + ,"},
+                {"os": "Linux", "keys": "Ctrl + ,"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and Comma together to open Settings dialog for configuring Teams preferences.",
+              "notes": "Screen readers announce Settings opened. Configure notifications, devices, accessibility, and more."
+            },
+            {
+              "action": "Open Help",
+              "keys": "F1",
+              "variants": [
+                {"os": "Windows", "keys": "F1"},
+                {"os": "macOS", "keys": "Cmd + F1"},
+                {"os": "Linux", "keys": "F1"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press F1 to open Help panel with support articles and troubleshooting.",
+              "notes": "Screen readers announce Help panel opened. Search help topics or browse categories."
+            }
+          ]
+        },
+        {
+          "name": "Messaging and Chat",
+          "shortcuts": [
+            {
+              "action": "Start new chat",
+              "keys": "Ctrl + N",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + N"},
+                {"os": "macOS", "keys": "Cmd + N"},
+                {"os": "Linux", "keys": "Ctrl + N"}
+              ],
+              "context": "When in Chat section",
+              "description": "Press Control and N together to start a new chat conversation with a person or group.",
+              "notes": "Screen readers announce new chat dialog. Type name to search and add people."
+            },
+            {
+              "action": "Focus compose box",
+              "keys": "C",
+              "variants": [
+                {"os": "Windows", "keys": "C"},
+                {"os": "macOS", "keys": "C"},
+                {"os": "Linux", "keys": "C"}
+              ],
+              "context": "When in chat or channel",
+              "description": "Press C to place focus in the compose box for typing a new message.",
+              "notes": "Screen readers announce compose box focused. Start typing your message."
+            },
+            {
+              "action": "Expand compose box",
+              "keys": "Ctrl + Shift + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + X"},
+                {"os": "macOS", "keys": "Cmd + Shift + X"},
+                {"os": "Linux", "keys": "Ctrl + Shift + X"}
+              ],
+              "context": "When in compose box",
+              "description": "Press Control, Shift, and X together to expand compose box to full editor with formatting options.",
+              "notes": "Screen readers announce expanded editor opened. Access rich text formatting tools."
+            },
+            {
+              "action": "Send message",
+              "keys": "Ctrl + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Enter"},
+                {"os": "macOS", "keys": "Cmd + Enter"},
+                {"os": "Linux", "keys": "Ctrl + Enter"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and Enter together to send the message you're currently composing.",
+              "notes": "Screen readers announce message sent. Message appears in conversation thread."
+            },
+            {
+              "action": "Attach file",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"},
+                {"os": "Linux", "keys": "Ctrl + O"}
+              ],
+              "context": "When in compose box",
+              "description": "Press Control and O together to attach a file to your message from computer or cloud storage.",
+              "notes": "Screen readers announce file picker dialog. Select file to attach to message."
+            },
+            {
+              "action": "Start new line",
+              "keys": "Shift + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Enter"},
+                {"os": "macOS", "keys": "Shift + Enter"},
+                {"os": "Linux", "keys": "Shift + Enter"}
+              ],
+              "context": "When composing message",
+              "description": "Press Shift and Enter together to insert a new line in message without sending.",
+              "notes": "Screen readers announce new line. Continue typing on next line."
+            },
+            {
+              "action": "Reply to thread",
+              "keys": "R",
+              "variants": [
+                {"os": "Windows", "keys": "R"},
+                {"os": "macOS", "keys": "R"},
+                {"os": "Linux", "keys": "R"}
+              ],
+              "context": "When message is selected",
+              "description": "Press R to reply to selected message in a conversation thread.",
+              "notes": "Screen readers announce reply compose box opened. Focus placed in reply field."
+            },
+            {
+              "action": "Mark as unread",
+              "keys": "Ctrl + Shift + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + U"},
+                {"os": "macOS", "keys": "Cmd + Shift + U"},
+                {"os": "Linux", "keys": "Ctrl + Shift + U"}
+              ],
+              "context": "When chat is selected",
+              "description": "Press Control, Shift, and U together to mark selected chat as unread for later attention.",
+              "notes": "Screen readers announce chat marked as unread. Chat appears bold in list."
+            },
+            {
+              "action": "Filter messages",
+              "keys": "Ctrl + Shift + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F"},
+                {"os": "macOS", "keys": "Cmd + Shift + F"},
+                {"os": "Linux", "keys": "Ctrl + Shift + F"}
+              ],
+              "context": "When in chat or channel",
+              "description": "Press Control, Shift, and F together to filter messages by type or sender.",
+              "notes": "Screen readers announce filter options. Select criteria to narrow message view."
+            },
+            {
+              "action": "Bold text",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"},
+                {"os": "Linux", "keys": "Ctrl + B"}
+              ],
+              "context": "When composing with text selected",
+              "description": "Press Control and B together to make selected text bold in your message.",
+              "notes": "Screen readers may announce bold formatting applied."
+            },
+            {
+              "action": "Italic text",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"},
+                {"os": "Linux", "keys": "Ctrl + I"}
+              ],
+              "context": "When composing with text selected",
+              "description": "Press Control and I together to italicize selected text in your message.",
+              "notes": "Screen readers may announce italic formatting applied."
+            },
+            {
+              "action": "Underline text",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"},
+                {"os": "Linux", "keys": "Ctrl + U"}
+              ],
+              "context": "When composing with text selected",
+              "description": "Press Control and U together to underline selected text in your message.",
+              "notes": "Screen readers may announce underline formatting applied."
+            }
+          ]
+        },
+        {
+          "name": "Meetings and Calls",
+          "shortcuts": [
+            {
+              "action": "Start video call",
+              "keys": "Ctrl + Shift + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + U"},
+                {"os": "macOS", "keys": "Cmd + Shift + U"},
+                {"os": "Linux", "keys": "Ctrl + Shift + U"}
+              ],
+              "context": "When in chat",
+              "description": "Press Control, Shift, and U together to start a video call with current chat participants.",
+              "notes": "Screen readers announce video call starting. Participants receive notification."
+            },
+            {
+              "action": "Start audio call",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"},
+                {"os": "Linux", "keys": "Ctrl + Shift + C"}
+              ],
+              "context": "When in chat",
+              "description": "Press Control, Shift, and C together to start an audio-only call with current chat participants.",
+              "notes": "Screen readers announce audio call starting."
+            },
+            {
+              "action": "Accept video call",
+              "keys": "Ctrl + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + A"},
+                {"os": "macOS", "keys": "Cmd + Shift + A"},
+                {"os": "Linux", "keys": "Ctrl + Shift + A"}
+              ],
+              "context": "When receiving incoming call",
+              "description": "Press Control, Shift, and A together to accept an incoming video call.",
+              "notes": "Screen readers announce joining call. Video call window opens."
+            },
+            {
+              "action": "Accept audio call",
+              "keys": "Ctrl + Shift + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + S"},
+                {"os": "macOS", "keys": "Cmd + Shift + S"},
+                {"os": "Linux", "keys": "Ctrl + Shift + S"}
+              ],
+              "context": "When receiving incoming call",
+              "description": "Press Control, Shift, and S together to accept an incoming audio-only call.",
+              "notes": "Screen readers announce joining audio call."
+            },
+            {
+              "action": "Decline call",
+              "keys": "Ctrl + Shift + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + D"},
+                {"os": "macOS", "keys": "Cmd + Shift + D"},
+                {"os": "Linux", "keys": "Ctrl + Shift + D"}
+              ],
+              "context": "When receiving incoming call",
+              "description": "Press Control, Shift, and D together to decline an incoming call.",
+              "notes": "Screen readers announce call declined. Caller notified you're unavailable."
+            },
+            {
+              "action": "Toggle mute",
+              "keys": "Ctrl + Shift + M",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + M"},
+                {"os": "macOS", "keys": "Cmd + Shift + M"},
+                {"os": "Linux", "keys": "Ctrl + Shift + M"}
+              ],
+              "context": "During call or meeting",
+              "description": "Press Control, Shift, and M together to mute or unmute your microphone during call.",
+              "notes": "Screen readers announce microphone muted or unmuted. Essential control for meetings."
+            },
+            {
+              "action": "Toggle video",
+              "keys": "Ctrl + Shift + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + O"},
+                {"os": "macOS", "keys": "Cmd + Shift + O"},
+                {"os": "Linux", "keys": "Ctrl + Shift + O"}
+              ],
+              "context": "During video call or meeting",
+              "description": "Press Control, Shift, and O together to turn your camera on or off during video call.",
+              "notes": "Screen readers announce camera turned on or off."
+            },
+            {
+              "action": "Share screen",
+              "keys": "Ctrl + Shift + E",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + E"},
+                {"os": "macOS", "keys": "Cmd + Shift + E"},
+                {"os": "Linux", "keys": "Ctrl + Shift + E"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and E together to start or stop sharing your screen with meeting participants.",
+              "notes": "Screen readers announce screen sharing dialog. Select window or full screen to share."
+            },
+            {
+              "action": "Toggle raise hand",
+              "keys": "Ctrl + Shift + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + K"},
+                {"os": "macOS", "keys": "Cmd + Shift + K"},
+                {"os": "Linux", "keys": "Ctrl + Shift + K"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and K together to raise or lower your hand to get attention in meeting.",
+              "notes": "Screen readers announce hand raised or lowered. Notifies presenters you have question."
+            },
+            {
+              "action": "Toggle background blur",
+              "keys": "Ctrl + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + P"},
+                {"os": "macOS", "keys": "Cmd + Shift + P"}
+              ],
+              "context": "During video call",
+              "description": "Press Control, Shift, and P together to blur or unblur your background during video call.",
+              "notes": "Screen readers announce background blur toggled. Provides privacy for home environments."
+            },
+            {
+              "action": "Admit participants from lobby",
+              "keys": "Ctrl + Shift + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Y"},
+                {"os": "macOS", "keys": "Cmd + Shift + Y"}
+              ],
+              "context": "When meeting organizer",
+              "description": "Press Control, Shift, and Y together to view and admit participants waiting in lobby.",
+              "notes": "Screen readers announce lobby panel. Select participants to admit to meeting."
+            },
+            {
+              "action": "Open meeting chat",
+              "keys": "Ctrl + Shift + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Enter"},
+                {"os": "macOS", "keys": "Cmd + Shift + Enter"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and Enter together to open meeting chat panel for text communication.",
+              "notes": "Screen readers announce chat panel opened. Type messages visible to all participants."
+            },
+            {
+              "action": "Leave meeting",
+              "keys": "Ctrl + Shift + H",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + H"},
+                {"os": "macOS", "keys": "Cmd + Shift + H"},
+                {"os": "Linux", "keys": "Ctrl + Shift + H"}
+              ],
+              "context": "During meeting or call",
+              "description": "Press Control, Shift, and H together to hang up and leave the current meeting or call.",
+              "notes": "Screen readers announce leaving meeting. Call ends for you, continues for others."
+            }
+          ]
+        },
+        {
+          "name": "Navigation Within Meetings",
+          "shortcuts": [
+            {
+              "action": "Toggle fullscreen",
+              "keys": "Ctrl + Shift + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + F"},
+                {"os": "macOS", "keys": "Cmd + Shift + F"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and F together to enter or exit fullscreen mode for meeting window.",
+              "notes": "Screen readers announce fullscreen mode toggled."
+            },
+            {
+              "action": "Show participants panel",
+              "keys": "Ctrl + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + P"},
+                {"os": "macOS", "keys": "Cmd + Shift + P"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and P together to show or hide participants list panel.",
+              "notes": "Screen readers announce participants panel shown or hidden. View list of attendees."
+            },
+            {
+              "action": "Open meeting controls",
+              "keys": "Ctrl + Shift + Space",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Space"},
+                {"os": "macOS", "keys": "Cmd + Shift + Space"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and Space together to show meeting control bar with mute, video, share options.",
+              "notes": "Screen readers announce controls visible. Access mute, video, and other controls."
+            }
+          ]
+        },
+        {
+          "name": "Accessibility Features",
+          "shortcuts": [
+            {
+              "action": "Turn on live captions",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C (in meeting)"},
+                {"os": "macOS", "keys": "Cmd + Shift + C (in meeting)"}
+              ],
+              "context": "During meeting",
+              "description": "Press Control, Shift, and C during meeting to enable live captions showing real-time speech-to-text.",
+              "notes": "Screen readers announce live captions enabled. Captions appear at bottom of meeting window. Essential for deaf and hard of hearing users."
+            },
+            {
+              "action": "Zoom in",
+              "keys": "Ctrl + Equals",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + ="},
+                {"os": "macOS", "keys": "Cmd + ="}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and Equals together to increase zoom level making interface elements larger.",
+              "notes": "Screen readers may announce zoom level. Helpful for users with low vision."
+            },
+            {
+              "action": "Zoom out",
+              "keys": "Ctrl + Minus",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + -"},
+                {"os": "macOS", "keys": "Cmd + -"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and Minus together to decrease zoom level making interface smaller.",
+              "notes": "Screen readers may announce zoom level."
+            },
+            {
+              "action": "Reset zoom",
+              "keys": "Ctrl + 0",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + 0"},
+                {"os": "macOS", "keys": "Cmd + 0"}
+              ],
+              "context": "Available in Teams",
+              "description": "Press Control and Zero together to reset zoom to default one hundred percent.",
+              "notes": "Screen readers announce zoom reset to default."
+            }
+          ]
+        },
+        {
+          "name": "General Commands",
+          "shortcuts": [
+            {
+              "action": "Close window",
+              "keys": "Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Esc"},
+                {"os": "macOS", "keys": "Esc"},
+                {"os": "Linux", "keys": "Esc"}
+              ],
+              "context": "When dialog or panel is open",
+              "description": "Press Escape to close current dialog, panel, or cancel current action.",
+              "notes": "Screen readers announce dialog closed. Returns focus to previous location."
+            },
+            {
+              "action": "Download current file",
+              "keys": "Ctrl + S",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + S"},
+                {"os": "macOS", "keys": "Cmd + S"}
+              ],
+              "context": "When viewing file",
+              "description": "Press Control and S together to download the currently open file to your computer.",
+              "notes": "Screen readers announce download started. File saves to default downloads folder."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "Teams.exe"},
+        {"type": "process", "value": "Microsoft Teams"},
+        {"type": "url_pattern", "value": "https://teams.microsoft.com/*"},
+        {"type": "window_title", "value": "*Microsoft Teams*"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2",
+        "https://www.microsoft.com/en-us/accessibility/microsoft-teams",
+        "https://support.microsoft.com/en-us/office/manage-audio-and-video-settings-in-microsoft-teams-meetings-f086c3db-a4d2-4f4c-9d87-1f17e5dc7c8a"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

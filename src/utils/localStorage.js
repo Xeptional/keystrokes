@@ -53,10 +53,10 @@ export const isBookmarked = (appSlug, shortcutId) => {
 export const getEnabledApps = () => {
   try {
     const data = localStorage.getItem(STORAGE_KEYS.ENABLED_APPS);
-    return data ? JSON.parse(data) : ['adobe-acrobat-reader'] //add other apps
+    return data ? JSON.parse(data) : [] //add other apps
   } catch (error) {
     console.error("Error reading enabled apps: ", error);
-    return ['adobe-acrobat-reader']
+    return []
   }
 };
 

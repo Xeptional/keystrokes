@@ -1,0 +1,588 @@
+{
+  "applications": [
+    {
+      "name": "Task Manager",
+      "slug": "task-manager",
+      "platforms": ["Windows"],
+      "description": "Task Manager is Windows' system monitoring and management tool for viewing running processes, performance metrics, startup programs, and system resource usage. It allows users to end unresponsive tasks, monitor CPU and memory usage, and manage system services.",
+      "categories": [
+        {
+          "name": "Opening Task Manager",
+          "shortcuts": [
+            {
+              "action": "Open Task Manager",
+              "keys": "Ctrl + Shift + Esc",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Esc"}
+              ],
+              "context": "Available from anywhere in Windows",
+              "description": "Press Control, Shift, and Escape together to open Task Manager directly showing processes and performance information.",
+              "notes": "Screen readers announce Task Manager window opened. NVDA and JAWS will read the current tab and available information. This is the fastest way to open Task Manager."
+            },
+            {
+              "action": "Open Task Manager via security screen",
+              "keys": "Ctrl + Alt + Delete, then Task Manager",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + Delete, then select Task Manager"}
+              ],
+              "context": "Available from anywhere",
+              "description": "Press Control, Alt, and Delete together to open Windows security screen, then select Task Manager from the menu.",
+              "notes": "Screen readers announce security screen with menu options. Use arrow keys to navigate to Task Manager option."
+            },
+            {
+              "action": "Open Task Manager via Run",
+              "keys": "Win + R, then taskmgr",
+              "variants": [
+                {"os": "Windows", "keys": "Win + R, type taskmgr, press Enter"}
+              ],
+              "context": "From Run dialog",
+              "description": "Press Windows and R to open Run dialog, type taskmgr, then press Enter to launch Task Manager.",
+              "notes": "Screen readers announce Task Manager opening. Alternative method if keyboard shortcuts are disabled."
+            },
+            {
+              "action": "Open Task Manager from taskbar",
+              "keys": "Right-click taskbar, select Task Manager",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10 on taskbar, select Task Manager"}
+              ],
+              "context": "When taskbar has focus",
+              "description": "Open context menu on taskbar and select Task Manager from the menu options.",
+              "notes": "Screen readers announce context menu. Navigate with arrow keys to Task Manager option."
+            }
+          ]
+        },
+        {
+          "name": "Tab Navigation",
+          "shortcuts": [
+            {
+              "action": "Switch between tabs",
+              "keys": "Ctrl + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Tab"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Control and Tab together to cycle forward through Task Manager tabs: Processes, Performance, App history, Startup, Users, Details, and Services.",
+              "notes": "Screen readers announce each tab name as you navigate. Each tab shows different system information."
+            },
+            {
+              "action": "Switch backward through tabs",
+              "keys": "Ctrl + Shift + Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Tab"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Control, Shift, and Tab together to cycle backward through Task Manager tabs.",
+              "notes": "Screen readers announce previous tab name as focus moves backward."
+            },
+            {
+              "action": "Navigate to Processes tab",
+              "keys": "Alt + P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + P"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and P together to jump directly to the Processes tab showing running applications and background processes.",
+              "notes": "Screen readers announce Processes tab with list of running processes. Shows CPU, memory, disk, and network usage."
+            },
+            {
+              "action": "Navigate to Performance tab",
+              "keys": "Alt + E",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + E"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and E together to jump directly to the Performance tab showing real-time system resource graphs.",
+              "notes": "Screen readers announce Performance tab. Contains CPU, memory, disk, and network graphs. Limited accessibility for visual charts."
+            },
+            {
+              "action": "Navigate to App history tab",
+              "keys": "Alt + A",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + A"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and A together to jump to App history tab showing resource usage history for applications.",
+              "notes": "Screen readers announce App history tab with application list and usage statistics."
+            },
+            {
+              "action": "Navigate to Startup tab",
+              "keys": "Alt + T",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + T"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and T together to jump to Startup tab showing programs that run when Windows starts.",
+              "notes": "Screen readers announce Startup tab with list of startup programs and their impact. Important for managing boot time."
+            },
+            {
+              "action": "Navigate to Users tab",
+              "keys": "Alt + U",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + U"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and U together to jump to Users tab showing logged-in users and their processes.",
+              "notes": "Screen readers announce Users tab. Shows resource usage per user account."
+            },
+            {
+              "action": "Navigate to Details tab",
+              "keys": "Alt + D",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + D"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and D together to jump to Details tab showing all processes with detailed information including PID and status.",
+              "notes": "Screen readers announce Details tab with comprehensive process list. Advanced view for technical users."
+            },
+            {
+              "action": "Navigate to Services tab",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + S"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and S together to jump to Services tab showing Windows services and their running status.",
+              "notes": "Screen readers announce Services tab with service list. Shows service names and running/stopped status."
+            }
+          ]
+        },
+        {
+          "name": "Process Management",
+          "shortcuts": [
+            {
+              "action": "End selected task",
+              "keys": "Delete",
+              "variants": [
+                {"os": "Windows", "keys": "Delete"}
+              ],
+              "context": "When process is selected in Processes or Details tab",
+              "description": "Press Delete to end the selected process or application. Opens confirmation dialog before terminating.",
+              "notes": "Screen readers announce end task confirmation dialog. Use to close unresponsive applications. Unsaved data may be lost."
+            },
+            {
+              "action": "End task immediately",
+              "keys": "Alt + E",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + E"}
+              ],
+              "context": "When process is selected in Processes tab",
+              "description": "Press Alt and E together to open End task button or dialog for terminating selected process.",
+              "notes": "Screen readers announce end task action. Process will close without saving. Use for frozen applications."
+            },
+            {
+              "action": "Navigate process list",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"}
+              ],
+              "context": "In Processes or Details tab",
+              "description": "Press Up or Down Arrow keys to navigate through the list of running processes and applications.",
+              "notes": "Screen readers announce process name, status, and resource usage for each item. Use Home/End to jump to first/last item."
+            },
+            {
+              "action": "Expand or collapse process tree",
+              "keys": "Right/Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Right Arrow to expand, Left Arrow to collapse"}
+              ],
+              "context": "When process with children is selected",
+              "description": "Press Right Arrow to expand process tree showing child processes, or Left Arrow to collapse the tree.",
+              "notes": "Screen readers announce expanded or collapsed state. Shows processes launched by a parent process."
+            },
+            {
+              "action": "Switch to application",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + S"}
+              ],
+              "context": "When application is selected in Processes tab",
+              "description": "Press Alt and S together to switch focus to the selected application window if it's running.",
+              "notes": "Screen readers announce switching to application. Brings application window to foreground."
+            },
+            {
+              "action": "Open file location",
+              "keys": "Alt + O",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + O"}
+              ],
+              "context": "When process is selected",
+              "description": "Press Alt and O together to open File Explorer showing the location of the selected process executable file.",
+              "notes": "Screen readers announce File Explorer opening at file location. Useful for identifying suspicious processes."
+            },
+            {
+              "action": "Search online",
+              "keys": "Alt + W",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + W"}
+              ],
+              "context": "When process is selected",
+              "description": "Press Alt and W together to search for information about the selected process online using default browser.",
+              "notes": "Screen readers announce browser opening with search. Helps identify unknown processes."
+            },
+            {
+              "action": "Properties of process",
+              "keys": "Alt + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Enter"}
+              ],
+              "context": "When process is selected in Details tab",
+              "description": "Press Alt and Enter together to view detailed properties of the selected process including file path and version.",
+              "notes": "Screen readers announce Properties dialog with process details and file information."
+            },
+            {
+              "action": "Set priority",
+              "keys": "Context menu, Set priority",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, navigate to Set priority"}
+              ],
+              "context": "When process is selected in Details tab",
+              "description": "Open context menu with Shift+F10, navigate to Set priority to change process CPU priority level.",
+              "notes": "Screen readers announce priority submenu. Options include Realtime, High, Above Normal, Normal, Below Normal, Low."
+            },
+            {
+              "action": "Set affinity",
+              "keys": "Context menu, Set affinity",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, navigate to Set affinity"}
+              ],
+              "context": "When process is selected in Details tab",
+              "description": "Open context menu and select Set affinity to choose which CPU cores the process can use.",
+              "notes": "Screen readers announce affinity dialog with checkbox list of CPU cores. Advanced feature for multi-core systems."
+            }
+          ]
+        },
+        {
+          "name": "Startup Program Management",
+          "shortcuts": [
+            {
+              "action": "Navigate startup programs",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"}
+              ],
+              "context": "In Startup tab",
+              "description": "Press Up or Down Arrow keys to navigate through the list of programs configured to run at Windows startup.",
+              "notes": "Screen readers announce program name, publisher, status (enabled/disabled), and startup impact for each item."
+            },
+            {
+              "action": "Enable or disable startup program",
+              "keys": "Alt + E or Alt + D",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + E to enable, Alt + D to disable"}
+              ],
+              "context": "When startup program is selected",
+              "description": "Press Alt and E to enable a disabled startup program, or Alt and D to disable an enabled startup program.",
+              "notes": "Screen readers announce program enabled or disabled. Disabling startup programs can improve boot time."
+            },
+            {
+              "action": "Toggle startup program state",
+              "keys": "Space or Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Space or Enter"}
+              ],
+              "context": "When startup program is selected",
+              "description": "Press Space or Enter to toggle the selected startup program between enabled and disabled states.",
+              "notes": "Screen readers announce new state. Quick way to enable or disable startup items."
+            },
+            {
+              "action": "Open file location of startup program",
+              "keys": "Context menu, Open file location",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select Open file location"}
+              ],
+              "context": "When startup program is selected",
+              "description": "Open context menu and select Open file location to view the program's executable file in File Explorer.",
+              "notes": "Screen readers announce File Explorer opening. Helps verify legitimate startup programs."
+            },
+            {
+              "action": "Search online for startup program",
+              "keys": "Context menu, Search online",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select Search online"}
+              ],
+              "context": "When startup program is selected",
+              "description": "Open context menu and select Search online to find information about the startup program.",
+              "notes": "Screen readers announce browser opening with search results. Useful for identifying unknown startup items."
+            }
+          ]
+        },
+        {
+          "name": "View Options",
+          "shortcuts": [
+            {
+              "action": "Refresh Task Manager",
+              "keys": "F5",
+              "variants": [
+                {"os": "Windows", "keys": "F5"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press F5 to manually refresh Task Manager data updating all process information and performance metrics.",
+              "notes": "Screen readers may announce refresh completion. Task Manager auto-updates, but F5 forces immediate refresh."
+            },
+            {
+              "action": "Toggle compact view",
+              "keys": "Alt + V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and V together to toggle between compact view showing only process names and detailed view with tabs.",
+              "notes": "Screen readers announce view mode change. Compact view useful for quick process termination."
+            },
+            {
+              "action": "Update speed settings",
+              "keys": "Alt + V, Update speed",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, navigate to Update speed"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and V to open View menu, then navigate to Update speed to set refresh rate to High, Normal, Low, or Paused.",
+              "notes": "Screen readers announce View menu and update speed options. Lower refresh rate reduces CPU usage of Task Manager itself."
+            },
+            {
+              "action": "Always on top",
+              "keys": "Alt + O",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + O"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and O together to toggle Always on top mode keeping Task Manager visible above other windows.",
+              "notes": "Screen readers announce always on top enabled or disabled. Useful for monitoring while working in other applications."
+            },
+            {
+              "action": "Show processes from all users",
+              "keys": "Alt + V, Show processes from all users",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, select Show processes from all users"}
+              ],
+              "context": "In Task Manager",
+              "description": "Open View menu and select Show processes from all users to display processes from all user accounts.",
+              "notes": "Screen readers announce all user processes showing. Requires administrator privileges to enable."
+            },
+            {
+              "action": "Expand all process groups",
+              "keys": "Alt + V, Expand all",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, select Expand all"}
+              ],
+              "context": "In Processes tab",
+              "description": "Open View menu and select Expand all to expand all process trees showing all child processes.",
+              "notes": "Screen readers announce expanded view. Shows complete process hierarchy."
+            },
+            {
+              "action": "Collapse all process groups",
+              "keys": "Alt + V, Collapse all",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, select Collapse all"}
+              ],
+              "context": "In Processes tab",
+              "description": "Open View menu and select Collapse all to collapse all process trees to parent processes only.",
+              "notes": "Screen readers announce collapsed view. Provides cleaner overview of running applications."
+            }
+          ]
+        },
+        {
+          "name": "Sorting and Filtering",
+          "shortcuts": [
+            {
+              "action": "Sort by column",
+              "keys": "Click column header",
+              "variants": [
+                {"os": "Windows", "keys": "Tab to column header, press Enter"}
+              ],
+              "context": "In Processes or Details tab",
+              "description": "Navigate to column headers and press Enter to sort the list by that column such as CPU, Memory, Disk, or Network.",
+              "notes": "Screen readers announce sort column and order. Click again to reverse sort order. Helpful for finding resource-heavy processes."
+            },
+            {
+              "action": "Navigate to column headers",
+              "keys": "Tab",
+              "variants": [
+                {"os": "Windows", "keys": "Tab to reach column headers"}
+              ],
+              "context": "In process list",
+              "description": "Press Tab to move focus from process list to column headers for sorting or column management.",
+              "notes": "Screen readers announce column header area. Use arrow keys to move between headers."
+            },
+            {
+              "action": "Select columns to display",
+              "keys": "Alt + V, Select columns",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, navigate to Select columns"}
+              ],
+              "context": "In Details tab",
+              "description": "Open View menu and select Select columns to choose which process information columns to display.",
+              "notes": "Screen readers announce column selection dialog. Add or remove columns like PID, Session ID, CPU time, etc."
+            },
+            {
+              "action": "Group by type",
+              "keys": "Alt + V, Group by type",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, select Group by type"}
+              ],
+              "context": "In Processes tab",
+              "description": "Open View menu and select Group by type to organize processes into Apps, Background processes, and Windows processes.",
+              "notes": "Screen readers announce grouped view. Helps distinguish user applications from system processes."
+            }
+          ]
+        },
+        {
+          "name": "Performance Monitoring",
+          "shortcuts": [
+            {
+              "action": "Open Resource Monitor",
+              "keys": "Alt + R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + R"}
+              ],
+              "context": "In Performance tab",
+              "description": "Press Alt and R together to open Resource Monitor showing detailed real-time resource usage analysis.",
+              "notes": "Screen readers announce Resource Monitor opening. Advanced tool for detailed system performance monitoring."
+            },
+            {
+              "action": "Copy performance data",
+              "keys": "Ctrl + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + C"}
+              ],
+              "context": "In Performance tab",
+              "description": "Press Control and C together to copy current performance information to clipboard as text.",
+              "notes": "Screen readers announce data copied. Can paste into text editor for analysis or troubleshooting."
+            },
+            {
+              "action": "Navigate performance categories",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"}
+              ],
+              "context": "In Performance tab left pane",
+              "description": "Press Up or Down Arrow to navigate between performance categories: CPU, Memory, Disk, Ethernet, GPU.",
+              "notes": "Screen readers announce category name and current values. Right pane updates to show detailed metrics for selected category."
+            },
+            {
+              "action": "View summary mode",
+              "keys": "Alt + V, Summary view",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, select Summary view"}
+              ],
+              "context": "In Performance tab",
+              "description": "Open View menu and select Summary view to show compact overview of all performance metrics.",
+              "notes": "Screen readers announce summary view mode. Shows all categories in single view."
+            }
+          ]
+        },
+        {
+          "name": "Window Management",
+          "shortcuts": [
+            {
+              "action": "Minimize Task Manager",
+              "keys": "Win + Down Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Win + Down Arrow"}
+              ],
+              "context": "When Task Manager window is active",
+              "description": "Press Windows and Down Arrow together to minimize Task Manager window to taskbar.",
+              "notes": "Screen readers announce window minimized. Task Manager continues running in background."
+            },
+            {
+              "action": "Close Task Manager",
+              "keys": "Alt + F4",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + F4"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press Alt and F4 together to close Task Manager window completely.",
+              "notes": "Screen readers announce window closing. Can reopen anytime with Ctrl+Shift+Esc."
+            },
+            {
+              "action": "Context menu",
+              "keys": "Shift + F10",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10"}
+              ],
+              "context": "When process or item is selected",
+              "description": "Press Shift and F10 together to open context menu for selected process with additional actions.",
+              "notes": "Screen readers announce context menu with options. Navigate with arrow keys and press Enter to select."
+            },
+            {
+              "action": "Help",
+              "keys": "F1",
+              "variants": [
+                {"os": "Windows", "keys": "F1"}
+              ],
+              "context": "When Task Manager is active",
+              "description": "Press F1 to open Windows Help showing Task Manager documentation and usage information.",
+              "notes": "Screen readers announce help window opening. Provides guidance on Task Manager features."
+            }
+          ]
+        },
+        {
+          "name": "Services Management",
+          "shortcuts": [
+            {
+              "action": "Navigate services list",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down Arrow"}
+              ],
+              "context": "In Services tab",
+              "description": "Press Up or Down Arrow keys to navigate through the list of Windows services.",
+              "notes": "Screen readers announce service name, status (Running or Stopped), and description for each service."
+            },
+            {
+              "action": "Start service",
+              "keys": "Context menu, Start",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select Start"}
+              ],
+              "context": "When stopped service is selected",
+              "description": "Open context menu and select Start to launch the selected Windows service.",
+              "notes": "Screen readers announce service starting. Requires administrator privileges for most services."
+            },
+            {
+              "action": "Stop service",
+              "keys": "Context menu, Stop",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select Stop"}
+              ],
+              "context": "When running service is selected",
+              "description": "Open context menu and select Stop to terminate the selected Windows service.",
+              "notes": "Screen readers announce service stopping. May affect system functionality. Use with caution."
+            },
+            {
+              "action": "Restart service",
+              "keys": "Context menu, Restart",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F10, select Restart"}
+              ],
+              "context": "When running service is selected",
+              "description": "Open context menu and select Restart to stop and immediately restart the selected service.",
+              "notes": "Screen readers announce service restarting. Useful for troubleshooting service issues."
+            },
+            {
+              "action": "Open Services console",
+              "keys": "Alt + S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + S"}
+              ],
+              "context": "In Services tab",
+              "description": "Press Alt and S together to open the full Services management console with more configuration options.",
+              "notes": "Screen readers announce Services console opening. Provides access to startup type, recovery options, and dependencies."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "Taskmgr.exe"},
+        {"type": "window_class", "value": "TaskManagerWindow"},
+        {"type": "window_title", "value": "Task Manager"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+        "https://www.howtogeek.com/244650/12-task-manager-tricks-you-probably-didnt-know/",
+        "https://www.tenforums.com/tutorials/128654-keyboard-shortcuts-task-manager-windows-10-a.html"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
