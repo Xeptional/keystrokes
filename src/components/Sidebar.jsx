@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { X, ChevronDown, ChevronRight, Bookmark, Search as SearchIcon } from 'lucide-react';
-import { ThemeContext, AppsContext, BookmarksContext, NavigationContext } from '../../contexts/AppContexts';
-import { getAllApplications } from '../../data/applications';
+import { ThemeContext, AppsContext, BookmarksContext, NavigationContext } from '../contexts/AppContexts';
+import { getAllApplications } from '../data/applications';
 
 const Sidebar = ({ isOpen, onClose }) => {
   const { theme } = React.useContext(ThemeContext);

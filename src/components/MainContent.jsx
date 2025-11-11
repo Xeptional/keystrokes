@@ -348,8 +348,8 @@ const MainContent = () => {
       className={`flex-1 overflow-y-auto ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
       role="main"
       tabIndex={-1}
-      aria-hidden={isOpen && window.innerWidth < 760 ? 'true' : 'false'}
-      inert={isOpen && window.innerWidth < 760 ? '' : undefined}
+      // aria-hidden={sidebarOpen && window.innerWidth < 760 ? 'true' : 'false'}
+      // inert={sidebarOpen && window.innerWidth < 760 ? '' : undefined}
     >
       {renderContent()}
     </main>
