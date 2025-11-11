@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { ThemeContext, AuthContext, AppsContext, BookmarksContext, NavigationContext } from './contexts/AppContexts';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import MainContent from './components/MainContext';
+import MainContent from './components/MainContent';
 import SettingsModal from './components/SettingsModal';
 import { 
   getBookmarks, 
@@ -266,7 +266,7 @@ function App() {
               setSearchQuery,
               searchResults 
             }}>
-              {/* Skip to main content link for accessibility */}
+              {/* Skip to main content link */}
               <a 
                 href="#main-content" 
                 className="skip-link"
@@ -281,7 +281,11 @@ function App() {
                   onClose={() => setSidebarOpen(false)}
                 />
                 
-                <div className="flex flex-col flex-1 min-w-0">
+                <div 
+                  className="flex flex-col flex-1 min-w-0"
+                  aria-hidden={sidebarOpen && window.innerWidth < 768 ? 'true' : 'false'}
+                  inert={sidebarOpen && window.innerWidth < 768 ? '' : undefined}
+                >
                   <Header 
                     onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
                     onOpenSettings={() => setSettingsOpen(true)}

@@ -1,23 +1,69 @@
-// src/components/layout/Sidebar.jsx
-
-import { useContext, useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { X, ChevronDown, ChevronRight, Bookmark, Search as SearchIcon } from 'lucide-react';
-import { ThemeContext, AppsContext, BookmarksContext, NavigationContext } from '../contexts/AppContexts';
-import { getAllApplications } from '../data/applications';
+import { ThemeContext, AppsContext, BookmarksContext, NavigationContext } from '../../contexts/AppContexts';
+import { getAllApplications } from '../../data/applications';
 
 const Sidebar = ({ isOpen, onClose }) => {
-  const { theme } = useContext(ThemeContext);
-  const { enabledApps, disabledApps, enableApp } = useContext(AppsContext);
-  const { getAppBookmarks } = useContext(BookmarksContext);
-  const { currentView, setCurrentView, searchQuery, setSearchQuery, searchResults } = useContext(NavigationContext);
+  const { theme } = React.useContext(ThemeContext);
+  const { enabledApps, disabledApps, enableApp } = React.useContext(AppsContext);
+  const { getAppBookmarks } = React.useContext(BookmarksContext);
+  const { currentView, setCurrentView, searchQuery, setSearchQuery, searchResults } = React.useContext(NavigationContext);
   
   const [expandedApps, setExpandedApps] = useState({});
   const [showDisabledApps, setShowDisabledApps] = useState(false);
   const searchInputRef = useRef(null);
+  const sidebarRef = useRef(null);
+  const closeButtonRef = useRef(null);
 
   const allApps = getAllApplications();
   const enabledAppsList = allApps.filter(app => enabledApps.includes(app.slug));
   const disabledAppsList = allApps.filter(app => disabledApps.includes(app.slug));
+
+  // Focus trap when sidebar opens on mobile
+  useEffect(() => {
+    if (isOpen && window.innerWidth < 768) {
+      // Focus the close button when sidebar opens
+      closeButtonRef.current?.focus();
+
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+
+      // Focus trap
+      const handleKeyDown = (e) => {
+        if (e.key === 'Tab') {
+          const focusableElements = sidebarRef.current?.querySelectorAll(
+            'button:not([tabindex="-1"]), input:not([tabindex="-1"]), [tabindex]:not([tabindex="-1"])'
+          );
+          
+          if (!focusableElements || focusableElements.length === 0) return;
+          
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+          
+          if (e.shiftKey) {
+            // Shift + Tab
+            if (document.activeElement === firstElement) {
+              e.preventDefault();
+              lastElement.focus();
+            }
+          } else {
+            // Tab
+            if (document.activeElement === lastElement) {
+              e.preventDefault();
+              firstElement.focus();
+            }
+          }
+        }
+      };
+
+      document.addEventListener('keydown', handleKeyDown);
+      
+      return () => {
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', handleKeyDown);
+      };
+    }
+  }, [isOpen]);
 
   // Auto-expand app when it's selected
   useEffect(() => {
@@ -109,10 +155,13 @@ const Sidebar = ({ isOpen, onClose }) => {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  // Determine if we're on mobile
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
   return (
     <>
       {/* Mobile overlay */}
-      {isOpen && (
+      {isOpen && isMobile && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
           onClick={onClose}
@@ -122,13 +171,14 @@ const Sidebar = ({ isOpen, onClose }) => {
       
       {/* Sidebar */}
       <aside
+        ref={sidebarRef}
         className={`fixed left-0 top-0 h-full w-80 transform transition-transform duration-300 ease-in-out z-50 md:relative md:translate-x-0 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } ${theme === 'dark' ? 'bg-gray-900 border-gray-700' : 'bg-gray-50 border-gray-200'} border-r flex flex-col`}
         aria-label="Application navigation"
-        aria-hidden={!isOpen && window.innerWidth < 768 ? 'true' : 'false'}
-        inert={!isOpen && window.innerWidth < 768 ? '' : undefined}
-        role="navigation"
+        aria-hidden={isMobile && !isOpen}
+        aria-modal={isMobile && isOpen ? 'true' : undefined}
+        role={isMobile && isOpen ? 'dialog' : 'navigation'}
       >
         <div className="flex flex-col h-full">
           {/* Mobile close button */}
@@ -137,14 +187,14 @@ const Sidebar = ({ isOpen, onClose }) => {
               Navigation
             </span>
             <button
+              ref={closeButtonRef}
               onClick={onClose}
               className={`p-2 rounded-lg transition-colors focus:ring-2 focus:ring-blue-500 ${
                 theme === 'dark' 
                   ? 'hover:bg-gray-800 text-gray-300 focus:bg-gray-800' 
                   : 'hover:bg-gray-100 text-gray-600 focus:bg-gray-100'
               }`}
-              aria-label="Close sidebar"
-              tabIndex={isOpen ? 0 : -1}
+              aria-label="Close navigation sidebar"
             >
               <X size={20} aria-hidden="true" />
             </button>
@@ -171,9 +221,8 @@ const Sidebar = ({ isOpen, onClose }) => {
                     ? 'bg-gray-800 border-gray-600 text-white placeholder-gray-400' 
                     : 'bg-white border-gray-300 text-gray-900 placeholder-gray-500'
                 }`}
-                aria-label="Search shortcuts"
+                aria-label="Search shortcuts by action or description"
                 role="searchbox"
-                tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
               />
             </div>
           </div>
@@ -181,7 +230,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <div className="flex-1 overflow-y-auto p-4">
             {/* Search Results */}
             {searchQuery.length >= 2 && searchResults.length > 0 ? (
-              <div role="region" aria-label="Search results">
+              <div role="region" aria-label="Search results" aria-live="polite">
                 <h3 className={`text-xs font-semibold uppercase tracking-wider mb-3 ${
                   theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
                 }`}>
@@ -197,8 +246,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                           ? 'hover:bg-gray-800 focus:bg-gray-800' 
                           : 'hover:bg-gray-100 focus:bg-gray-100'
                       }`}
-                      tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
-                      aria-label={`${result.shortcut.action} in ${result.app.name}`}
+                      aria-label={`${result.shortcut.action} in ${result.app.name}, ${result.category.name} category`}
                     >
                       <div className="flex items-start gap-3">
                         {/* App icon placeholder */}
@@ -225,14 +273,14 @@ const Sidebar = ({ isOpen, onClose }) => {
                 </div>
               </div>
             ) : searchQuery.length >= 2 && searchResults.length === 0 ? (
-              <div className={`text-center py-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+              <div className={`text-center py-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`} role="status">
                 <p className="text-sm">No shortcuts found for "{searchQuery}"</p>
               </div>
             ) : (
               /* Application List */
-              <nav aria-label="Applications">
+              <nav aria-label="Applications list">
                 {enabledAppsList.length === 0 ? (
-                  <div className={`text-center py-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+                  <div className={`text-center py-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`} role="status">
                     <p className="text-sm">No applications enabled.</p>
                     <p className="text-xs mt-2">Enable apps in settings.</p>
                   </div>
@@ -252,8 +300,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                               : 'hover:bg-gray-100 text-gray-700 focus:bg-gray-100'
                           }`}
                           aria-expanded={isExpanded}
-                          aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${app.name}`}
-                          tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
+                          aria-label={`${app.name}, ${app.categories.length} categories. ${isExpanded ? 'Expanded' : 'Collapsed'}. Press to ${isExpanded ? 'collapse' : 'expand'}`}
                         >
                           <div 
                             className="flex items-center gap-3 flex-1"
@@ -270,7 +317,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                             </div>
                             <div className="text-left flex-1 min-w-0">
                               <div className="font-medium text-sm truncate">{app.name}</div>
-                              <div className={`text-xs ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`}>
+                              <div className={`text-xs ${theme === 'dark' ? 'text-gray-500' : 'text-gray-500'}`} aria-hidden="true">
                                 {app.categories.length} categories
                               </div>
                             </div>
@@ -290,7 +337,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                               <div className="mb-2">
                                 <div className={`flex items-center gap-2 px-3 py-2 text-xs font-semibold uppercase tracking-wider ${
                                   theme === 'dark' ? 'text-gray-400' : 'text-gray-600'
-                                }`}>
+                                }`} role="heading" aria-level="3">
                                   <Bookmark size={12} aria-hidden="true" />
                                   Bookmarked ({bookmarks.length})
                                 </div>
@@ -303,13 +350,12 @@ const Sidebar = ({ isOpen, onClose }) => {
                                         ? 'hover:bg-gray-800 text-gray-400 focus:bg-gray-800' 
                                         : 'hover:bg-gray-100 text-gray-600 focus:bg-gray-100'
                                     }`}
-                                    tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
-                                    aria-label={`Bookmarked: ${bookmark.shortcut.action}`}
+                                    aria-label={`Bookmarked shortcut: ${bookmark.shortcut.action}, from ${bookmark.category.name} category`}
                                   >
                                     <div className="text-sm truncate">{bookmark.shortcut.action}</div>
                                     <div className={`text-xs truncate ${
                                       theme === 'dark' ? 'text-gray-600' : 'text-gray-500'
-                                    }`}>
+                                    }`} aria-hidden="true">
                                       {bookmark.category.name}
                                     </div>
                                   </button>
@@ -333,8 +379,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                                       ? 'hover:bg-gray-800 text-gray-400 focus:bg-gray-800' 
                                       : 'hover:bg-gray-100 text-gray-600 focus:bg-gray-100'
                                 }`}
-                                tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
-                                aria-label={`${category.name} category with ${category.shortcuts.length} shortcuts`}
+                                aria-label={`${category.name} category, ${category.shortcuts.length} shortcuts`}
                                 aria-current={
                                   currentView.type === 'category' && 
                                   currentView.category?.name === category.name ? 
@@ -342,7 +387,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                                 }
                               >
                                 <div className="font-medium text-sm">{category.name}</div>
-                                <div className={`text-xs ${theme === 'dark' ? 'text-gray-600' : 'text-gray-500'}`}>
+                                <div className={`text-xs ${theme === 'dark' ? 'text-gray-600' : 'text-gray-500'}`} aria-hidden="true">
                                   {category.shortcuts.length} shortcuts
                                 </div>
                               </button>
@@ -365,8 +410,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                           : 'hover:bg-gray-100 text-gray-600 focus:bg-gray-100'
                       }`}
                       aria-expanded={showDisabledApps}
-                      aria-label={`${showDisabledApps ? 'Collapse' : 'Expand'} disabled applications`}
-                      tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
+                      aria-label={`Disabled applications, ${disabledAppsList.length} apps. ${showDisabledApps ? 'Expanded' : 'Collapsed'}. Press to ${showDisabledApps ? 'collapse' : 'expand'}`}
                     >
                       <span className="text-sm font-medium">
                         Disabled Applications ({disabledAppsList.length})
@@ -406,8 +450,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                                   ? 'bg-blue-900 text-blue-200 hover:bg-blue-800' 
                                   : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                               }`}
-                              tabIndex={isOpen || window.innerWidth >= 768 ? 0 : -1}
-                              aria-label={`Enable ${app.name}`}
+                              aria-label={`Enable ${app.name} application`}
                             >
                               Enable
                             </button>
