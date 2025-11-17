@@ -5,6 +5,18 @@ import edgeData from './edge_shortcuts.json';
 import excelData from './excel_shortcuts.json';
 import firefoxData from './firefox_shortcuts.json';
 import gdocsData from './google_docs_shortcuts.json';
+import gdriveData from './google_drive_gmail_shortcuts.json';
+import gsheetsData from './google_sheets_shortcuts.json';
+import gslidesData from './google_slides_shortcuts.json';
+import onedriveData from './onedrive_shortcuts.json';
+import outlookData from './outlook_shortcuts.json';
+import powerpointData from './powerpoint_shortcuts.json';
+import taskManagerData from './task_manager_shortcuts.json';
+import teamsData from './teams_shortcuts.json';
+import wordData from './word_shortcuts.json';
+import zoomData from './zoom_shortcuts.json'
+
+
 
 export const applications = {
   'adobe-acrobat': adobeAcrobatData.applications[0],
@@ -13,7 +25,17 @@ export const applications = {
   'edge': edgeData.applications[0],
   'excel': excelData.applications[0],
   'firefox': firefoxData.applications[0],
-  'google-docs': gdocsData.applications[0]
+  'google-docs': gdocsData.applications[0],
+  'google-drive': gdriveData.applications[0],
+  'google-sheets': gsheetsData.applications[0],
+  'google-slides': gslidesData.applications[0],
+  'onedrive': onedriveData.applications[0],
+  'outlook': outlookData.applications[0],
+  'power-point': powerpointData.applications[0],
+  'task-manager': taskManagerData.applications[0],
+  'teams': teamsData.applications[0],
+  'word': wordData.applications[0],
+  'zoom': zoomData.applications[0]
 
   // add more applications
 };

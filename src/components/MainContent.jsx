@@ -297,7 +297,7 @@ const MainContent = () => {
       case 'shortcut':
         return (
           <div className="max-w-4xl mx-auto p-6 md:p-8">
-            <nav className="flex items-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
+             <nav className="flex items-center gap-2 text-sm mb-6" aria-label="Breadcrumb">
               <button
                 onClick={() => {}}
                 className={`hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded ${
