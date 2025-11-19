@@ -1,0 +1,307 @@
+{
+  "applications": [
+    {
+      "name": "Google Drive",
+      "slug": "google-drive",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Google Drive is a cloud storage and file management service for storing, sharing, and organizing files. It includes keyboard navigation for efficient file management and accessibility support for screen readers.",
+      "categories": [
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Go to navigation panel",
+              "keys": "G then N",
+              "variants": [
+                {"os": "Windows", "keys": "G then N"},
+                {"os": "macOS", "keys": "G then N"},
+                {"os": "Linux", "keys": "G then N"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press G then N to move focus to the left navigation panel with folders and shortcuts.",
+              "notes": "Screen readers announce navigation panel focused. Use arrow keys to navigate folders."
+            },
+            {
+              "action": "Go to files list",
+              "keys": "G then L",
+              "variants": [
+                {"os": "Windows", "keys": "G then L"},
+                {"os": "macOS", "keys": "G then L"},
+                {"os": "Linux", "keys": "G then L"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press G then L to move focus to the main files list view.",
+              "notes": "Screen readers announce files list focused. Navigate files with arrow keys."
+            },
+            {
+              "action": "Go to top of application",
+              "keys": "G then T",
+              "variants": [
+                {"os": "Windows", "keys": "G then T"},
+                {"os": "macOS", "keys": "G then T"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press G then T to move focus to the top toolbar with search and view options.",
+              "notes": "Screen readers announce toolbar focused."
+            },
+            {
+              "action": "Navigate files",
+              "keys": "Arrow Keys",
+              "variants": [
+                {"os": "Windows", "keys": "Up/Down/Left/Right Arrow"},
+                {"os": "macOS", "keys": "Up/Down/Left/Right Arrow"}
+              ],
+              "context": "When in files list",
+              "description": "Press arrow keys to navigate through files and folders in list or grid view.",
+              "notes": "Screen readers announce each file name, type, and modified date as you navigate."
+            },
+            {
+              "action": "Open selected item",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"},
+                {"os": "macOS", "keys": "Enter"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Enter to open selected file or folder.",
+              "notes": "Screen readers announce file opening. Folders open in current view, files open in appropriate editor."
+            },
+            {
+              "action": "Go back",
+              "keys": "Alt + Left Arrow",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + Left Arrow"},
+                {"os": "macOS", "keys": "Cmd + Left Arrow"}
+              ],
+              "context": "After navigating folders",
+              "description": "Press Alt and Left Arrow to go back to previous folder in navigation history.",
+              "notes": "Screen readers announce previous folder name."
+            },
+            {
+              "action": "Show keyboard shortcuts",
+              "keys": "Ctrl + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + /"},
+                {"os": "macOS", "keys": "Cmd + /"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press Control and Forward Slash together to show list of all keyboard shortcuts.",
+              "notes": "Screen readers announce shortcuts help dialog opened."
+            }
+          ]
+        },
+        {
+          "name": "File Operations",
+          "shortcuts": [
+            {
+              "action": "Create new folder",
+              "keys": "Shift + F",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + F"},
+                {"os": "macOS", "keys": "Shift + F"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press Shift and F together to create a new folder in current location.",
+              "notes": "Screen readers announce new folder dialog. Type folder name and press Enter."
+            },
+            {
+              "action": "Upload files",
+              "keys": "Ctrl + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + O"},
+                {"os": "macOS", "keys": "Cmd + O"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press Control and O together to open file picker for uploading files to Drive.",
+              "notes": "Screen readers announce file picker dialog. Select files to upload."
+            },
+            {
+              "action": "Upload folder",
+              "keys": "Ctrl + Shift + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + O"},
+                {"os": "macOS", "keys": "Cmd + Shift + O"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press Control, Shift, and O together to upload an entire folder with its contents.",
+              "notes": "Screen readers announce folder picker. Select folder to upload with all files."
+            },
+            {
+              "action": "Rename",
+              "keys": "N",
+              "variants": [
+                {"os": "Windows", "keys": "N"},
+                {"os": "macOS", "keys": "N"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press N to rename the selected file or folder.",
+              "notes": "Screen readers announce rename dialog. Type new name and press Enter."
+            },
+            {
+              "action": "Move to folder",
+              "keys": "Z",
+              "variants": [
+                {"os": "Windows", "keys": "Z"},
+                {"os": "macOS", "keys": "Z"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Z to move selected items to a different folder.",
+              "notes": "Screen readers announce move dialog. Navigate folders and press Enter to move."
+            },
+            {
+              "action": "Add to starred",
+              "keys": "S",
+              "variants": [
+                {"os": "Windows", "keys": "S"},
+                {"os": "macOS", "keys": "S"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press S to star or unstar the selected item for quick access.",
+              "notes": "Screen readers announce item starred or unstarred. Starred items appear in Starred folder."
+            },
+            {
+              "action": "Share",
+              "keys": "Period",
+              "variants": [
+                {"os": "Windows", "keys": "."},
+                {"os": "macOS", "keys": "."}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Period to open sharing settings for selected file or folder.",
+              "notes": "Screen readers announce share dialog. Add people and set permissions."
+            },
+            {
+              "action": "Delete",
+              "keys": "Hash",
+              "variants": [
+                {"os": "Windows", "keys": "#"},
+                {"os": "macOS", "keys": "#"}
+              ],
+              "context": "When file or folder is selected",
+              "description": "Press Hash key to move selected items to trash.",
+              "notes": "Screen readers announce item moved to trash. Can be restored from Trash folder."
+            },
+            {
+              "action": "Restore from trash",
+              "keys": "Z",
+              "variants": [
+                {"os": "Windows", "keys": "Z"},
+                {"os": "macOS", "keys": "Z"}
+              ],
+              "context": "When item in trash is selected",
+              "description": "Press Z while in Trash to restore selected items to original location.",
+              "notes": "Screen readers announce item restored. Returns to original folder."
+            },
+            {
+              "action": "Get link",
+              "keys": "Shift + Period",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + ."},
+                {"os": "macOS", "keys": "Shift + ."}
+              ],
+              "context": "When file is selected",
+              "description": "Press Shift and Period together to get shareable link for selected file.",
+              "notes": "Screen readers announce link dialog. Copy link to share with others."
+            }
+          ]
+        },
+        {
+          "name": "Selection and Views",
+          "shortcuts": [
+            {
+              "action": "Select item",
+              "keys": "X",
+              "variants": [
+                {"os": "Windows", "keys": "X"},
+                {"os": "macOS", "keys": "X"}
+              ],
+              "context": "When file or folder is focused",
+              "description": "Press X to select or deselect the focused item without moving focus.",
+              "notes": "Screen readers announce item selected or deselected. Allows building multi-selection."
+            },
+            {
+              "action": "Select all",
+              "keys": "Ctrl + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + A"},
+                {"os": "macOS", "keys": "Cmd + A"}
+              ],
+              "context": "When in files list",
+              "description": "Press Control and A together to select all visible files in current view.",
+              "notes": "Screen readers announce all items selected with count."
+            },
+            {
+              "action": "Clear selection",
+              "keys": "Ctrl + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + A"},
+                {"os": "macOS", "keys": "Cmd + Shift + A"}
+              ],
+              "context": "When items are selected",
+              "description": "Press Control, Shift, and A together to clear all selections.",
+              "notes": "Screen readers announce selection cleared."
+            },
+            {
+              "action": "Show details pane",
+              "keys": "D",
+              "variants": [
+                {"os": "Windows", "keys": "D"},
+                {"os": "macOS", "keys": "D"}
+              ],
+              "context": "When file is selected",
+              "description": "Press D to show or hide the details pane with file information and activity.",
+              "notes": "Screen readers announce details pane shown or hidden."
+            },
+            {
+              "action": "Toggle list/grid view",
+              "keys": "V",
+              "variants": [
+                {"os": "Windows", "keys": "V"},
+                {"os": "macOS", "keys": "V"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press V to toggle between list view and grid view for files.",
+              "notes": "Screen readers announce view changed to list or grid."
+            }
+          ]
+        },
+        {
+          "name": "Search",
+          "shortcuts": [
+            {
+              "action": "Search Drive",
+              "keys": "Slash",
+              "variants": [
+                {"os": "Windows", "keys": "/"},
+                {"os": "macOS", "keys": "/"}
+              ],
+              "context": "Available in Drive",
+              "description": "Press Forward Slash to place focus in search box for searching files and folders.",
+              "notes": "Screen readers announce search box focused. Type keywords to search."
+            },
+            {
+              "action": "Show search options",
+              "keys": "Ctrl + Slash",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + /"},
+                {"os": "macOS", "keys": "Cmd + /"}
+              ],
+              "context": "When search box is focused",
+              "description": "Press Control and Forward Slash to show advanced search options for filtering results.",
+              "notes": "Screen readers announce search options panel. Filter by type, owner, date, etc."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://drive.google.com/*"},
+        {"type": "window_title", "value": "* - Google Drive"}
+      ],
+      "source": [
+        "https://support.google.com/drive/answer/2563044",
+        "https://www.google.com/accessibility/products-features/"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

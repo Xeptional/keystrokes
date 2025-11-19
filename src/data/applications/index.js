@@ -5,11 +5,12 @@ import edgeData from './edge_shortcuts.json';
 import excelData from './excel_shortcuts.json';
 import firefoxData from './firefox_shortcuts.json';
 import gdocsData from './google_docs_shortcuts.json';
-import gdriveData from './google_drive_gmail_shortcuts.json';
+import gdriveData from './google_drive_shortcuts.json';
 import gsheetsData from './google_sheets_shortcuts.json';
 import gslidesData from './google_slides_shortcuts.json';
+import gmailData from './gmail_shortcuts.json'
 import onedriveData from './onedrive_shortcuts.json';
-import outlookData from './outlook_shortcuts.json';
+// import outlookData from './outlook_shortcuts.json';
 import powerpointData from './powerpoint_shortcuts.json';
 import taskManagerData from './task_manager_shortcuts.json';
 import teamsData from './teams_shortcuts.json';
@@ -29,8 +30,9 @@ export const applications = {
   'google-drive': gdriveData.applications[0],
   'google-sheets': gsheetsData.applications[0],
   'google-slides': gslidesData.applications[0],
+  'gmail': gmailData.applications[0],
   'onedrive': onedriveData.applications[0],
-  'outlook': outlookData.applications[0],
+  // 'outlook': outlookData.applications[0],
   'power-point': powerpointData.applications[0],
   'task-manager': taskManagerData.applications[0],
   'teams': teamsData.applications[0],

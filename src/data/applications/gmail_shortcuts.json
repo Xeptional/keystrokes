@@ -1,0 +1,679 @@
+{
+  "applications": [
+    {
+      "name": "Gmail",
+      "slug": "gmail",
+      "platforms": ["Windows", "macOS", "Linux"],
+      "description": "Gmail is Google's web-based email service with features for composing, organizing, and searching emails. It includes extensive keyboard shortcuts and screen reader support for accessible email management.",
+      "categories": [
+        {
+          "name": "Navigation",
+          "shortcuts": [
+            {
+              "action": "Go to Inbox",
+              "keys": "G then I",
+              "variants": [
+                {"os": "Windows", "keys": "G then I"},
+                {"os": "macOS", "keys": "G then I"},
+                {"os": "Linux", "keys": "G then I"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then I to navigate to the Inbox view showing all incoming messages.",
+              "notes": "Screen readers announce Inbox opened and message count. Quick way to return to main inbox."
+            },
+            {
+              "action": "Go to Starred",
+              "keys": "G then S",
+              "variants": [
+                {"os": "Windows", "keys": "G then S"},
+                {"os": "macOS", "keys": "G then S"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then S to navigate to Starred messages view.",
+              "notes": "Screen readers announce Starred view and count of starred messages."
+            },
+            {
+              "action": "Go to Sent",
+              "keys": "G then T",
+              "variants": [
+                {"os": "Windows", "keys": "G then T"},
+                {"os": "macOS", "keys": "G then T"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then T to navigate to Sent mail folder showing messages you've sent.",
+              "notes": "Screen readers announce Sent mail view with message count."
+            },
+            {
+              "action": "Go to Drafts",
+              "keys": "G then D",
+              "variants": [
+                {"os": "Windows", "keys": "G then D"},
+                {"os": "macOS", "keys": "G then D"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then D to navigate to Drafts folder showing unsent composed messages.",
+              "notes": "Screen readers announce Drafts view and count of draft messages."
+            },
+            {
+              "action": "Go to All Mail",
+              "keys": "G then A",
+              "variants": [
+                {"os": "Windows", "keys": "G then A"},
+                {"os": "macOS", "keys": "G then A"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then A to navigate to All Mail view showing all messages except trash and spam.",
+              "notes": "Screen readers announce All Mail view. Includes archived messages."
+            },
+            {
+              "action": "Navigate conversations",
+              "keys": "J / K",
+              "variants": [
+                {"os": "Windows", "keys": "J for newer, K for older"},
+                {"os": "macOS", "keys": "J for newer, K for older"}
+              ],
+              "context": "When viewing conversation list",
+              "description": "Press J to move to newer conversation or K to move to older conversation in the list.",
+              "notes": "Screen readers announce conversation subject, sender, and date as you navigate."
+            },
+            {
+              "action": "Open conversation",
+              "keys": "O or Enter",
+              "variants": [
+                {"os": "Windows", "keys": "O or Enter"},
+                {"os": "macOS", "keys": "O or Enter"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press O or Enter to open the selected conversation to read its messages.",
+              "notes": "Screen readers announce conversation opened and read first message sender and subject."
+            },
+            {
+              "action": "Return to conversation list",
+              "keys": "U",
+              "variants": [
+                {"os": "Windows", "keys": "U"},
+                {"os": "macOS", "keys": "U"}
+              ],
+              "context": "When viewing open conversation",
+              "description": "Press U to return to the conversation list from an open message.",
+              "notes": "Screen readers announce conversation list and focus on previously selected conversation."
+            },
+            {
+              "action": "Next message in conversation",
+              "keys": "N",
+              "variants": [
+                {"os": "Windows", "keys": "N"},
+                {"os": "macOS", "keys": "N"}
+              ],
+              "context": "When viewing conversation with multiple messages",
+              "description": "Press N to jump to the next message within the current conversation.",
+              "notes": "Screen readers announce next message sender and content."
+            },
+            {
+              "action": "Previous message in conversation",
+              "keys": "P",
+              "variants": [
+                {"os": "Windows", "keys": "P"},
+                {"os": "macOS", "keys": "P"}
+              ],
+              "context": "When viewing conversation",
+              "description": "Press P to jump to the previous message within the current conversation.",
+              "notes": "Screen readers announce previous message details."
+            }
+          ]
+        },
+        {
+          "name": "Composing Messages",
+          "shortcuts": [
+            {
+              "action": "Compose new message",
+              "keys": "C",
+              "variants": [
+                {"os": "Windows", "keys": "C"},
+                {"os": "macOS", "keys": "C"},
+                {"os": "Linux", "keys": "C"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press C to open a new compose window for writing a new email message.",
+              "notes": "Screen readers announce compose window opened. Focus placed in To field for entering recipients."
+            },
+            {
+              "action": "Compose in new window",
+              "keys": "Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + C"},
+                {"os": "macOS", "keys": "Shift + C"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press Shift and C together to open compose in a new browser window instead of overlay.",
+              "notes": "Screen readers announce compose window opened in new window."
+            },
+            {
+              "action": "Reply",
+              "keys": "R",
+              "variants": [
+                {"os": "Windows", "keys": "R"},
+                {"os": "macOS", "keys": "R"}
+              ],
+              "context": "When viewing an open message",
+              "description": "Press R to reply to the sender of the currently displayed message.",
+              "notes": "Screen readers announce reply window opened. Focus in message body for typing reply."
+            },
+            {
+              "action": "Reply all",
+              "keys": "A",
+              "variants": [
+                {"os": "Windows", "keys": "A"},
+                {"os": "macOS", "keys": "A"}
+              ],
+              "context": "When viewing message with multiple recipients",
+              "description": "Press A to reply to all recipients included in the conversation.",
+              "notes": "Screen readers announce reply all window opened with all recipients."
+            },
+            {
+              "action": "Forward",
+              "keys": "F",
+              "variants": [
+                {"os": "Windows", "keys": "F"},
+                {"os": "macOS", "keys": "F"}
+              ],
+              "context": "When viewing an open message",
+              "description": "Press F to forward the current message to other recipients.",
+              "notes": "Screen readers announce forward window opened. Add recipients and additional message."
+            },
+            {
+              "action": "Send message",
+              "keys": "Ctrl + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Enter"},
+                {"os": "macOS", "keys": "Cmd + Enter"}
+              ],
+              "context": "When composing or replying",
+              "description": "Press Control and Enter together to send the message you're currently composing.",
+              "notes": "Screen readers announce message sent. Compose window closes automatically."
+            },
+            {
+              "action": "Add CC recipients",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"},
+                {"os": "macOS", "keys": "Cmd + Shift + C"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control, Shift, and C together to show CC field for carbon copy recipients.",
+              "notes": "Screen readers announce CC field visible. Focus moves to CC field."
+            },
+            {
+              "action": "Add BCC recipients",
+              "keys": "Ctrl + Shift + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + B"},
+                {"os": "macOS", "keys": "Cmd + Shift + B"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control, Shift, and B together to show BCC field for blind carbon copy recipients.",
+              "notes": "Screen readers announce BCC field visible. Focus moves to BCC field."
+            },
+            {
+              "action": "Insert link",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"},
+                {"os": "macOS", "keys": "Cmd + K"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and K together to insert a hyperlink in the message body.",
+              "notes": "Screen readers announce link dialog. Enter URL and link text."
+            },
+            {
+              "action": "Discard draft",
+              "keys": "Ctrl + Shift + D",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + D"},
+                {"os": "macOS", "keys": "Cmd + Shift + D"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control, Shift, and D together to discard current draft and close compose window.",
+              "notes": "Screen readers announce draft discarded. Message is not saved."
+            }
+          ]
+        },
+        {
+          "name": "Message Actions",
+          "shortcuts": [
+            {
+              "action": "Archive",
+              "keys": "E",
+              "variants": [
+                {"os": "Windows", "keys": "E"},
+                {"os": "macOS", "keys": "E"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press E to archive selected conversation removing it from inbox while keeping in All Mail.",
+              "notes": "Screen readers announce conversation archived. Message preserved but removed from inbox."
+            },
+            {
+              "action": "Delete",
+              "keys": "Hash",
+              "variants": [
+                {"os": "Windows", "keys": "#"},
+                {"os": "macOS", "keys": "#"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press Hash key to move selected conversation to Trash.",
+              "notes": "Screen readers announce conversation moved to trash. Can be restored within 30 days."
+            },
+            {
+              "action": "Report spam",
+              "keys": "Exclamation",
+              "variants": [
+                {"os": "Windows", "keys": "!"},
+                {"os": "macOS", "keys": "!"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press Exclamation mark to report selected conversation as spam and move to Spam folder.",
+              "notes": "Screen readers announce message reported as spam. Helps Gmail filter future similar messages."
+            },
+            {
+              "action": "Mark as read",
+              "keys": "Shift + I",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + I"},
+                {"os": "macOS", "keys": "Shift + I"}
+              ],
+              "context": "When unread conversation is selected",
+              "description": "Press Shift and I together to mark selected conversations as read.",
+              "notes": "Screen readers announce messages marked as read. Removes bold highlighting."
+            },
+            {
+              "action": "Mark as unread",
+              "keys": "Shift + U",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + U"},
+                {"os": "macOS", "keys": "Shift + U"}
+              ],
+              "context": "When read conversation is selected",
+              "description": "Press Shift and U together to mark selected conversations as unread for later attention.",
+              "notes": "Screen readers announce messages marked as unread. Appears bold to indicate unread status."
+            },
+            {
+              "action": "Star conversation",
+              "keys": "S",
+              "variants": [
+                {"os": "Windows", "keys": "S"},
+                {"os": "macOS", "keys": "S"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press S to add or remove star from selected conversation for quick reference.",
+              "notes": "Screen readers announce conversation starred or unstarred. Starred messages easily accessible."
+            },
+            {
+              "action": "Mute conversation",
+              "keys": "M",
+              "variants": [
+                {"os": "Windows", "keys": "M"},
+                {"os": "macOS", "keys": "M"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press M to mute conversation so future replies automatically archive and skip inbox.",
+              "notes": "Screen readers announce conversation muted. Useful for busy threads you don't need to follow."
+            },
+            {
+              "action": "Snooze",
+              "keys": "B",
+              "variants": [
+                {"os": "Windows", "keys": "B"},
+                {"os": "macOS", "keys": "B"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press B to snooze conversation which hides it until a specified time when it reappears in inbox.",
+              "notes": "Screen readers announce snooze dialog. Select time for message to return to inbox."
+            },
+            {
+              "action": "Apply label",
+              "keys": "L",
+              "variants": [
+                {"os": "Windows", "keys": "L"},
+                {"os": "macOS", "keys": "L"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press L to open label menu for adding labels to selected conversations for organization.",
+              "notes": "Screen readers announce label menu. Type to search labels or navigate with arrows."
+            },
+            {
+              "action": "Move to folder",
+              "keys": "V",
+              "variants": [
+                {"os": "Windows", "keys": "V"},
+                {"os": "macOS", "keys": "V"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press V to move selected conversations to a different folder or label.",
+              "notes": "Screen readers announce move menu. Select destination folder."
+            }
+          ]
+        },
+        {
+          "name": "Selection",
+          "shortcuts": [
+            {
+              "action": "Select conversation",
+              "keys": "X",
+              "variants": [
+                {"os": "Windows", "keys": "X"},
+                {"os": "macOS", "keys": "X"}
+              ],
+              "context": "When conversation is focused",
+              "description": "Press X to select or deselect the focused conversation for batch operations.",
+              "notes": "Screen readers announce conversation selected or deselected. Build multi-selection."
+            },
+            {
+              "action": "Select all conversations",
+              "keys": "Asterisk then A",
+              "variants": [
+                {"os": "Windows", "keys": "* then A"},
+                {"os": "macOS", "keys": "* then A"}
+              ],
+              "context": "In conversation list",
+              "description": "Press Asterisk then R to select all read conversations in current view.",
+              "notes": "Screen readers announce read conversations selected. Useful for bulk archiving."
+            },
+            {
+              "action": "Deselect all",
+              "keys": "Asterisk then N",
+              "variants": [
+                {"os": "Windows", "keys": "* then N"},
+                {"os": "macOS", "keys": "* then N"}
+              ],
+              "context": "When conversations are selected",
+              "description": "Press Asterisk then N to clear all selections.",
+              "notes": "Screen readers announce selection cleared."
+            },
+            {
+              "action": "Select unread",
+              "keys": "Asterisk then U",
+              "variants": [
+                {"os": "Windows", "keys": "* then U"},
+                {"os": "macOS", "keys": "* then U"}
+              ],
+              "context": "In conversation list",
+              "description": "Press Asterisk then U to select all unread conversations in current view.",
+              "notes": "Screen readers announce unread conversations selected."
+            },
+            {
+              "action": "Select starred",
+              "keys": "Asterisk then S",
+              "variants": [
+                {"os": "Windows", "keys": "* then S"},
+                {"os": "macOS", "keys": "* then S"}
+              ],
+              "context": "In conversation list",
+              "description": "Press Asterisk then S to select all starred conversations in current view.",
+              "notes": "Screen readers announce starred conversations selected."
+            }
+          ]
+        },
+        {
+          "name": "Search and Formatting",
+          "shortcuts": [
+            {
+              "action": "Search mail",
+              "keys": "Slash",
+              "variants": [
+                {"os": "Windows", "keys": "/"},
+                {"os": "macOS", "keys": "/"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press Forward Slash to place focus in search box for searching emails.",
+              "notes": "Screen readers announce search box focused. Type keywords to search messages."
+            },
+            {
+              "action": "Bold text",
+              "keys": "Ctrl + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + B"},
+                {"os": "macOS", "keys": "Cmd + B"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and B together to make selected text bold in message body.",
+              "notes": "Screen readers may announce bold formatting applied."
+            },
+            {
+              "action": "Italic text",
+              "keys": "Ctrl + I",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + I"},
+                {"os": "macOS", "keys": "Cmd + I"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and I together to italicize selected text in message body.",
+              "notes": "Screen readers may announce italic formatting."
+            },
+            {
+              "action": "Underline text",
+              "keys": "Ctrl + U",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + U"},
+                {"os": "macOS", "keys": "Cmd + U"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and U together to underline selected text in message body.",
+              "notes": "Screen readers may announce underline formatting."
+            },
+            {
+              "action": "Numbered list",
+              "keys": "Ctrl + Shift + 7",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 7"},
+                {"os": "macOS", "keys": "Cmd + Shift + 7"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control, Shift, and 7 together to create numbered list in message body.",
+              "notes": "Screen readers announce numbered list created."
+            },
+            {
+              "action": "Bulleted list",
+              "keys": "Ctrl + Shift + 8",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + 8"},
+                {"os": "macOS", "keys": "Cmd + Shift + 8"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control, Shift, and 8 together to create bulleted list in message body.",
+              "notes": "Screen readers announce bulleted list created."
+            },
+            {
+              "action": "Undo",
+              "keys": "Ctrl + Z",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Z"},
+                {"os": "macOS", "keys": "Cmd + Z"}
+              ],
+              "context": "When composing message",
+              "description": "Press Control and Z together to undo last editing action in message compose.",
+              "notes": "Screen readers may announce undo action."
+            },
+            {
+              "action": "Redo",
+              "keys": "Ctrl + Y",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Y"},
+                {"os": "macOS", "keys": "Cmd + Y"}
+              ],
+              "context": "When composing message after undo",
+              "description": "Press Control and Y together to redo previously undone action.",
+              "notes": "Screen readers may announce redo action."
+            }
+          ]
+        },
+        {
+          "name": "Advanced Features",
+          "shortcuts": [
+            {
+              "action": "Enable keyboard shortcuts",
+              "keys": "Question Mark",
+              "variants": [
+                {"os": "Windows", "keys": "?"},
+                {"os": "macOS", "keys": "?"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press Question Mark to open keyboard shortcuts help showing all available shortcuts.",
+              "notes": "Screen readers announce shortcuts help dialog. Shows complete list of Gmail shortcuts."
+            },
+            {
+              "action": "Mark as important",
+              "keys": "Plus Sign",
+              "variants": [
+                {"os": "Windows", "keys": "+"},
+                {"os": "macOS", "keys": "+"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press Plus Sign to mark selected conversation as important for Gmail priority inbox.",
+              "notes": "Screen readers announce conversation marked as important."
+            },
+            {
+              "action": "Mark as not important",
+              "keys": "Minus Sign",
+              "variants": [
+                {"os": "Windows", "keys": "-"},
+                {"os": "macOS", "keys": "-"}
+              ],
+              "context": "When conversation is selected",
+              "description": "Press Minus Sign to mark conversation as not important for priority filtering.",
+              "notes": "Screen readers announce conversation marked as not important."
+            },
+            {
+              "action": "Filter by attachment",
+              "keys": "G then B",
+              "variants": [
+                {"os": "Windows", "keys": "G then B"},
+                {"os": "macOS", "keys": "G then B"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then B to view only conversations with attachments.",
+              "notes": "Screen readers announce filtered view showing messages with attachments."
+            },
+            {
+              "action": "Open Tasks",
+              "keys": "G then K",
+              "variants": [
+                {"os": "Windows", "keys": "G then K"},
+                {"os": "macOS", "keys": "G then K"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then K to open Google Tasks side panel for managing tasks.",
+              "notes": "Screen readers announce Tasks panel opened."
+            },
+            {
+              "action": "Open Contacts",
+              "keys": "G then C",
+              "variants": [
+                {"os": "Windows", "keys": "G then C"},
+                {"os": "macOS", "keys": "G then C"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press G then C to open Google Contacts in new tab.",
+              "notes": "Screen readers announce Contacts opening in new tab."
+            },
+            {
+              "action": "Expand entire conversation",
+              "keys": "Semicolon",
+              "variants": [
+                {"os": "Windows", "keys": ";"},
+                {"os": "macOS", "keys": ";"}
+              ],
+              "context": "When viewing conversation",
+              "description": "Press Semicolon to expand all collapsed messages in the current conversation.",
+              "notes": "Screen readers announce all messages expanded. Shows full conversation thread."
+            },
+            {
+              "action": "Collapse entire conversation",
+              "keys": "Colon",
+              "variants": [
+                {"os": "Windows", "keys": ":"},
+                {"os": "macOS", "keys": ":"}
+              ],
+              "context": "When viewing conversation",
+              "description": "Press Colon to collapse all messages in the current conversation showing only most recent.",
+              "notes": "Screen readers announce messages collapsed."
+            },
+            {
+              "action": "Print message",
+              "keys": "Ctrl + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + P"},
+                {"os": "macOS", "keys": "Cmd + P"}
+              ],
+              "context": "When viewing message",
+              "description": "Press Control and P together to print the current message or conversation.",
+              "notes": "Screen readers announce print dialog opened."
+            },
+            {
+              "action": "Show original message",
+              "keys": "Ctrl + Alt + O",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + O"},
+                {"os": "macOS", "keys": "Cmd + Option + O"}
+              ],
+              "context": "When viewing message",
+              "description": "Press Control, Alt, and O together to view original message source including headers.",
+              "notes": "Screen readers announce original message view. Shows raw email with all technical headers."
+            }
+          ]
+        },
+        {
+          "name": "Screen Reader Features",
+          "shortcuts": [
+            {
+              "action": "Enable screen reader mode",
+              "keys": "Question Mark, then Screen reader on",
+              "variants": [
+                {"os": "Windows", "keys": "? to open help, enable in settings"},
+                {"os": "macOS", "keys": "? to open help, enable in settings"}
+              ],
+              "context": "In Gmail settings",
+              "description": "Enable screen reader support in Gmail settings for optimized keyboard navigation and announcements.",
+              "notes": "Screen readers announce optimized mode enabled. Improves navigation and ARIA announcements. Access via Settings > General > Keyboard shortcuts."
+            },
+            {
+              "action": "Jump to navigation",
+              "keys": "Comma then N",
+              "variants": [
+                {"os": "Windows", "keys": ", then N"},
+                {"os": "macOS", "keys": ", then N"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press Comma then N to jump focus to left navigation panel with folders and labels.",
+              "notes": "Screen readers announce navigation panel focused. Navigate folders with arrow keys."
+            },
+            {
+              "action": "Jump to search",
+              "keys": "Comma then S",
+              "variants": [
+                {"os": "Windows", "keys": ", then S"},
+                {"os": "macOS", "keys": ", then S"}
+              ],
+              "context": "Available in Gmail",
+              "description": "Press Comma then S to jump focus to search box.",
+              "notes": "Screen readers announce search box focused."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "url_pattern", "value": "https://mail.google.com/*"},
+        {"type": "url_pattern", "value": "https://inbox.google.com/*"},
+        {"type": "window_title", "value": "* - Gmail"},
+        {"type": "window_title", "value": "Inbox *"}
+      ],
+      "source": [
+        "https://support.google.com/mail/answer/6594",
+        "https://support.google.com/mail/answer/90559",
+        "https://www.google.com/accessibility/products-features/"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
+
+
