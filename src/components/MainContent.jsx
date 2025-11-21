@@ -58,11 +58,11 @@ const WelcomeHome = () => {
             <ul className={`space-y-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">Sidebar:</span>
-                <span>Browse applications, categories, and bookmarked shortcuts. Click an application to see its overview.</span>
+                <span>Browse applications, categories, and bookmarked shortcuts. Select an application to see its overview.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">Categories:</span>
-                <span>Expand an application to see all its shortcut categories. Click a category to view all shortcuts within it.</span>
+                <span>Expand an application to see all its shortcut categories. Select a category to view all shortcuts within it.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">Bookmarks:</span>
@@ -89,7 +89,7 @@ const WelcomeHome = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">View Results:</span>
-                <span>Click any search result to view the full shortcut details in the main area.</span>
+                <span>Select any search result to view the full shortcut details in the main area.</span>
               </li>
             </ul>
           </div>
@@ -104,7 +104,7 @@ const WelcomeHome = () => {
             <ul className={`space-y-2 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">Save Favorites:</span>
-                <span>Click the bookmark icon on any shortcut to save it for quick access.</span>
+                <span>Select the bookmark icon on any shortcut to save it for quick access.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="font-semibold min-w-[120px]">Toggle:</span>
@@ -385,7 +385,7 @@ const GuidePage = () => {
             Sidebar Navigation
           </h3>
           <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-            The sidebar on the left contains all available applications. Click on an application name to expand it and see its categories. Each application can be enabled or disabled in the settings.
+            The sidebar on the left contains all available applications. Select an application to expand it and see its categories. Each application can be enabled or disabled in the settings.
           </p>
 
           <h3 className={`text-xl font-semibold mb-3 mt-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
@@ -399,7 +399,7 @@ const GuidePage = () => {
             Categories
           </h3>
           <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-            Each application is organized into categories like "General Navigation", "Editing", "Accessibility Features", etc. Click a category to view all shortcuts in that category.
+            Each application is organized into categories like "General Navigation", "Editing", "Accessibility Features", etc. Select a category to view all shortcuts in that category.
           </p>
         </section>
 
@@ -417,7 +417,7 @@ const GuidePage = () => {
             Managing Applications
           </h2>
           <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-            You can enable or disable applications in the Settings (press Ctrl+, or click the settings icon). Disabled applications appear at the bottom of the sidebar in the "Disabled Applications" section, where you can easily re-enable them.
+            You can enable or disable applications in the Settings (press Ctrl + , or Select the settings icon). Disabled applications appear at the bottom of the sidebar in the "Disabled Applications" section, where you can easily re-enable them.
           </p>
         </section>
 

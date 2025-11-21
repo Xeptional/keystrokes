@@ -415,4 +415,355 @@
               "context": "Available in any view",
               "description": "Press Control and E together to place focus in the search box for finding emails, contacts, or calendar items.",
               "notes": "Screen readers announce search box active. Type search terms and press Enter to search."
+            }
+          ]
+        },
+        {
+          "name": "Quick Steps and Rules",
+          "shortcuts": [
+            {
+              "action": "Create rule from message",
+              "keys": "Ctrl + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + R"}
+              ],
+              "context": "When message is selected",
+              "description": "Press Control, Alt, and R together to create a rule based on the selected message for automated email management.",
+              "notes": "Screen readers announce Rules wizard dialog. Configure conditions and actions for automatic processing."
+            },
+            {
+              "action": "Manage Quick Steps",
+              "keys": "Ctrl + Alt + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Alt + K"}
+              ],
+              "context": "Available in Mail view",
+              "description": "Press Control, Alt, and K together to open Quick Steps gallery for managing automated action sequences.",
+              "notes": "Screen readers announce Quick Steps dialog. Create, edit, or delete custom workflow shortcuts."
+            }
+          ]
+        },
+        {
+          "name": "Address Book and Contacts",
+          "shortcuts": [
+            {
+              "action": "Open address book",
+              "keys": "Ctrl + Shift + B",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + B"}
+              ],
+              "context": "Available in Outlook",
+              "description": "Press Control, Shift, and B together to open the address book for browsing all contacts.",
+              "notes": "Screen readers announce address book window. Navigate contacts with arrow keys or type to search."
+            },
+            {
+              "action": "New contact from message",
+              "keys": "Ctrl + Shift + C",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + C"}
+              ],
+              "context": "When message with sender is selected",
+              "description": "Press Control, Shift, and C together to create a new contact from the sender of selected message.",
+              "notes": "Screen readers announce new contact window with sender information pre-filled."
+            },
+            {
+              "action": "Check names in address fields",
+              "keys": "Ctrl + K",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + K"}
+              ],
+              "context": "When composing with recipients entered",
+              "description": "Press Control and K together to validate and resolve recipient names against address book.",
+              "notes": "Screen readers announce resolution status or multiple match dialog if ambiguous."
+            },
+            {
+              "action": "Display selected contact details",
+              "keys": "Ctrl + Shift + Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + Enter"}
+              ],
+              "context": "When contact is selected",
+              "description": "Press Control, Shift, and Enter together to display contact card with full details.",
+              "notes": "Screen readers announce contact card with phone, email, and address information."
+            }
+          ]
+        },
+        {
+          "name": "Calendar Advanced",
+          "shortcuts": [
+            {
+              "action": "Create appointment from message",
+              "keys": "Ctrl + Shift + A",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + A"}
+              ],
+              "context": "When message is selected or open",
+              "description": "Press Control, Shift, and A together to create a calendar appointment with message content.",
+              "notes": "Screen readers announce new appointment window with message subject and content included."
+            },
+            {
+              "action": "Forward appointment",
+              "keys": "Ctrl + F",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + F"}
+              ],
+              "context": "When appointment is selected",
+              "description": "Press Control and F together to forward the selected appointment to other people.",
+              "notes": "Screen readers announce forward window with appointment details. Add recipients in To field."
+            },
+            {
+              "action": "Recurrence",
+              "keys": "Ctrl + G",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + G"}
+              ],
+              "context": "When creating or editing appointment",
+              "description": "Press Control and G together to open recurrence dialog for setting up repeating appointments.",
+              "notes": "Screen readers announce Appointment Recurrence dialog. Configure pattern and range."
+            },
+            {
+              "action": "Show as",
+              "keys": "Alt + 0, 1, 2, 3",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + 0, 1, 2, 3"}
+              ],
+              "context": "When creating or editing appointment",
+              "description": "Press Alt and number to set appointment status: 0 for Free, 1 for Tentative, 2 for Busy, 3 for Out of Office.",
+              "notes": "Screen readers announce status setting changed to selected availability state."
+            },
+            {
+              "action": "Private appointment",
+              "keys": "Ctrl + Shift + P",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + P"}
+              ],
+              "context": "When creating or editing appointment",
+              "description": "Press Control, Shift, and P together to mark appointment as private so details are hidden from others.",
+              "notes": "Screen readers announce private setting toggled on or off."
+            },
+            {
+              "action": "Show overlay mode",
+              "keys": "Alt + V, Y",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, Y"}
+              ],
+              "context": "When viewing multiple calendars",
+              "description": "Press Alt then V then Y to toggle overlay mode for viewing multiple calendars stacked.",
+              "notes": "Screen readers announce overlay mode. Calendars display on top of each other for comparison."
+            },
+            {
+              "action": "Open shared calendar",
+              "keys": "Ctrl + 2",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + O"}
+              ],
+              "context": "Available in Calendar view",
+              "description": "Press Control, Shift, and O together to open dialog for accessing shared calendars from other users.",
+              "notes": "Screen readers announce Open Shared Calendar dialog. Enter name or email to open their calendar."
+            }
+          ]
+        },
+        {
+          "name": "Attachments",
+          "shortcuts": [
+            {
+              "action": "Save attachment",
+              "keys": "Alt + J, A, A, V",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + J, A, A, V"}
+              ],
+              "context": "When attachment is selected",
+              "description": "Press Alt then J then A then A then V to save selected attachment to disk.",
+              "notes": "Screen readers announce Save As dialog. Choose location and filename for attachment."
+            },
+            {
+              "action": "Save all attachments",
+              "keys": "Alt + J, A, L",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + J, A, L"}
+              ],
+              "context": "When message has multiple attachments",
+              "description": "Press Alt then J then A then L to save all attachments from the message at once.",
+              "notes": "Screen readers announce Save All dialog. Select folder for saving all attachments."
+            },
+            {
+              "action": "Open attachment",
+              "keys": "Enter",
+              "variants": [
+                {"os": "Windows", "keys": "Enter"}
+              ],
+              "context": "When attachment is selected",
+              "description": "Press Enter when attachment is focused to open it in the default application.",
+              "notes": "Screen readers announce attachment opening. File opens in associated program."
+            },
+            {
+              "action": "Preview attachment",
+              "keys": "Spacebar",
+              "variants": [
+                {"os": "Windows", "keys": "Spacebar"}
+              ],
+              "context": "When attachment is selected",
+              "description": "Press Spacebar to preview the selected attachment within Outlook without opening separate application.",
+              "notes": "Screen readers announce preview pane. Limited functionality compared to full application."
+            }
+          ]
+        },
+        {
+          "name": "Email Signatures and Options",
+          "shortcuts": [
+            {
+              "action": "Insert signature",
+              "keys": "Alt + N, A, S",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + N, A, S"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then N then A then S to insert email signature into message body.",
+              "notes": "Screen readers announce signature menu. Select which signature to insert if multiple exist."
+            },
+            {
+              "action": "Message options",
+              "keys": "Alt + P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + P"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt and P together to open message options for setting importance, sensitivity, and delivery options.",
+              "notes": "Screen readers announce Options tab ribbon. Navigate settings for message properties."
+            },
+            {
+              "action": "Set high importance",
+              "keys": "Ctrl + Shift + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, A, H"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then H then A then H to mark message with high importance flag.",
+              "notes": "Screen readers announce high importance set. Recipients see priority indicator."
+            },
+            {
+              "action": "Set low importance",
+              "keys": "Ctrl + Shift + 1",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + H, A, L"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then H then A then L to mark message with low importance.",
+              "notes": "Screen readers announce low importance set."
+            },
+            {
+              "action": "Request read receipt",
+              "keys": "Alt + P, R, R",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + P, R, R"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then P then R then R to request read receipt notification when recipient opens message.",
+              "notes": "Screen readers announce read receipt requested. Recipients may decline to send receipt."
+            },
+            {
+              "action": "Request delivery receipt",
+              "keys": "Alt + P, R, D",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + P, R, D"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then P then R then D to request delivery receipt when message reaches recipient's server.",
+              "notes": "Screen readers announce delivery receipt requested."
+            },
+            {
+              "action": "Delay delivery",
+              "keys": "Alt + P, D, Y",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + P, D, Y"}
+              ],
+              "context": "When composing message",
+              "description": "Press Alt then P then D then Y to set future date and time for message delivery.",
+              "notes": "Screen readers announce delivery options dialog. Set date and time for delayed sending."
+            }
+          ]
+        },
+        {
+          "name": "Reading Pane and Preview",
+          "shortcuts": [
+            {
+              "action": "Mark as read in Reading Pane",
+              "keys": "Insert",
+              "variants": [
+                {"os": "Windows", "keys": "Insert"}
+              ],
+              "context": "When message is displayed in Reading Pane",
+              "description": "Press Insert to mark the message displayed in Reading Pane as read without opening it.",
+              "notes": "Screen readers announce message marked as read. Visual indicator changes."
+            },
+            {
+              "action": "Scroll down in Reading Pane",
+              "keys": "Spacebar",
+              "variants": [
+                {"os": "Windows", "keys": "Spacebar"}
+              ],
+              "context": "When Reading Pane is active",
+              "description": "Press Spacebar to scroll down through the message content in the Reading Pane.",
+              "notes": "Screen readers read next portion of message content as it scrolls."
+            },
+            {
+              "action": "Scroll up in Reading Pane",
+              "keys": "Shift + Spacebar",
+              "variants": [
+                {"os": "Windows", "keys": "Shift + Spacebar"}
+              ],
+              "context": "When Reading Pane is active",
+              "description": "Press Shift and Spacebar together to scroll up through message content in Reading Pane.",
+              "notes": "Screen readers read previous portion of message as it scrolls upward."
+            },
+            {
+              "action": "Toggle Reading Pane position",
+              "keys": "Alt + V, P",
+              "variants": [
+                {"os": "Windows", "keys": "Alt + V, P"}
+              ],
+              "context": "Available in Mail view",
+              "description": "Press Alt then V then P to toggle Reading Pane between right, bottom, or off positions.",
+              "notes": "Screen readers announce Reading Pane position changed."
+            }
+          ]
+        },
+        {
+          "name": "Distribution Lists and Groups",
+          "shortcuts": [
+            {
+              "action": "New distribution list",
+              "keys": "Ctrl + Shift + L",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + L"}
+              ],
+              "context": "When in Contacts view",
+              "description": "Press Control, Shift, and L together to create a new contact group or distribution list.",
+              "notes": "Screen readers announce new contact group window. Add members to group for easy group emailing."
+            },
+            {
+              "action": "Expand distribution list",
+              "keys": "Ctrl + Shift + X",
+              "variants": [
+                {"os": "Windows", "keys": "Ctrl + Shift + X"}
+              ],
+              "context": "When distribution list is in To or CC field",
+              "description": "Press Control, Shift, and X together to expand distribution list to show all member email addresses.",
+              "notes": "Screen readers announce list expanded. Individual members become visible and editable."
+            }
+          ]
+        }
+      ],
+      "app_detection_signatures": [
+        {"type": "process", "value": "OUTLOOK.EXE"},
+        {"type": "process", "value": "Microsoft Outlook"}
+      ],
+      "source": [
+        "https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd",
+        "https://support.microsoft.com/en-us/office/use-a-screen-reader-to-explore-and-navigate-outlook-mail-2afe595a-7c1b-4739-88d6-38a68d092ae8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
             
